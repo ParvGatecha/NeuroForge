@@ -1,0 +1,31 @@
+{
+  "id": 36,
+  "slug": "data-leakage-detection",
+  "title": "Data Leakage Detection",
+  "section": "Machine Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "leakage",
+    "validation",
+    "errors"
+  ],
+  "learning_objectives": [
+    "Identify target leaks",
+    "Resolve train-test leaks"
+  ],
+  "description": "Audit features for processing leaks that artificially inflate validation scores.",
+  "theory_resource": {
+    "title": "Data Leakage in ML",
+    "url": "https://wikipedia.org/wiki/Leakage_(machine_learning)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Data Leakage Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-data-leakage"
+  },
+  "prerequisites": [
+    35
+  ]
+}

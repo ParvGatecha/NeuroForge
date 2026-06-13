@@ -1,0 +1,31 @@
+{
+  "id": 89,
+  "slug": "deep-reinforcement-learning-agent",
+  "title": "Deep Reinforcement Learning Agent",
+  "section": "Agents",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "rl",
+    "dqn",
+    "neural-nets"
+  ],
+  "learning_objectives": [
+    "Formulate policy rewards",
+    "Train Q-network parameters"
+  ],
+  "description": "Construct deep reinforcement learning agents using Q-Network architectures.",
+  "theory_resource": {
+    "title": "Playing Atari with Deep Reinforcement Learning",
+    "url": "https://arxiv.org/abs/1312.5602",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Deep Reinforcement Learning Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-deep-reinforcement-learning"
+  },
+  "prerequisites": [
+    88
+  ]
+}

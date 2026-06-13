@@ -1,0 +1,31 @@
+{
+  "id": 42,
+  "slug": "feature-scaling-normalization",
+  "title": "Feature Scaling Normalization",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "preprocessing",
+    "scaling",
+    "min-max"
+  ],
+  "learning_objectives": [
+    "Implement Min-Max scaling",
+    "Compute Standard Z-Score scaling"
+  ],
+  "description": "Normalize column features to uniform scale to accelerate optimization.",
+  "theory_resource": {
+    "title": "Feature Scaling Guide",
+    "url": "https://wikipedia.org/wiki/Feature_scaling",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Min-Max Normalization of Features",
+    "url": "https://deep-ml.com/problems/112"
+  },
+  "prerequisites": [
+    41
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 49,
+  "slug": "overfitting-and-underfitting-dl",
+  "title": "Overfitting and Underfitting in DL",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "overfitting",
+    "early-stopping",
+    "regularization"
+  ],
+  "learning_objectives": [
+    "Apply early stopping limits",
+    "Monitor validation curves"
+  ],
+  "description": "Mitigate network capacity variance using early stopping callbacks.",
+  "theory_resource": {
+    "title": "Generalization in Neural Networks",
+    "url": "https://wikipedia.org/wiki/Overfitting",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Overfitting and Underfitting Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-overfitting-and-underfitting"
+  },
+  "prerequisites": [
+    48
+  ]
+}

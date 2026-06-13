@@ -1,0 +1,31 @@
+{
+  "id": 31,
+  "slug": "missing-values-imputation",
+  "title": "Missing Values Imputation",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "preprocessing",
+    "imputation",
+    "nulls"
+  ],
+  "learning_objectives": [
+    "Apply SimpleImputer mappings",
+    "Verify imputation bias impacts"
+  ],
+  "description": "Cleanse incomplete inputs using zero, mean, or median imputation.",
+  "theory_resource": {
+    "title": "Imputation of Missing Values",
+    "url": "https://scikit-learn.org/stable/modules/impute.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Missing Values Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-missing-values"
+  },
+  "prerequisites": [
+    30
+  ]
+}

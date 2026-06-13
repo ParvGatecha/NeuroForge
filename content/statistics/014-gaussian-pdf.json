@@ -1,0 +1,31 @@
+{
+  "id": 14,
+  "slug": "gaussian-pdf",
+  "title": "Gaussian Probability Density Function",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "probability",
+    "normal-distribution",
+    "math"
+  ],
+  "learning_objectives": [
+    "Compute Normal PDF",
+    "Interpret Gaussian distributions"
+  ],
+  "description": "Represent continuous data models using the Gaussian/Normal probability distribution curve.",
+  "theory_resource": {
+    "title": "Normal Distribution Overview",
+    "url": "https://wikipedia.org/wiki/Normal_distribution",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Normal Distribution PDF Calculator",
+    "url": "https://deep-ml.com/problems/80"
+  },
+  "prerequisites": [
+    13
+  ]
+}

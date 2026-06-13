@@ -1,0 +1,31 @@
+{
+  "id": 18,
+  "slug": "chi-square-independence-test",
+  "title": "Chi-Square Independence Test",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "hypothesis-testing",
+    "chi-square",
+    "categorical"
+  ],
+  "learning_objectives": [
+    "Compute contingency expectations",
+    "Calculate chi-square values"
+  ],
+  "description": "Establish correlation status between two categorical nominal variables.",
+  "theory_resource": {
+    "title": "Chi-squared Test Wiki",
+    "url": "https://wikipedia.org/wiki/Chi-squared_test",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Chi-Square Test Exercise",
+    "url": "https://www.kaggle.com/code/ravji71/chi-square-test-exercise"
+  },
+  "prerequisites": [
+    17
+  ]
+}

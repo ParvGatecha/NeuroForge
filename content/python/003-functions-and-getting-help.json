@@ -1,0 +1,31 @@
+{
+  "id": 3,
+  "slug": "functions-and-getting-help",
+  "title": "Python Functions and Getting Help",
+  "section": "Python",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "functions",
+    "help",
+    "docstrings"
+  ],
+  "learning_objectives": [
+    "Define functions with def",
+    "Read python docstrings using help()"
+  ],
+  "description": "Learn to structure clean, documented functions and seek interactive help using Python's built-in inspection systems.",
+  "theory_resource": {
+    "title": "Defining Your Own Python Function",
+    "url": "https://realpython.com/defining-your-own-python-function/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Functions and Help Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-functions-and-getting-help"
+  },
+  "prerequisites": [
+    2
+  ]
+}

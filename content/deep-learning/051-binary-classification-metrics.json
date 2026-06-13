@@ -1,0 +1,31 @@
+{
+  "id": 51,
+  "slug": "binary-classification-metrics",
+  "title": "Binary Classification in DL",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "classification",
+    "cross-entropy",
+    "metrics"
+  ],
+  "learning_objectives": [
+    "Compute sigmoid probability boundaries",
+    "Apply binary cross-entropy loss"
+  ],
+  "description": "Optimize classification logits using logarithmic cross entropy losses.",
+  "theory_resource": {
+    "title": "Binary Cross Entropy Loss",
+    "url": "https://wikipedia.org/wiki/Cross_entropy",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Binary Classification Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-binary-classification"
+  },
+  "prerequisites": [
+    50
+  ]
+}

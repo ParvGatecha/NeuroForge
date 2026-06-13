@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NeuroForge MVP - AI Engineer Upskilling Platform
 
-## Getting Started
+Welcome to **NeuroForge**, a production-ready, roadmap-driven learning and interview preparation platform designed specifically for AI and Machine Learning Engineers.
 
-First, run the development server:
+This platform launches with **100 pre-loaded, first-principles questions** categorized across 8 core tracks.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Key Features
+
+- **Linear Learning Roadmap**: Tracks progress sequentially using course prerequisites (`Python Concurrency` ➔ `Math Stats` ➔ `Classical ML` ➔ `Deep Learning` ➔ `LLM` ➔ `RAG` ➔ `AI Agents` ➔ `AI System Design`).
+- **Interactive Code Playground**: Full split-screen workspace with multi-tab description panels,progressive hints, literature references, and an interactive mock Python execution sandbox with console output logging.
+- **Zod Content Validator**: Runs automatically during code builds to validate all 100 question files under `content/questions/` against strict schema rules.
+- **Gamified Progress Engines**:
+  - **XP Engine**: Computes RPG-like exponential leveling progression.
+  - **Streak Engine**: Tracks daily question completion and tracks consecutive activity.
+  - **Achievement Auto-Unlocker**: Awards XP bonuses and badge unlocks for hitting milestone targets.
+- **Hybrid Storage Provider**: Seamlessly uses **Prisma/PostgreSQL** in production, but automatically falls back to a **local file-based JSON database (`content/local_mock_db.json`)** if the database server is not reachable. This guarantees the app is functional out-of-the-box in local development.
+- **High-Performance Client Search**: Leverages `Fuse.js` client-side fuzzy queries on a compiled build-time search index for instant filtering.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Framework**: Next.js 16 (App Router, TypeScript, Tailwind CSS v4)
+- **Database ORM**: Prisma ORM (targeting PostgreSQL for production, with SQLite and JSON-file fallback capability)
+- **Authentication**: Better Auth (configured with Prisma adapter)
+- **State Management**: Zustand (for unified client state synchronization)
+- **Styling**: Vanilla CSS with custom scrollbars, animations, and premium glassmorphic/neon utility classes
+
+---
+
+## 📂 Project Architecture
+
+The codebase follows **Clean Architecture** patterns, separating modules and shared concerns:
+
+```
+src/
+├── app/                  # Next.js App Router (pages and API route controllers)
+├── modules/              # Clean Architecture Feature Modules
+│   ├── auth/             # Login, signup, password reset flow components
+│   ├── dashboard/        # Dashboard layout, streaks, XP progress panels
+│   ├── questions/        # Questions Explorer, split-screen workspace UI
+│   ├── roadmaps/         # Learning path vertical sequence graphs
+│   ├── achievements/     # Milestone checker, rewards, and badge descriptors
+│   ├── admin/            # Control panel, infra metrics, index re-builder
+│   └── progress/         # XP levels and active streak computation engines
+└── shared/               # Shared cross-cutting components & utilities
+    ├── components/       # Global Header, theme provider, UI wrappers
+    ├── lib/              # Prisma client, Better Auth config, DB services
+    └── hooks/            # Shared state stores (Zustand)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1. Prerequisites
+- Node.js `v20.x` or `v22.x`
+- npm (installed automatically with Node)
 
-## Learn More
+### 2. Installation
+Clone this repository and install dependencies:
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Environment Setup
+A default local `.env` is already provided:
+```env
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/neuroforge?schema=public"
+BETTER_AUTH_SECRET="some-secret-key-at-least-32-chars-long-neuroforge"
+BETTER_AUTH_URL="http://localhost:3000"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Running the Development Server
+Start the local server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the application. The system will automatically detect if PostgreSQL is not running and fall back to the local file DB mock in `content/local_mock_db.json`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧪 Testing and Building
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Run Unit Tests
+Executes test assertions for the XP progression calculations and recommended question sequencing:
+```bash
+npm run test
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Build for Production
+Runs the Zod question verification, builds the Fuse.js search index, and compiles the Next.js production build:
+```bash
+npm run build
+```
+The build process will fail if any question file does not comply with the Zod schema.
+
+---
+
+## 📊 Database Models
+
+Defined in `prisma/schema.prisma`:
+- `User`: Handles active stats (XP, Level, Role).
+- `Session`, `Account`, `Verification`: Standard Better Auth schema models.
+- `QuestionProgress`: Logs completed challenges and XP rewards.
+- `Bookmark`: Tracks bookmarked questions.
+- `Streak`: Tracks daily active streak counts and records.
+- `Achievement`, `UserAchievement`: Custom gamification badges and unlock timestamps.
+- `UserSettings`: Layout theme preferences and notification flags.

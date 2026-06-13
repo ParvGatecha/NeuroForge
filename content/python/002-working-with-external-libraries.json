@@ -1,0 +1,31 @@
+{
+  "id": 2,
+  "slug": "working-with-external-libraries",
+  "title": "Working with External Libraries",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "imports",
+    "pip",
+    "libraries"
+  ],
+  "learning_objectives": [
+    "Import external packages",
+    "Use modules and submodules"
+  ],
+  "description": "Understand how to import, inspect, and work with external packages like numpy or math in Python.",
+  "theory_resource": {
+    "title": "Python Modules and Packages",
+    "url": "https://realpython.com/python-modules-packages/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Working with External Libraries Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-working-with-external-libraries"
+  },
+  "prerequisites": [
+    1
+  ]
+}

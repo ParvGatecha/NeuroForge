@@ -1,0 +1,31 @@
+{
+  "id": 63,
+  "slug": "softplus-activation-function",
+  "title": "Softplus Activation Function",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "activations",
+    "softplus",
+    "math"
+  ],
+  "learning_objectives": [
+    "Compute Softplus activation output",
+    "Verify continuous differentiability properties"
+  ],
+  "description": "Implement the smooth Softplus activation function commonly used in neural parameters.",
+  "theory_resource": {
+    "title": "Softplus Activation Concept",
+    "url": "https://wikipedia.org/wiki/Rectifier_(neural_networks)#Softplus",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement the Softplus Activation",
+    "url": "https://deep-ml.com/problems/99"
+  },
+  "prerequisites": [
+    62
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 39,
+  "slug": "logistic-regression-gradient-descent",
+  "title": "Logistic Regression (Gradient Descent)",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "classification",
+    "logistic-regression",
+    "sigmoid"
+  ],
+  "learning_objectives": [
+    "Build sigmoid probability maps",
+    "Calculate cross-entropy updates"
+  ],
+  "description": "Train binary classification models using gradient descent log loss optimization.",
+  "theory_resource": {
+    "title": "Logistic Regression Details",
+    "url": "https://wikipedia.org/wiki/Logistic_regression",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Train Logistic Regression with GD",
+    "url": "https://deep-ml.com/problems/106"
+  },
+  "prerequisites": [
+    38
+  ]
+}

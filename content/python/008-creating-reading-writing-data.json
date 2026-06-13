@@ -1,0 +1,31 @@
+{
+  "id": 8,
+  "slug": "creating-reading-writing-data",
+  "title": "Creating, Reading, and Writing Data",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "pandas",
+    "csv",
+    "dataframes"
+  ],
+  "learning_objectives": [
+    "Create Pandas DataFrames",
+    "Load CSV files into memory"
+  ],
+  "description": "Instantiate Series and DataFrames programmatically and output structures into filesystem data files.",
+  "theory_resource": {
+    "title": "Pandas Read Write Tutorial",
+    "url": "https://realpython.com/pandas-read-write-files/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Creating, Reading and Writing Data Exercise",
+    "url": "https://www.kaggle.com/code/residentmario/exercise-creating-reading-and-writing"
+  },
+  "prerequisites": [
+    7
+  ]
+}

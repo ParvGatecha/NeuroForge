@@ -1,0 +1,31 @@
+{
+  "id": 17,
+  "slug": "two-sample-t-test",
+  "title": "Two-sample T-test",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "hypothesis-testing",
+    "t-test",
+    "inference"
+  ],
+  "learning_objectives": [
+    "Compute T-statistics",
+    "Determine degrees of freedom"
+  ],
+  "description": "Assess difference significance between two independent sample group averages.",
+  "theory_resource": {
+    "title": "Student's T-test Explained",
+    "url": "https://wikipedia.org/wiki/Student%27s_t-test",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "T-test and ANOVA Exercise",
+    "url": "https://www.kaggle.com/code/chocoz/exercise-t-test-and-anova"
+  },
+  "prerequisites": [
+    16
+  ]
+}

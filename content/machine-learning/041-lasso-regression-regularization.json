@@ -1,0 +1,31 @@
+{
+  "id": 41,
+  "slug": "lasso-regression-regularization",
+  "title": "Lasso Regression Regularization",
+  "section": "Machine Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "regularization",
+    "lasso",
+    "l1"
+  ],
+  "learning_objectives": [
+    "Apply L1 coordinate descent penalties",
+    "Perform sparse selection maps"
+  ],
+  "description": "Optimize Lasso L1 objective paths to construct sparse feature selections.",
+  "theory_resource": {
+    "title": "Lasso Regression Details",
+    "url": "https://wikipedia.org/wiki/Lasso_(statistics)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement Lasso Regression GD",
+    "url": "https://deep-ml.com/problems/50"
+  },
+  "prerequisites": [
+    40
+  ]
+}

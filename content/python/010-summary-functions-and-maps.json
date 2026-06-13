@@ -1,0 +1,31 @@
+{
+  "id": 10,
+  "slug": "summary-functions-and-maps",
+  "title": "Summary Functions and Maps",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "pandas",
+    "maps",
+    "summaries"
+  ],
+  "learning_objectives": [
+    "Apply map() and apply() operators",
+    "Generate aggregate summary stats"
+  ],
+  "description": "Transform dataframe rows using mapping functions and execute statistic overviews.",
+  "theory_resource": {
+    "title": "Pandas Map and Apply Guide",
+    "url": "https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Summary Functions and Maps Exercise",
+    "url": "https://www.kaggle.com/code/residentmario/exercise-summary-functions-and-maps"
+  },
+  "prerequisites": [
+    9
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 19,
+  "slug": "one-way-f-test",
+  "title": "One-Way F-test (ANOVA)",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "hypothesis-testing",
+    "f-test",
+    "anova"
+  ],
+  "learning_objectives": [
+    "Determine F-ratio statistics",
+    "Calculate variance splits"
+  ],
+  "description": "Compare aggregate group variances across multiple populations concurrently.",
+  "theory_resource": {
+    "title": "F-test Analysis of Variance",
+    "url": "https://wikipedia.org/wiki/F-test",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Statistical Data Analysis ANOVA Exercise",
+    "url": "https://www.kaggle.com/code/jakevdp/statistical-data-analysis-in-python"
+  },
+  "prerequisites": [
+    18
+  ]
+}

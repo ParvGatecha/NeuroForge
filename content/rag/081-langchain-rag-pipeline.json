@@ -1,0 +1,31 @@
+{
+  "id": 81,
+  "slug": "langchain-rag-pipeline",
+  "title": "LangChain RAG Pipeline",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "langchain",
+    "chromadb",
+    "llama-2"
+  ],
+  "learning_objectives": [
+    "Setup LangChain loaders",
+    "Connect query prompts to contexts"
+  ],
+  "description": "Assemble retrieval-augmented pipelines querying ChromaDB vectors.",
+  "theory_resource": {
+    "title": "LangChain RAG Guide",
+    "url": "https://python.langchain.com/docs/tutorials/rag/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangChain RAG Pipeline Exercise",
+    "url": "https://www.kaggle.com/code/gpreda/rag-using-llama-2-langchain-and-chromadb"
+  },
+  "prerequisites": [
+    80
+  ]
+}

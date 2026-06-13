@@ -1,0 +1,31 @@
+{
+  "id": 61,
+  "slug": "bpe-tokenization",
+  "title": "BPE Word Tokenization",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "tokenization",
+    "bpe",
+    "nlp"
+  ],
+  "learning_objectives": [
+    "Find frequent character merges",
+    "Build subword vocabularies"
+  ],
+  "description": "Construct subword dictionaries based on iterative frequency evaluations.",
+  "theory_resource": {
+    "title": "Byte Pair Encoding Tokenization",
+    "url": "https://huggingface.co/learn/nlp-course/chapter6/5",
+    "type": "course"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "BPE Tokenization From Scratch",
+    "url": "https://www.kaggle.com/code/tuckerarrants/k-means-and-bpe-tokenization-from-scratch"
+  },
+  "prerequisites": [
+    60
+  ]
+}

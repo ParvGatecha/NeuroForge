@@ -1,0 +1,31 @@
+{
+  "id": 75,
+  "slug": "unsloth-llama-3-tuning",
+  "title": "Unsloth Llama-3 Fine-Tuning",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "unsloth",
+    "llama-3",
+    "peft"
+  ],
+  "learning_objectives": [
+    "Configure PEFT adapters",
+    "Accelerate fine-tuning workflows"
+  ],
+  "description": "Accelerate fine-tuning steps using Unsloth optimized attention kernels.",
+  "theory_resource": {
+    "title": "Unsloth PEFT Optimization Documentation",
+    "url": "https://github.com/unslothai/unsloth",
+    "type": "github"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Unsloth Llama-3 Fine-Tuning Exercise",
+    "url": "https://www.kaggle.com/code/danielhanchen/llama-3-8b-unsloth-notebook"
+  },
+  "prerequisites": [
+    74
+  ]
+}

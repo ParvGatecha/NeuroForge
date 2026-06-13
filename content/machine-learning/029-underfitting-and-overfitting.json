@@ -1,0 +1,31 @@
+{
+  "id": 29,
+  "slug": "underfitting-and-overfitting",
+  "title": "Underfitting and Overfitting",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "bias-variance",
+    "capacity",
+    "overfitting"
+  ],
+  "learning_objectives": [
+    "Identify overfitting signals",
+    "Tune tree depth limits"
+  ],
+  "description": "Optimize tree capacities to resolve high bias and high variance tradeoffs.",
+  "theory_resource": {
+    "title": "Bias-Variance Tradeoff",
+    "url": "https://wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Underfitting and Overfitting Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-underfitting-and-overfitting"
+  },
+  "prerequisites": [
+    28
+  ]
+}

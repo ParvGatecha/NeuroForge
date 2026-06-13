@@ -1,0 +1,31 @@
+{
+  "id": 30,
+  "slug": "random-forests-ensemble",
+  "title": "Random Forests Ensemble",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "ensembles",
+    "random-forest",
+    "bagging"
+  ],
+  "learning_objectives": [
+    "Build bagging estimators",
+    "Analyze ensemble predictions"
+  ],
+  "description": "Harness decision tree aggregates to stabilize prediction noise.",
+  "theory_resource": {
+    "title": "Random Forests Classifiers",
+    "url": "https://scikit-learn.org/stable/modules/ensemble.html#forests-of-randomized-trees",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Random Forests Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-random-forests"
+  },
+  "prerequisites": [
+    29
+  ]
+}

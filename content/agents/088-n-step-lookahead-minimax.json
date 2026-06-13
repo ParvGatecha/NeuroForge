@@ -1,0 +1,31 @@
+{
+  "id": 88,
+  "slug": "n-step-lookahead-minimax",
+  "title": "N-Step Lookahead (Minimax)",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "minimax",
+    "game-trees",
+    "alphabeta"
+  ],
+  "learning_objectives": [
+    "Apply minimax score derivations",
+    "Prune tree paths using alpha-beta parameters"
+  ],
+  "description": "Implement recursive minimax depth planners mapping state projections.",
+  "theory_resource": {
+    "title": "Minimax Decision Tree Theory",
+    "url": "https://wikipedia.org/wiki/Minimax",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "N-Step Lookahead Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-n-step-lookahead"
+  },
+  "prerequisites": [
+    87
+  ]
+}

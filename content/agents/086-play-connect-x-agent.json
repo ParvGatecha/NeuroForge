@@ -1,0 +1,31 @@
+{
+  "id": 86,
+  "slug": "play-connect-x-agent",
+  "title": "Play the Game ConnectX Agent",
+  "section": "Agents",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "game-ai",
+    "connect-x",
+    "agent-loops"
+  ],
+  "learning_objectives": [
+    "Configure step decision cycles",
+    "Handle current state models"
+  ],
+  "description": "Build interactive game agents executing decisions within loop cycles.",
+  "theory_resource": {
+    "title": "Introduction to Game AI",
+    "url": "https://www.kaggle.com/learn/intro-to-game-ai",
+    "type": "course"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Play the Game Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-play-the-game"
+  },
+  "prerequisites": [
+    62
+  ]
+}

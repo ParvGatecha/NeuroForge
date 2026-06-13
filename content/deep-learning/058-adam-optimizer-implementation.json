@@ -1,0 +1,31 @@
+{
+  "id": 58,
+  "slug": "adam-optimizer-implementation",
+  "title": "Adam Optimizer Implementation",
+  "section": "Deep Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "optimization",
+    "adam",
+    "momentum"
+  ],
+  "learning_objectives": [
+    "Incorporate momentum moments",
+    "Apply RMSprop scaling coefficients"
+  ],
+  "description": "Construct adaptive learning rates using rolling mean-square metrics.",
+  "theory_resource": {
+    "title": "Adam Optimization Algorithm Details",
+    "url": "https://arxiv.org/abs/1412.6980",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement Adam Optimization",
+    "url": "https://deep-ml.com/problems/49"
+  },
+  "prerequisites": [
+    57
+  ]
+}

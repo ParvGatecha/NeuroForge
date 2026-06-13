@@ -1,0 +1,31 @@
+{
+  "id": 70,
+  "slug": "nlp-text-classification",
+  "title": "Text Classification Pipelines",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "classification",
+    "nlp",
+    "textcat"
+  ],
+  "learning_objectives": [
+    "Train text classifiers",
+    "Evaluate bag-of-words pipelines"
+  ],
+  "description": "Train semantic categorization pipelines on text documents using SpaCy.",
+  "theory_resource": {
+    "title": "SpaCy Text Classification guide",
+    "url": "https://spacy.io/usage/training#quickstart",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Text Classification Exercise",
+    "url": "https://www.kaggle.com/code/matheon/exercise-text-classification"
+  },
+  "prerequisites": [
+    69
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 13,
+  "slug": "markov-chains-probability-transitions",
+  "title": "Markov Chains & Probability Transitions",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "probability",
+    "markov",
+    "transitions"
+  ],
+  "learning_objectives": [
+    "Map state transition matrices",
+    "Simulate multi-step probability states"
+  ],
+  "description": "Update state probabilities over sequential time intervals using transition matrices.",
+  "theory_resource": {
+    "title": "Markov Chains Explained",
+    "url": "https://wikipedia.org/wiki/Markov_chain",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Simulate Markov Chain Transitions",
+    "url": "https://deep-ml.com/problems/132"
+  },
+  "prerequisites": [
+    12
+  ]
+}

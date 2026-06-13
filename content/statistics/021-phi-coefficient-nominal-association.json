@@ -1,0 +1,31 @@
+{
+  "id": 21,
+  "slug": "phi-coefficient-nominal-association",
+  "title": "Phi Coefficient & Nominal Association",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "correlation",
+    "phi-coefficient",
+    "categorical"
+  ],
+  "learning_objectives": [
+    "Map nominal variables to binary counts",
+    "Determine Phi correlation value"
+  ],
+  "description": "Evaluate relationship strength between binary nominal parameters.",
+  "theory_resource": {
+    "title": "Phi Coefficient Details",
+    "url": "https://wikipedia.org/wiki/Phi_coefficient",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Calculate the Phi Coefficient",
+    "url": "https://deep-ml.com/problems/95"
+  },
+  "prerequisites": [
+    20
+  ]
+}

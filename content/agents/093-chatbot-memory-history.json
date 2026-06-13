@@ -1,0 +1,31 @@
+{
+  "id": 93,
+  "slug": "chatbot-memory-history",
+  "title": "Chatbots with Memory and History",
+  "section": "Agents",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "memory",
+    "langchain",
+    "chat-history"
+  ],
+  "learning_objectives": [
+    "Maintain rolling buffer history",
+    "Format conversation context windows"
+  ],
+  "description": "Structure persistent chat message storage arrays to preserve conversation state.",
+  "theory_resource": {
+    "title": "LangChain Memory Management",
+    "url": "https://python.langchain.com/v0.1/docs/modules/memory/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Chatbots with Memory Exercise",
+    "url": "https://www.kaggle.com/code/gpreda/building-chatbots-with-memory-and-langchain"
+  },
+  "prerequisites": [
+    92
+  ]
+}

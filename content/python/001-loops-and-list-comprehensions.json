@@ -1,0 +1,29 @@
+{
+  "id": 1,
+  "slug": "loops-and-list-comprehensions",
+  "title": "Python Loops & List Comprehensions",
+  "section": "Python",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "loops",
+    "list-comprehensions",
+    "fundamentals"
+  ],
+  "learning_objectives": [
+    "Implement standard loops",
+    "Convert loops to list comprehensions"
+  ],
+  "description": "Learn the syntax and optimization of Python loops and convert sequential iteration logic into elegant list comprehensions.",
+  "theory_resource": {
+    "title": "Python List Comprehensions Guide",
+    "url": "https://realpython.com/list-comprehension-python/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Loops and List Comprehensions Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-loops-and-list-comprehensions"
+  },
+  "prerequisites": []
+}

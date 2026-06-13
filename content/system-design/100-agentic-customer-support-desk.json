@@ -1,0 +1,32 @@
+{
+  "id": 100,
+  "slug": "agentic-customer-support-desk",
+  "title": "Agentic Customer Support Desk",
+  "section": "System Design",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "agentic-support",
+    "rag",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Connect multi-agent routers",
+    "Incorporate context memory logs"
+  ],
+  "description": "Deploy automated customer service portals utilizing RAG and agents.",
+  "theory_resource": {
+    "title": "Designing Agentic Support Portals",
+    "url": "https://wikipedia.org/wiki/Customer_service_conversational_agent",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Agentic Customer Support Desk Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag"
+  },
+  "prerequisites": [
+    95,
+    85
+  ]
+}

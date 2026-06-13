@@ -1,0 +1,31 @@
+{
+  "id": 57,
+  "slug": "backpropagation-neural-network",
+  "title": "Backpropagation in Neural Network",
+  "section": "Deep Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "gradients",
+    "chain-rule",
+    "backprop"
+  ],
+  "learning_objectives": [
+    "Determine activation derivatives",
+    "Execute matrix chain rules"
+  ],
+  "description": "Propagate error gradients backward using chain-rule updates.",
+  "theory_resource": {
+    "title": "Backpropagation Algorithm Wiki",
+    "url": "https://wikipedia.org/wiki/Backpropagation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Single Neuron with Backpropagation",
+    "url": "https://deep-ml.com/problems/25"
+  },
+  "prerequisites": [
+    56
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 12,
+  "slug": "variance-and-standard-deviation",
+  "title": "Variance and Standard Deviation",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "statistics",
+    "dispersion",
+    "math"
+  ],
+  "learning_objectives": [
+    "Compute variance and standard deviation",
+    "Differentiate population vs sample variance"
+  ],
+  "description": "Measure statistical dispersion using probability distributions.",
+  "theory_resource": {
+    "title": "Understanding Variance and Standard Deviation",
+    "url": "https://wikipedia.org/wiki/Variance",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Statistical Distributions Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/distributions"
+  },
+  "prerequisites": [
+    11
+  ]
+}

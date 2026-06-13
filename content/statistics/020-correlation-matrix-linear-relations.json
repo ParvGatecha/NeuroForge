@@ -1,0 +1,31 @@
+{
+  "id": 20,
+  "slug": "correlation-matrix-linear-relations",
+  "title": "Correlation Matrix & Linear Relations",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "correlation",
+    "pearson",
+    "matrix"
+  ],
+  "learning_objectives": [
+    "Calculate covariance normalization",
+    "Construct full correlation matrices"
+  ],
+  "description": "Assess linear correlation matrices between multiple variable pairs.",
+  "theory_resource": {
+    "title": "Correlation Matrix Concepts",
+    "url": "https://wikipedia.org/wiki/Correlation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Calculate Correlation Matrix",
+    "url": "https://deep-ml.com/problems/37"
+  },
+  "prerequisites": [
+    19
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 80,
+  "slug": "bag-of-words-mapping",
+  "title": "Bag of Words Mapping",
+  "section": "RAG",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "nlp",
+    "bag-of-words",
+    "token-counts"
+  ],
+  "learning_objectives": [
+    "Construct unique vocabulary indices",
+    "Formulate occurrence frequency matrices"
+  ],
+  "description": "Generate token occurrence vectors from text arrays.",
+  "theory_resource": {
+    "title": "Bag of Words Model",
+    "url": "https://wikipedia.org/wiki/Bag-of-words_model",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Calculate Unigram Probability",
+    "url": "https://deep-ml.com/problems/129"
+  },
+  "prerequisites": [
+    79
+  ]
+}

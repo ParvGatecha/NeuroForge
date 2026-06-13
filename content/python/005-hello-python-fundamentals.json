@@ -1,0 +1,31 @@
+{
+  "id": 5,
+  "slug": "hello-python-fundamentals",
+  "title": "Hello Python Fundamentals",
+  "section": "Python",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 10,
+  "tags": [
+    "variables",
+    "types",
+    "operators"
+  ],
+  "learning_objectives": [
+    "Create variables",
+    "Use basic mathematical operators"
+  ],
+  "description": "Get started with basic variables, assignment rules, arithmetic operators, and native types in Python.",
+  "theory_resource": {
+    "title": "Python Variables and Assignment",
+    "url": "https://realpython.com/python-variables/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Hello Python Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-hello-python"
+  },
+  "prerequisites": [
+    4
+  ]
+}

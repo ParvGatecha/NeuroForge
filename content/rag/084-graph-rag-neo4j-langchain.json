@@ -1,0 +1,31 @@
+{
+  "id": 84,
+  "slug": "graph-rag-neo4j-langchain",
+  "title": "Graph RAG with Neo4j and LangChain",
+  "section": "RAG",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "graph-rag",
+    "neo4j",
+    "knowledge-graphs"
+  ],
+  "learning_objectives": [
+    "Map entity relationships",
+    "Query knowledge graphs"
+  ],
+  "description": "Construct structural RAG workflows querying Neo4j graph nodes.",
+  "theory_resource": {
+    "title": "Knowledge Graph RAG Overview",
+    "url": "https://python.langchain.com/docs/tutorials/graph/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Graph RAG Neo4j Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/graph-rag-with-neo4j-and-langchain"
+  },
+  "prerequisites": [
+    83
+  ]
+}

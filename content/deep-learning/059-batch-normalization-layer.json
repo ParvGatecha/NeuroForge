@@ -1,0 +1,31 @@
+{
+  "id": 59,
+  "slug": "batch-normalization-layer",
+  "title": "Batch Normalization Layer",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "stabilization",
+    "batch-norm",
+    "layers"
+  ],
+  "learning_objectives": [
+    "Formulate mean variance normalization",
+    "Scale parameters using gamma and beta"
+  ],
+  "description": "Stabilize intermediate activations using batch normalization scaling.",
+  "theory_resource": {
+    "title": "Batch Normalization Paper",
+    "url": "https://arxiv.org/abs/1502.03167",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement Batch Normalization BCHW",
+    "url": "https://deep-ml.com/problems/115"
+  },
+  "prerequisites": [
+    58
+  ]
+}

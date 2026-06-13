@@ -1,0 +1,31 @@
+{
+  "id": 76,
+  "slug": "cosine-similarity-metrics",
+  "title": "Cosine Similarity Metrics",
+  "section": "RAG",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "similarity",
+    "cosine",
+    "vectors"
+  ],
+  "learning_objectives": [
+    "Determine query-document dot products",
+    "Normalize vector similarity bounds"
+  ],
+  "description": "Quantify semantic overlaps using normalized cosine projections.",
+  "theory_resource": {
+    "title": "Cosine Similarity Concepts",
+    "url": "https://wikipedia.org/wiki/Cosine_similarity",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Cosine Similarity",
+    "url": "https://deep-ml.com/problems/76"
+  },
+  "prerequisites": [
+    64
+  ]
+}

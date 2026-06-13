@@ -1,0 +1,31 @@
+{
+  "id": 50,
+  "slug": "dropout-and-batch-normalization",
+  "title": "Dropout and Batch Normalization",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "dropout",
+    "batch-norm",
+    "stabilization"
+  ],
+  "learning_objectives": [
+    "Apply dropout probability drops",
+    "Implement batch norm scaling"
+  ],
+  "description": "Stabilize network parameter training using dropout and batch norm layers.",
+  "theory_resource": {
+    "title": "Batch Normalization Derivation",
+    "url": "https://wikipedia.org/wiki/Batch_normalization",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Dropout and Batch Normalization Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-dropout-and-batch-normalization"
+  },
+  "prerequisites": [
+    49
+  ]
+}

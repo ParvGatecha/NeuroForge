@@ -1,0 +1,31 @@
+{
+  "id": 96,
+  "slug": "real-time-fraud-detection-system",
+  "title": "Real-time Fraud Detection Pipeline",
+  "section": "System Design",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "fraud-detection",
+    "classification",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Identify skewed label profiles",
+    "Deploy real-time transaction pipelines"
+  ],
+  "description": "Design sub-second tabular classification pipelines detecting card fraud.",
+  "theory_resource": {
+    "title": "Real-time ML System Architectures",
+    "url": "https://wikipedia.org/wiki/Fraud_detection",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Fraud Detection System Exercise",
+    "url": "https://www.kaggle.com/code/gpreda/credit-card-fraud-detection-predictive-models"
+  },
+  "prerequisites": [
+    35
+  ]
+}

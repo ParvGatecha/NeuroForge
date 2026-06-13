@@ -1,0 +1,31 @@
+{
+  "id": 11,
+  "slug": "mean-median-mode",
+  "title": "Mean, Median, and Mode",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "statistics",
+    "central-tendency",
+    "math"
+  ],
+  "learning_objectives": [
+    "Calculate mean, median, mode",
+    "Identify skewness impacts"
+  ],
+  "description": "Understand basic central tendency metrics and how outliers skew standard deviations and means.",
+  "theory_resource": {
+    "title": "Intro to Measures of Central Tendency",
+    "url": "https://wikipedia.org/wiki/Central_tendency",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Descriptive Statistics Calculator",
+    "url": "https://deep-ml.com/problems/78"
+  },
+  "prerequisites": [
+    10
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 56,
+  "slug": "feedforward-neural-network",
+  "title": "Feedforward Neural Network",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "dense",
+    "perceptron",
+    "feedforward"
+  ],
+  "learning_objectives": [
+    "Compute neural layer steps",
+    "Map input vectors forward"
+  ],
+  "description": "Model custom feedforward networks calculating multi-layer matrix outputs.",
+  "theory_resource": {
+    "title": "Feedforward Networks",
+    "url": "https://wikipedia.org/wiki/Feedforward_neural_network",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Single Neuron (Perceptron) Scratch",
+    "url": "https://deep-ml.com/problems/24"
+  },
+  "prerequisites": [
+    55
+  ]
+}

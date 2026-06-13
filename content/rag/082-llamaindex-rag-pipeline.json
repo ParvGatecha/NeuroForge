@@ -1,0 +1,31 @@
+{
+  "id": 82,
+  "slug": "llamaindex-rag-pipeline",
+  "title": "LlamaIndex RAG Pipeline",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "llamaindex",
+    "chromadb",
+    "embeddings"
+  ],
+  "learning_objectives": [
+    "Build LlamaIndex storage layouts",
+    "Execute search query engines"
+  ],
+  "description": "Index documents and query knowledge using LlamaIndex structures.",
+  "theory_resource": {
+    "title": "LlamaIndex High-Level Concepts",
+    "url": "https://docs.llamaindex.ai/en/stable/getting_started/concepts/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LlamaIndex RAG Pipeline Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/rag-with-llama-index-and-chromadb"
+  },
+  "prerequisites": [
+    81
+  ]
+}

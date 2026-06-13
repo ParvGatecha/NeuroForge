@@ -1,0 +1,31 @@
+{
+  "id": 92,
+  "slug": "gemini-tool-calling-api",
+  "title": "Gemini Tool Calling & API Execution",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "tool-calling",
+    "apis",
+    "gemini"
+  ],
+  "learning_objectives": [
+    "Define valid tool schemas",
+    "Handle execution response inputs"
+  ],
+  "description": "Configure models to select and call external APIs via structured function calling.",
+  "theory_resource": {
+    "title": "Function Calling in Gemini",
+    "url": "https://ai.google.dev/gemini-api/docs/function-calling",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Gemini Tool Calling Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/gemini-tool-calling-and-function-execution"
+  },
+  "prerequisites": [
+    91
+  ]
+}

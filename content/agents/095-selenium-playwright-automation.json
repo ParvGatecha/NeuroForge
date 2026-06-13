@@ -1,0 +1,31 @@
+{
+  "id": 95,
+  "slug": "selenium-playwright-automation",
+  "title": "Selenium & Playwright Automation",
+  "section": "Agents",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "automation",
+    "playwright",
+    "scraping"
+  ],
+  "learning_objectives": [
+    "Control headless browsers",
+    "Handle dynamic page loads"
+  ],
+  "description": "Build automated web agents crawling and interacting with dynamic websites.",
+  "theory_resource": {
+    "title": "Playwright Automation Guide",
+    "url": "https://playwright.dev/python/docs/intro",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Selenium and Playwright Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    94
+  ]
+}

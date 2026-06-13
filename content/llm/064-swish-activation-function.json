@@ -1,0 +1,31 @@
+{
+  "id": 64,
+  "slug": "swish-activation-function",
+  "title": "Swish Activation Function",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "activations",
+    "swish",
+    "silu"
+  ],
+  "learning_objectives": [
+    "Compute Swish function values",
+    "Verify dynamic sigmoid gating scaling"
+  ],
+  "description": "Implement the self-gated Swish activation function used in modern transformers.",
+  "theory_resource": {
+    "title": "Swish Activation Function Details",
+    "url": "https://wikipedia.org/wiki/Swish_function",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement the Swish Activation",
+    "url": "https://deep-ml.com/problems/102"
+  },
+  "prerequisites": [
+    63
+  ]
+}

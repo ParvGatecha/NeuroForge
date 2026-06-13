@@ -1,0 +1,31 @@
+{
+  "id": 40,
+  "slug": "ridge-regression-regularization",
+  "title": "Ridge Regression Regularization",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "regularization",
+    "ridge",
+    "l2"
+  ],
+  "learning_objectives": [
+    "Apply L2 penalty matrices",
+    "Control model weight complexity"
+  ],
+  "description": "Mitigate collinear feature variance using closed-form Ridge L2 penalties.",
+  "theory_resource": {
+    "title": "Ridge Regression Overview",
+    "url": "https://wikipedia.org/wiki/Ridge_regression",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement Ridge Regression Loss",
+    "url": "https://deep-ml.com/problems/43"
+  },
+  "prerequisites": [
+    39
+  ]
+}

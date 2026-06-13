@@ -1,0 +1,31 @@
+{
+  "id": 7,
+  "slug": "lists-and-tuples",
+  "title": "Lists and Tuples",
+  "section": "Python",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "lists",
+    "tuples",
+    "sequences"
+  ],
+  "learning_objectives": [
+    "Perform sequence slicing",
+    "Mutate list items"
+  ],
+  "description": "Differentiate mutable lists from immutable tuples, index sequences from the end, and apply slicing parameters.",
+  "theory_resource": {
+    "title": "Lists and Tuples in Python",
+    "url": "https://realpython.com/python-lists-tuples/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Lists and Tuples Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-lists"
+  },
+  "prerequisites": [
+    6
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 85,
+  "slug": "context-compression-reranking-rag",
+  "title": "Context Compression & Reranking",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "reranking",
+    "context-compression",
+    "lost-in-the-middle"
+  ],
+  "learning_objectives": [
+    "Apply reranker ranking grids",
+    "Compress long retrieved document contexts"
+  ],
+  "description": "Resolve lost-in-the-middle context limits using rank score filters.",
+  "theory_resource": {
+    "title": "Lost in the Middle: How Language Models Use Long Contexts",
+    "url": "https://arxiv.org/abs/2307.03172",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Context Compression and Reranking Exercise",
+    "url": "https://www.kaggle.com/code/simonveit/context-compression-and-reranking-in-rag"
+  },
+  "prerequisites": [
+    84
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 4,
+  "slug": "strings-and-dictionaries",
+  "title": "Python Strings and Dictionaries",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "strings",
+    "dictionaries",
+    "hashing"
+  ],
+  "learning_objectives": [
+    "Manipulate string structures",
+    "Query dictionary hash maps"
+  ],
+  "description": "Perform complex string formatting, search substring indices, and construct robust dictionary key-value stores.",
+  "theory_resource": {
+    "title": "Dictionaries in Python",
+    "url": "https://realpython.com/python-dicts/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Strings and Dictionaries Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-strings-and-dictionaries"
+  },
+  "prerequisites": [
+    3
+  ]
+}

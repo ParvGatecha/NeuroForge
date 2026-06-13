@@ -1,0 +1,31 @@
+{
+  "id": 68,
+  "slug": "positional-encoding",
+  "title": "Sinusoidal Positional Encoding",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "transformers",
+    "embeddings",
+    "positional"
+  ],
+  "learning_objectives": [
+    "Construct sine position arrays",
+    "Add context vectors to input embeddings"
+  ],
+  "description": "Build sequence order models using sinusoidal wave values.",
+  "theory_resource": {
+    "title": "Transformer Positional Encodings",
+    "url": "https://kazemnejad.com/blog/transformer_architecture_positional_encoding/",
+    "type": "blog"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Positional Encoding Calculator",
+    "url": "https://deep-ml.com/problems/85"
+  },
+  "prerequisites": [
+    67
+  ]
+}

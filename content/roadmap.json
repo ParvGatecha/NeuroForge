@@ -1,0 +1,49 @@
+{
+  "section_order": [
+    "python",
+    "statistics",
+    "machine-learning",
+    "deep-learning",
+    "llm",
+    "rag",
+    "agents",
+    "system-design"
+  ],
+  "prerequisites": {
+    "python": [],
+    "statistics": [],
+    "machine-learning": [
+      "python",
+      "statistics"
+    ],
+    "deep-learning": [
+      "machine-learning"
+    ],
+    "llm": [
+      "deep-learning"
+    ],
+    "rag": [
+      "llm"
+    ],
+    "agents": [
+      "llm"
+    ],
+    "system-design": [
+      "machine-learning",
+      "deep-learning",
+      "llm",
+      "rag",
+      "agents"
+    ]
+  },
+  "recommended_sequence": [
+    "python",
+    "statistics",
+    "machine-learning",
+    "deep-learning",
+    "llm",
+    "rag",
+    "agents",
+    "system-design"
+  ]
+}

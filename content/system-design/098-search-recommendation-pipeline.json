@@ -1,0 +1,31 @@
+{
+  "id": 98,
+  "slug": "search-recommendation-pipeline",
+  "title": "Search & Recommendation Pipeline",
+  "section": "System Design",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "recommendations",
+    "collaborative-filtering",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Build item similarity profiles",
+    "Structure recommendation pipelines"
+  ],
+  "description": "Design multi-stage recommendation pipelines serving items in real time.",
+  "theory_resource": {
+    "title": "Recommender Systems Architectures",
+    "url": "https://wikipedia.org/wiki/Recommender_system",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Search & Recommendation Exercise",
+    "url": "https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch"
+  },
+  "prerequisites": [
+    43
+  ]
+}

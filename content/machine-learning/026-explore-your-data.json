@@ -1,0 +1,32 @@
+{
+  "id": 26,
+  "slug": "explore-your-data",
+  "title": "Explore Your Data",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "eda",
+    "pandas",
+    "data-exploration"
+  ],
+  "learning_objectives": [
+    "Inspect feature summaries",
+    "Identify dataset shapes"
+  ],
+  "description": "Perform baseline exploratory data analysis (EDA) to understand feature properties.",
+  "theory_resource": {
+    "title": "Exploratory Data Analysis Guide",
+    "url": "https://wikipedia.org/wiki/Exploratory_data_analysis",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Explore Your Data Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-explore-your-data"
+  },
+  "prerequisites": [
+    10,
+    23
+  ]
+}

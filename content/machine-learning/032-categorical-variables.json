@@ -1,0 +1,31 @@
+{
+  "id": 32,
+  "slug": "categorical-variables",
+  "title": "Categorical Variables",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "encoding",
+    "one-hot",
+    "ordinal"
+  ],
+  "learning_objectives": [
+    "Build one-hot encoders",
+    "Execute ordinal feature mapping"
+  ],
+  "description": "Convert text variables into numerical format using standard encoders.",
+  "theory_resource": {
+    "title": "Encoding Categorical Features",
+    "url": "https://scikit-learn.org/stable/modules/preprocessing.html#encoding-categorical-features",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Categorical Variables Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-categorical-variables"
+  },
+  "prerequisites": [
+    31
+  ]
+}

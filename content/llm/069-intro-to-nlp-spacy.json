@@ -1,0 +1,31 @@
+{
+  "id": 69,
+  "slug": "intro-to-nlp-spacy",
+  "title": "Introduction to NLP with SpaCy",
+  "section": "LLM",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "spacy",
+    "tokenization",
+    "parsing"
+  ],
+  "learning_objectives": [
+    "Load spacy language models",
+    "Perform lemmatization"
+  ],
+  "description": "Examine token features, text components, and parts of speech using SpaCy.",
+  "theory_resource": {
+    "title": "SpaCy Industrial NLP Guide",
+    "url": "https://spacy.io/usage/spacy-101",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Intro to NLP Exercise",
+    "url": "https://www.kaggle.com/code/matheon/exercise-intro-to-nlp"
+  },
+  "prerequisites": [
+    68
+  ]
+}

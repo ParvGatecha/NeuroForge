@@ -1,0 +1,31 @@
+{
+  "id": 15,
+  "slug": "central-limit-theorem",
+  "title": "Central Limit Theorem (CLT) Simulation",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "clt",
+    "sampling",
+    "simulation"
+  ],
+  "learning_objectives": [
+    "Simulate CLT sample averages",
+    "Identify normal approximations"
+  ],
+  "description": "Observe how the distribution of sample averages approaches normality regardless of shape.",
+  "theory_resource": {
+    "title": "Central Limit Theorem",
+    "url": "https://wikipedia.org/wiki/Central_limit_theorem",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Central Limit Theorem Playground",
+    "url": "https://www.kaggle.com/code/rtatman/central-limit-theorem-playground"
+  },
+  "prerequisites": [
+    14
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 79,
+  "slug": "tf-idf-vectorizer",
+  "title": "TF-IDF Vectorizer Implementation",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "nlp",
+    "tfidf",
+    "sparse-retrieval"
+  ],
+  "learning_objectives": [
+    "Compute term frequency values",
+    "Determine inverse document frequency matrices"
+  ],
+  "description": "Build document weight vectors based on unique token counts.",
+  "theory_resource": {
+    "title": "TF-IDF Calculation Details",
+    "url": "https://wikipedia.org/wiki/Tf%E2%80%93idf",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement TF-IDF Vectorizer",
+    "url": "https://deep-ml.com/problems/60"
+  },
+  "prerequisites": [
+    78
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 87,
+  "slug": "one-step-lookahead-agent",
+  "title": "One-Step Lookahead Agent",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "lookahead",
+    "heuristic",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Build scoring heuristics",
+    "Evaluate next action states"
+  ],
+  "description": "Develop heuristic search agents identifying optimal next-step outcomes.",
+  "theory_resource": {
+    "title": "Heuristic Search Strategies",
+    "url": "https://wikipedia.org/wiki/Heuristic_routing",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "One-Step Lookahead Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-one-step-lookahead"
+  },
+  "prerequisites": [
+    86
+  ]
+}

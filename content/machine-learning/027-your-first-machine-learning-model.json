@@ -1,0 +1,31 @@
+{
+  "id": 27,
+  "slug": "your-first-machine-learning-model",
+  "title": "Your First Machine Learning Model",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "scikit-learn",
+    "decision-trees",
+    "model-fitting"
+  ],
+  "learning_objectives": [
+    "Initialize predictor classes",
+    "Fit models using sklearn"
+  ],
+  "description": "Train your first decision tree regression model on housing features.",
+  "theory_resource": {
+    "title": "Scikit-Learn Decision Trees Guide",
+    "url": "https://scikit-learn.org/stable/modules/tree.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Your First Machine Learning Model Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-your-first-machine-learning-model"
+  },
+  "prerequisites": [
+    26
+  ]
+}

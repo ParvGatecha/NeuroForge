@@ -1,0 +1,31 @@
+{
+  "id": 6,
+  "slug": "booleans-and-conditionals",
+  "title": "Booleans and Conditionals",
+  "section": "Python",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "booleans",
+    "logic",
+    "control-flow"
+  ],
+  "learning_objectives": [
+    "Apply logical operators",
+    "Create if-elif-else branches"
+  ],
+  "description": "Construct boolean logic using and, or, not operators and direct execution flow with conditional statements.",
+  "theory_resource": {
+    "title": "Conditional Statements in Python",
+    "url": "https://realpython.com/python-conditional-statements/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Booleans and Conditionals Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-booleans-and-conditionals"
+  },
+  "prerequisites": [
+    5
+  ]
+}

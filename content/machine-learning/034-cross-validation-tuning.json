@@ -1,0 +1,31 @@
+{
+  "id": 34,
+  "slug": "cross-validation-tuning",
+  "title": "Cross-Validation Tuning",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "validation",
+    "cross-validation",
+    "hyperparameters"
+  ],
+  "learning_objectives": [
+    "Apply cross_val_score processes",
+    "Identify parameter variations"
+  ],
+  "description": "Assess model variance limits by running cross-validation folds.",
+  "theory_resource": {
+    "title": "Cross-Validation: Evaluating Estimator Performance",
+    "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Cross Validation Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-cross-validation"
+  },
+  "prerequisites": [
+    33
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 22,
+  "slug": "mean-absolute-error",
+  "title": "Mean Absolute Error",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "mae",
+    "error"
+  ],
+  "learning_objectives": [
+    "Compute absolute differences",
+    "Identify MAE benefits over MSE"
+  ],
+  "description": "Evaluate model average prediction variance using robust absolute metrics.",
+  "theory_resource": {
+    "title": "Mean Absolute Error Details",
+    "url": "https://wikipedia.org/wiki/Mean_absolute_error",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Calculate Mean Absolute Error",
+    "url": "https://deep-ml.com/problems/93"
+  },
+  "prerequisites": [
+    21
+  ]
+}

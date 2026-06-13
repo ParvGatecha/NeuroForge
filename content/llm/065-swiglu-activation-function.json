@@ -1,0 +1,31 @@
+{
+  "id": 65,
+  "slug": "swiglu-activation-function",
+  "title": "SwiGLU Activation Function",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "activations",
+    "swiglu",
+    "transformers"
+  ],
+  "learning_objectives": [
+    "Build SwiGLU gated layers",
+    "Apply element-wise gate multiplications"
+  ],
+  "description": "Implement SwiGLU, the state-of-the-art gated linear activation powering Llama architectures.",
+  "theory_resource": {
+    "title": "GLU Variants Improve Transformer Paper",
+    "url": "https://arxiv.org/abs/2002.05202",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement SwiGLU Activation",
+    "url": "https://deep-ml.com/problems/156"
+  },
+  "prerequisites": [
+    64
+  ]
+}

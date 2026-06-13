@@ -1,0 +1,31 @@
+{
+  "id": 43,
+  "slug": "k-means-clustering",
+  "title": "K-Means Clustering",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "clustering",
+    "unsupervised",
+    "centroids"
+  ],
+  "learning_objectives": [
+    "Assign data points to closest centroids",
+    "Iterate centroid updates"
+  ],
+  "description": "Build partitions using standard K-Means centroid adjustments.",
+  "theory_resource": {
+    "title": "K-Means Clustering Analysis",
+    "url": "https://wikipedia.org/wiki/K-means_clustering",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "K-Means Clustering",
+    "url": "https://deep-ml.com/problems/17"
+  },
+  "prerequisites": [
+    42
+  ]
+}

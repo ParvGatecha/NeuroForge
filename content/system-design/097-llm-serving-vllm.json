@@ -1,0 +1,31 @@
+{
+  "id": 97,
+  "slug": "llm-serving-vllm",
+  "title": "vLLM Serving Infrastructure",
+  "section": "System Design",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "serving",
+    "vllm",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Optimize KV cache parameters",
+    "Handle concurrent requests"
+  ],
+  "description": "Scale open model serving interfaces using page-attention pooling structures.",
+  "theory_resource": {
+    "title": "vLLM Engine Internals",
+    "url": "https://vllm.ai/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "vLLM Serving Infrastructure Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/vllm-inference-gemma-2-9b"
+  },
+  "prerequisites": [
+    74
+  ]
+}

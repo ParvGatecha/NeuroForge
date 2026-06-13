@@ -1,0 +1,31 @@
+{
+  "id": 16,
+  "slug": "z-test-evaluation",
+  "title": "Z-Test Evaluation",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "hypothesis-testing",
+    "z-test",
+    "inference"
+  ],
+  "learning_objectives": [
+    "Calculate Z-scores",
+    "Verify null hypotheses using Z-tests"
+  ],
+  "description": "Validate sample population assertions using standard Z-scores and critical bounds.",
+  "theory_resource": {
+    "title": "Introduction to Z-tests",
+    "url": "https://wikipedia.org/wiki/Z-test",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Hypothesis Testing Exercise",
+    "url": "https://www.kaggle.com/code/hamelg/python-for-data-analysis-hypothesis-testing"
+  },
+  "prerequisites": [
+    15
+  ]
+}

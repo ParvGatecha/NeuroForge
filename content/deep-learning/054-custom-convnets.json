@@ -1,0 +1,31 @@
+{
+  "id": 54,
+  "slug": "custom-convnets",
+  "title": "Custom Convnets Architectures",
+  "section": "Deep Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "cnn",
+    "custom-architecture",
+    "maxpool"
+  ],
+  "learning_objectives": [
+    "Stack custom pooling grids",
+    "Determine convolutional channels"
+  ],
+  "description": "Build high-capacity image feature classifiers from scratch.",
+  "theory_resource": {
+    "title": "Pooling Layers in CNNs",
+    "url": "https://wikipedia.org/wiki/Pooling_(computer_vision)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Custom Convnets Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-custom-convnets"
+  },
+  "prerequisites": [
+    53
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 44,
+  "slug": "decision-tree-learning",
+  "title": "Decision Tree Learning",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "trees",
+    "entropy",
+    "information-gain"
+  ],
+  "learning_objectives": [
+    "Compute Shannon Entropy",
+    "Determine Information Gain indices"
+  ],
+  "description": "Evaluate split candidates based on entropy reductions.",
+  "theory_resource": {
+    "title": "Decision Tree Splitting Metrics",
+    "url": "https://wikipedia.org/wiki/Decision_tree_learning",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Decision Tree Learning",
+    "url": "https://deep-ml.com/problems/20"
+  },
+  "prerequisites": [
+    43
+  ]
+}

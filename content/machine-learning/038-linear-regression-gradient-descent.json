@@ -1,0 +1,31 @@
+{
+  "id": 38,
+  "slug": "linear-regression-gradient-descent",
+  "title": "Linear Regression (Gradient Descent)",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "optimization",
+    "gradient-descent",
+    "regression"
+  ],
+  "learning_objectives": [
+    "Calculate MSE gradient vectors",
+    "Update weights iteratively"
+  ],
+  "description": "Train linear models using batch gradient descent updates.",
+  "theory_resource": {
+    "title": "Linear Regression with Gradient Descent",
+    "url": "https://wikipedia.org/wiki/Gradient_descent",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Linear Regression Gradient Descent",
+    "url": "https://deep-ml.com/problems/15"
+  },
+  "prerequisites": [
+    37
+  ]
+}

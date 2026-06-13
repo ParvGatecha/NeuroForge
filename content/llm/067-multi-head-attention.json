@@ -1,0 +1,31 @@
+{
+  "id": 67,
+  "slug": "multi-head-attention",
+  "title": "Multi-Head Attention",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "attention",
+    "transformers",
+    "multi-head"
+  ],
+  "learning_objectives": [
+    "Partition dimensional projections",
+    "Concatenate attention headers"
+  ],
+  "description": "Execute parallel attention projections across multiple headers.",
+  "theory_resource": {
+    "title": "Multi-Head Attention Details",
+    "url": "https://wikipedia.org/wiki/Attention_(machine_learning)#Multi-head_attention",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement Multi-Head Attention",
+    "url": "https://deep-ml.com/problems/94"
+  },
+  "prerequisites": [
+    66
+  ]
+}

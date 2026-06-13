@@ -1,0 +1,31 @@
+{
+  "id": 90,
+  "slug": "langgraph-agentic-workflow",
+  "title": "LangGraph Agentic Workflow",
+  "section": "Agents",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "langgraph",
+    "state-machines",
+    "graphs"
+  ],
+  "learning_objectives": [
+    "Design state transition routing",
+    "Construct cyclic graph nodes"
+  ],
+  "description": "Construct state graph routing models managing persistent loop nodes.",
+  "theory_resource": {
+    "title": "LangGraph State Machine Concepts",
+    "url": "https://langchainai.github.io/langgraph/concepts/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangGraph Agentic Workflow Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langgraph-agentic-workflow-from-scratch"
+  },
+  "prerequisites": [
+    89
+  ]
+}

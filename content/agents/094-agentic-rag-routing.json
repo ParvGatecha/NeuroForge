@@ -1,0 +1,32 @@
+{
+  "id": 94,
+  "slug": "agentic-rag-routing",
+  "title": "Agentic RAG with LangChain",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "agentic-rag",
+    "routing",
+    "langchain"
+  ],
+  "learning_objectives": [
+    "Construct dynamic RAG routes",
+    "Handle multi-index database checks"
+  ],
+  "description": "Build agentic routing networks dynamically selecting database index targets.",
+  "theory_resource": {
+    "title": "Agentic RAG Architectures",
+    "url": "https://python.langchain.com/docs/concepts/rag/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Agentic RAG Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/agentic-rag-with-langchain"
+  },
+  "prerequisites": [
+    93,
+    85
+  ]
+}

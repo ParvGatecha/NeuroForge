@@ -1,0 +1,31 @@
+{
+  "id": 91,
+  "slug": "crewai-multi-agent-system",
+  "title": "CrewAI Multi-Agent System",
+  "section": "Agents",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "crewai",
+    "multi-agent",
+    "collaboration"
+  ],
+  "learning_objectives": [
+    "Define specific agent persona scopes",
+    "Establish inter-agent output routing"
+  ],
+  "description": "Orchestrate collaborative multi-agent teams executing sequential task targets.",
+  "theory_resource": {
+    "title": "CrewAI Multi-Agent Collaboration Docs",
+    "url": "https://docs.crewai.com/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "CrewAI Multi-Agent System Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/crewai-multi-agent-system-for-news-analysis"
+  },
+  "prerequisites": [
+    90
+  ]
+}

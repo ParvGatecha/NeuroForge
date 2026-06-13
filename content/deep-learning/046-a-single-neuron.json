@@ -1,0 +1,31 @@
+{
+  "id": 46,
+  "slug": "a-single-neuron",
+  "title": "A Single Neuron (Perceptron)",
+  "section": "Deep Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "neuron",
+    "activation",
+    "math"
+  ],
+  "learning_objectives": [
+    "Calculate dot product inputs",
+    "Apply step activation thresholds"
+  ],
+  "description": "Construct a basic linear perceptron calculating inputs and weights.",
+  "theory_resource": {
+    "title": "The Perceptron Architecture",
+    "url": "https://wikipedia.org/wiki/Perceptron",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "A Single Neuron Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-a-single-neuron"
+  },
+  "prerequisites": [
+    38
+  ]
+}

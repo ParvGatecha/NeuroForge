@@ -1,0 +1,31 @@
+{
+  "id": 45,
+  "slug": "k-nearest-neighbors-classifier",
+  "title": "K-Nearest Neighbors Classifier",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "knn",
+    "lazy-learning",
+    "distance"
+  ],
+  "learning_objectives": [
+    "Formulate Euclidean distance vectors",
+    "Aggregated top-k voting labels"
+  ],
+  "description": "Construct K-Nearest Neighbors predictions using distance sorting.",
+  "theory_resource": {
+    "title": "KNN Classifier Algorithm",
+    "url": "https://wikipedia.org/wiki/K-nearest_neighbors_algorithm",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement K-Nearest Neighbors",
+    "url": "https://deep-ml.com/problems/173"
+  },
+  "prerequisites": [
+    44
+  ]
+}

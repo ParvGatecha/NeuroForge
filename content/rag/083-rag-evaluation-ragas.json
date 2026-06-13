@@ -1,0 +1,31 @@
+{
+  "id": 83,
+  "slug": "rag-evaluation-ragas",
+  "title": "RAG Evaluation using RAGAs",
+  "section": "RAG",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "evaluation",
+    "ragas",
+    "metrics"
+  ],
+  "learning_objectives": [
+    "Evaluate retrieval faithfulness scores",
+    "Verify answer relevancy values"
+  ],
+  "description": "Grade RAG answer faithfulness and retrieval accuracy using RAGAs.",
+  "theory_resource": {
+    "title": "RAGAs Metric Evaluation Framework",
+    "url": "https://arxiv.org/abs/2309.15217",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "RAG Evaluation RAGAs Exercise",
+    "url": "https://www.kaggle.com/code/philipps/rag-evaluation-using-ragas"
+  },
+  "prerequisites": [
+    82
+  ]
+}

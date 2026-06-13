@@ -1,0 +1,31 @@
+{
+  "id": 24,
+  "slug": "binomial-distribution",
+  "title": "Binomial Distribution",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "probability",
+    "binomial",
+    "discrete"
+  ],
+  "learning_objectives": [
+    "Apply Binomial PMF formulas",
+    "Interpret success probability sequences"
+  ],
+  "description": "Model count of successes in independent binary Bernoulli trials.",
+  "theory_resource": {
+    "title": "Binomial Distribution Explained",
+    "url": "https://wikipedia.org/wiki/Binomial_distribution",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Binomial Distribution Probability",
+    "url": "https://deep-ml.com/problems/79"
+  },
+  "prerequisites": [
+    23
+  ]
+}

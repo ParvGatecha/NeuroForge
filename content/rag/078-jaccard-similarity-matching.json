@@ -1,0 +1,31 @@
+{
+  "id": 78,
+  "slug": "jaccard-similarity-matching",
+  "title": "Jaccard Similarity Matching",
+  "section": "RAG",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "similarity",
+    "jaccard",
+    "sparse"
+  ],
+  "learning_objectives": [
+    "Formulate intersection set counts",
+    "Evaluate union counts"
+  ],
+  "description": "Measure sparse token overlap ratios between sets.",
+  "theory_resource": {
+    "title": "Jaccard Index Definition",
+    "url": "https://wikipedia.org/wiki/Jaccard_index",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Jaccard Similarity Index",
+    "url": "https://deep-ml.com/problems/72"
+  },
+  "prerequisites": [
+    77
+  ]
+}

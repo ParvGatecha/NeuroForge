@@ -1,0 +1,31 @@
+{
+  "id": 9,
+  "slug": "indexing-selecting-assigning",
+  "title": "Indexing, Selecting & Assigning",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "pandas",
+    "selection",
+    "loc-iloc"
+  ],
+  "learning_objectives": [
+    "Select index slices with loc and iloc",
+    "Apply boolean indexing"
+  ],
+  "description": "Master row and column extractions using labels, coordinates, and criteria masks in Pandas.",
+  "theory_resource": {
+    "title": "Pandas Indexing and Selecting",
+    "url": "https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Indexing, Selecting and Assigning Exercise",
+    "url": "https://www.kaggle.com/code/residentmario/exercise-indexing-selecting-assigning"
+  },
+  "prerequisites": [
+    8
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 73,
+  "slug": "llm-prompt-recovery",
+  "title": "LLM Prompt Recovery Integration",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "prompting",
+    "gemma",
+    "recovery"
+  ],
+  "learning_objectives": [
+    "Prompt models to recover instructions",
+    "Structure generation outputs"
+  ],
+  "description": "Recover lost generation instructions by comparing base and modified text outputs.",
+  "theory_resource": {
+    "title": "Prompt Engineering Guide",
+    "url": "https://www.promptingguide.ai/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LLM Prompt Recovery Exercise",
+    "url": "https://www.kaggle.com/code/gpreda/llm-prompt-recovery-gemma-integration"
+  },
+  "prerequisites": [
+    72
+  ]
+}

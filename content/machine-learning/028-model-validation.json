@@ -1,0 +1,31 @@
+{
+  "id": 28,
+  "slug": "model-validation",
+  "title": "Model Validation",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "validation",
+    "metrics",
+    "mae"
+  ],
+  "learning_objectives": [
+    "Split data into train/validation folds",
+    "Evaluate validation score stability"
+  ],
+  "description": "Assess model out-of-sample performance using validation holds instead of train metrics.",
+  "theory_resource": {
+    "title": "Evaluating Estimator Performance",
+    "url": "https://scikit-learn.org/stable/modules/cross_validation.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Model Validation Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-model-validation"
+  },
+  "prerequisites": [
+    27
+  ]
+}

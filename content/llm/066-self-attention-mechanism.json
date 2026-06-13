@@ -1,0 +1,31 @@
+{
+  "id": 66,
+  "slug": "self-attention-mechanism",
+  "title": "Self-Attention Mechanism",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "attention",
+    "transformer",
+    "math"
+  ],
+  "learning_objectives": [
+    "Compute similarity weights using QK transposes",
+    "Scale dot products using root dimension values"
+  ],
+  "description": "Model self-attention maps query, key, and value matrices.",
+  "theory_resource": {
+    "title": "Attention Is All You Need Paper",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implement Self-Attention Mechanism",
+    "url": "https://deep-ml.com/problems/53"
+  },
+  "prerequisites": [
+    65
+  ]
+}

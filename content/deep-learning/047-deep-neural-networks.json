@@ -1,0 +1,31 @@
+{
+  "id": 47,
+  "slug": "deep-neural-networks",
+  "title": "Deep Neural Networks",
+  "section": "Deep Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "layers",
+    "hidden-layers",
+    "keras"
+  ],
+  "learning_objectives": [
+    "Stack dense hidden layers",
+    "Configure activation maps"
+  ],
+  "description": "Construct multilayer feedforward architectures stacking dense layers.",
+  "theory_resource": {
+    "title": "Multilayer Perceptron Networks",
+    "url": "https://wikipedia.org/wiki/Multilayer_perceptron",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Deep Neural Networks Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-deep-neural-networks"
+  },
+  "prerequisites": [
+    46
+  ]
+}

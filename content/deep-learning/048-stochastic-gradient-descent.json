@@ -1,0 +1,31 @@
+{
+  "id": 48,
+  "slug": "stochastic-gradient-descent",
+  "title": "Stochastic Gradient Descent (SGD)",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "optimization",
+    "sgd",
+    "training"
+  ],
+  "learning_objectives": [
+    "Differentiate batch sizes",
+    "Tuned SGD learning rates"
+  ],
+  "description": "Train networks using mini-batch gradient updates.",
+  "theory_resource": {
+    "title": "SGD Optimization in Neural Nets",
+    "url": "https://wikipedia.org/wiki/Stochastic_gradient_descent",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Stochastic Gradient Descent Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-stochastic-gradient-descent"
+  },
+  "prerequisites": [
+    47
+  ]
+}

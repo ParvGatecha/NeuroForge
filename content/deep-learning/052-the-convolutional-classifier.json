@@ -1,0 +1,31 @@
+{
+  "id": 52,
+  "slug": "the-convolutional-classifier",
+  "title": "The Convolutional Classifier",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "cnn",
+    "convolutions",
+    "image-classification"
+  ],
+  "learning_objectives": [
+    "Configure feature extraction layers",
+    "Determine convolutional sizes"
+  ],
+  "description": "Extract image feature arrays using spatial convolution layers.",
+  "theory_resource": {
+    "title": "Convolutional Neural Networks Introduction",
+    "url": "https://wikipedia.org/wiki/Convolutional_neural_network",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "The Convolutional Classifier Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-the-convolutional-classifier"
+  },
+  "prerequisites": [
+    51
+  ]
+}

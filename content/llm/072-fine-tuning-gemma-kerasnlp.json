@@ -1,0 +1,31 @@
+{
+  "id": 72,
+  "slug": "fine-tuning-gemma-kerasnlp",
+  "title": "Fine-Tuning Gemma with KerasNLP",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "gemma",
+    "kerasnlp",
+    "fine-tuning"
+  ],
+  "learning_objectives": [
+    "Build LoRA adapter matrices",
+    "Train open models with KerasNLP"
+  ],
+  "description": "Fine-tune Gemma-2b parameters using low-rank adapters.",
+  "theory_resource": {
+    "title": "LoRA: Low-Rank Adaptation of LLMs",
+    "url": "https://arxiv.org/abs/2106.09685",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Fine-tuning Gemma KerasNLP Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/gemma-kerasnlp-fine-tuning"
+  },
+  "prerequisites": [
+    71
+  ]
+}

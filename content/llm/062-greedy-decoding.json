@@ -1,0 +1,31 @@
+{
+  "id": 62,
+  "slug": "greedy-decoding",
+  "title": "Greedy Decoding",
+  "section": "LLM",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "decoding",
+    "inference",
+    "greedy"
+  ],
+  "learning_objectives": [
+    "Select maximum logit probabilities",
+    "Verify end-of-sequence parameters"
+  ],
+  "description": "Map auto-regressive decoding loops selecting maximum probability tokens.",
+  "theory_resource": {
+    "title": "Text Generation Strategies",
+    "url": "https://huggingface.co/docs/transformers/generation_strategies",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "GPT-2 Text Generation",
+    "url": "https://deep-ml.com/problems/88"
+  },
+  "prerequisites": [
+    61
+  ]
+}

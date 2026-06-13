@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "id": "dev-user-id",
+      "name": "Alex AI",
+      "email": "alex@neuroforge.ai",
+      "role": "ADMIN",
+      "xp": 250,
+      "level": 2,
+      "createdAt": "2026-06-11T10:10:41.268Z"
+    }
+  ],
+  "progress": [],
+  "bookmarks": [],
+  "streaks": [
+    {
+      "id": "dev-streak-id",
+      "userId": "dev-user-id",
+      "currentCount": 1,
+      "longestCount": 1,
+      "lastActive": "2026-06-13T05:28:39.653Z"
+    }
+  ],
+  "userAchievements": [
+    {
+      "id": "xyips0ip5w",
+      "userId": "dev-user-id",
+      "achievementCode": "FIRST_QUESTION",
+      "unlockedAt": "2026-06-11T10:19:25.822Z"
+    },
+    {
+      "id": "8q1tmyli7iq",
+      "userId": "dev-user-id",
+      "achievementCode": "LEVEL_5",
+      "unlockedAt": "2026-06-13T05:32:09.693Z"
+    }
+  ],
+  "settings": [
+    {
+      "id": "dev-settings-id",
+      "userId": "dev-user-id",
+      "theme": "dark",
+      "emailNotifications": true,
+      "marketingEmails": false,
+      "publicProfile": true
+    }
+  ]
+}

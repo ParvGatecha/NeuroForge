@@ -1,0 +1,31 @@
+{
+  "id": 25,
+  "slug": "covariance-matrix-calculation",
+  "title": "Covariance Matrix Calculation",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "covariance",
+    "matrix",
+    "linear-algebra"
+  ],
+  "learning_objectives": [
+    "Formulate mean vector offsets",
+    "Generate full covariance matrices"
+  ],
+  "description": "Build multi-dimensional variance models across multiple variable sets.",
+  "theory_resource": {
+    "title": "Covariance Matrix Details",
+    "url": "https://wikipedia.org/wiki/Covariance_matrix",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Calculate Covariance Matrix",
+    "url": "https://deep-ml.com/problems/10"
+  },
+  "prerequisites": [
+    24
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 53,
+  "slug": "convolution-and-relu",
+  "title": "Convolution and ReLU",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "cnn",
+    "relu",
+    "feature-maps"
+  ],
+  "learning_objectives": [
+    "Verify convolution filters",
+    "Apply rectified linear activation"
+  ],
+  "description": "Construct non-linear filter activations using Rectified Linear Units (ReLU).",
+  "theory_resource": {
+    "title": "ReLU Activation Function",
+    "url": "https://wikipedia.org/wiki/Rectifier_(neural_networks)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Convolution and ReLU Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-convolution-and-relu"
+  },
+  "prerequisites": [
+    52
+  ]
+}

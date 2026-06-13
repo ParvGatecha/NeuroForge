@@ -1,0 +1,31 @@
+{
+  "id": 77,
+  "slug": "vector-database-matching",
+  "title": "Vector Database Similarity Matching",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "vector-db",
+    "retrieval",
+    "ann"
+  ],
+  "learning_objectives": [
+    "Retrieve top-k matches",
+    "Index embeddings using distance metrics"
+  ],
+  "description": "Construct similarity searches querying database embeddings.",
+  "theory_resource": {
+    "title": "Nearest Neighbor Search Algorithms",
+    "url": "https://wikipedia.org/wiki/Nearest_neighbor_search",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Create Composite Hypervector",
+    "url": "https://deep-ml.com/problems/74"
+  },
+  "prerequisites": [
+    76
+  ]
+}

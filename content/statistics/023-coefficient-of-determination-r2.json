@@ -1,0 +1,31 @@
+{
+  "id": 23,
+  "slug": "coefficient-of-determination-r2",
+  "title": "Coefficient of Determination (R2)",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "r-squared",
+    "regression"
+  ],
+  "learning_objectives": [
+    "Determine sum of residuals",
+    "Evaluate model variance metrics"
+  ],
+  "description": "Verify the proportion of output variance explained by model inputs.",
+  "theory_resource": {
+    "title": "Coefficient of Determination Wiki",
+    "url": "https://wikipedia.org/wiki/Coefficient_of_determination",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Calculate R-squared for Regression",
+    "url": "https://deep-ml.com/problems/69"
+  },
+  "prerequisites": [
+    22
+  ]
+}

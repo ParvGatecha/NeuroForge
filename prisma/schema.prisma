@@ -1,0 +1,225 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model User {
+  id            String             @id @default(uuid())
+  name          String?
+  email         String             @unique
+  emailVerified Boolean            @default(false)
+  image         String?
+  role          Role               @default(USER)
+  xp            Int                @default(0)
+  level         Int                @default(1)
+  createdAt     DateTime           @default(now())
+  updatedAt     DateTime           @updatedAt
+
+  // Relations
+  sessions        Session[]
+  accounts        Account[]
+  progress        LearningItemProgress[]
+  achievements    UserAchievement[]
+  bookmarks       Bookmark[]
+  roadmapProgress RoadmapProgress[]
+  streak          Streak?
+  settings        UserSettings?
+
+  // Future relations (placeholders)
+  discussions        Discussion[]
+  comments           Comment[]
+  mockInterviews     MockInterview[]
+  leaderboardEntry   Leaderboard?
+  premiumSub         PremiumSubscription?
+  interviewExprs     InterviewExperience[]
+}
+
+model Session {
+  id        String   @id @default(uuid())
+  expiresAt DateTime
+  token     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  ipAddress String?
+  userAgent String?
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Account {
+  id                    String    @id @default(uuid())
+  accountId             String
+  providerId            String
+  userId                String
+  user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+}
+
+model Verification {
+  id         String   @id @default(uuid())
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model LearningItemProgress {
+  id             String   @id @default(uuid())
+  userId         String
+  learningItemId Int
+  completedAt    DateTime @default(now())
+  xpEarned       Int
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, learningItemId])
+}
+
+model Bookmark {
+  id             String   @id @default(uuid())
+  userId         String
+  learningItemId Int
+  createdAt      DateTime @default(now())
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, learningItemId])
+}
+
+model Achievement {
+  id          String            @id @default(uuid())
+  code        String            @unique // e.g. "FIRST_QUESTION", "PYTHON_EXPLORER"
+  name        String
+  description String
+  xpReward    Int               @default(0)
+  users       UserAchievement[]
+}
+
+model UserAchievement {
+  id            String      @id @default(uuid())
+  userId        String
+  achievementId String
+  unlockedAt    DateTime    @default(now())
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievement   Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, achievementId])
+}
+
+model RoadmapProgress {
+  id             String   @id @default(uuid())
+  userId         String
+  roadmapId      String   // e.g. "ai-engineer"
+  currentSection String   @default("python")
+  completedCount Int      @default(0)
+  totalCount     Int      @default(0)
+  completed      Boolean  @default(false)
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, roadmapId])
+}
+
+model Streak {
+  id           String    @id @default(uuid())
+  userId       String    @unique
+  currentCount Int       @default(0)
+  longestCount Int       @default(0)
+  lastActive   DateTime?
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model UserSettings {
+  id                 String  @id @default(uuid())
+  userId             String  @unique
+  theme              String  @default("system")
+  emailNotifications Boolean @default(true)
+  marketingEmails    Boolean @default(false)
+  publicProfile      Boolean @default(true)
+  user               User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+// Future Models (No active business logic)
+model Lab {
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  difficulty  String
+  createdAt   DateTime @default(now())
+}
+
+model InterviewExperience {
+  id        String   @id @default(uuid())
+  company   String
+  role      String
+  content   String
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model Discussion {
+  id        String    @id @default(uuid())
+  title     String
+  content   String
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  comments  Comment[]
+  createdAt DateTime  @default(now())
+}
+
+model Comment {
+  id           String     @id @default(uuid())
+  content      String
+  discussionId String
+  discussion   Discussion @relation(fields: [discussionId], references: [id], onDelete: Cascade)
+  userId       String
+  user         User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime   @default(now())
+}
+
+model CompanyTrack {
+  id          String   @id @default(uuid())
+  name        String
+  description String
+  createdAt   DateTime @default(now())
+}
+
+model MockInterview {
+  id        String   @id @default(uuid())
+  title     String
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+}
+
+model Leaderboard {
+  id     String @id @default(uuid())
+  userId String @unique
+  score  Int
+  rank   Int
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model PremiumSubscription {
+  id        String   @id @default(uuid())
+  userId    String   @unique
+  status    String
+  expiresAt DateTime
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}

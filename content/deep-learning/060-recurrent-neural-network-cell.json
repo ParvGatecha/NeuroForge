@@ -1,0 +1,31 @@
+{
+  "id": 60,
+  "slug": "recurrent-neural-network-cell",
+  "title": "RNN Cell Forward Pass",
+  "section": "Deep Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "rnn",
+    "sequential",
+    "hidden-state"
+  ],
+  "learning_objectives": [
+    "Track hidden state updates",
+    "Evaluate hyperbolic tangent steps"
+  ],
+  "description": "Model recurrent step processes to encode historical parameters.",
+  "theory_resource": {
+    "title": "Recurrent Neural Networks Wiki",
+    "url": "https://wikipedia.org/wiki/Recurrent_neural_network",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Implementing a Simple RNN",
+    "url": "https://deep-ml.com/problems/54"
+  },
+  "prerequisites": [
+    59
+  ]
+}

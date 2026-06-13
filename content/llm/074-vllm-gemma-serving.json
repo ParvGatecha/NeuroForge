@@ -1,0 +1,31 @@
+{
+  "id": 74,
+  "slug": "vllm-gemma-serving",
+  "title": "vLLM Gemma 2 Serving",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "serving",
+    "vllm",
+    "quantization"
+  ],
+  "learning_objectives": [
+    "Serve models with vLLM engines",
+    "Apply AWQ quantization profiles"
+  ],
+  "description": "Deploy low-latency inference services using page-attention memory structures.",
+  "theory_resource": {
+    "title": "vLLM Engine Architecture",
+    "url": "https://arxiv.org/abs/2309.06180",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "vLLM Gemma 2 Serving Exercise",
+    "url": "https://www.kaggle.com/code/titericz/gemma-2-9b-it-with-vllm"
+  },
+  "prerequisites": [
+    73
+  ]
+}

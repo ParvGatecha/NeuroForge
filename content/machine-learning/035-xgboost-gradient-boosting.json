@@ -1,0 +1,31 @@
+{
+  "id": 35,
+  "slug": "xgboost-gradient-boosting",
+  "title": "XGBoost Gradient Boosting",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "boosting",
+    "xgboost",
+    "ensembles"
+  ],
+  "learning_objectives": [
+    "Train XGBRegressor setups",
+    "Configure boosting parameters"
+  ],
+  "description": "Train extreme gradient boosted decision trees for tabular prediction.",
+  "theory_resource": {
+    "title": "XGBoost Documentation",
+    "url": "https://xgboost.readthedocs.io/en/stable/",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "XGBoost Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-xgboost"
+  },
+  "prerequisites": [
+    34
+  ]
+}

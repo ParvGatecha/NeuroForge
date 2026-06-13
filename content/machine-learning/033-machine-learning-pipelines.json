@@ -1,0 +1,31 @@
+{
+  "id": 33,
+  "slug": "machine-learning-pipelines",
+  "title": "Machine Learning Pipelines",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "pipelines",
+    "engineering",
+    "scikit-learn"
+  ],
+  "learning_objectives": [
+    "Construct composite Pipeline pipelines",
+    "Prevent processing leaks"
+  ],
+  "description": "Structure training operations into a single deployable object.",
+  "theory_resource": {
+    "title": "Pipeline Architectures in Scikit-Learn",
+    "url": "https://scikit-learn.org/stable/modules/compose.html#pipeline",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Pipelines Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-pipelines"
+  },
+  "prerequisites": [
+    32
+  ]
+}

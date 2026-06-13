@@ -1,0 +1,31 @@
+{
+  "id": 37,
+  "slug": "linear-regression-normal-equation",
+  "title": "Linear Regression (Normal Equation)",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "linear-algebra",
+    "normal-equation",
+    "regression"
+  ],
+  "learning_objectives": [
+    "Prepend bias coordinates",
+    "Evaluate Normal Equation weights"
+  ],
+  "description": "Solve OLS regression analytically using closed-form normal equation matrices.",
+  "theory_resource": {
+    "title": "OLS Normal Equation Derivation",
+    "url": "https://wikipedia.org/wiki/Normal_equation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Linear Regression Normal Equation",
+    "url": "https://deep-ml.com/problems/14"
+  },
+  "prerequisites": [
+    36
+  ]
+}

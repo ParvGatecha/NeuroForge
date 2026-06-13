@@ -1,0 +1,31 @@
+{
+  "id": 71,
+  "slug": "nlp-word-vectors",
+  "title": "Word Vectors & Embeddings",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "embeddings",
+    "word2vec",
+    "vectors"
+  ],
+  "learning_objectives": [
+    "Query cosine similarity matches",
+    "Apply vector math to words"
+  ],
+  "description": "Measure semantic distances using multi-dimensional word2vec matrices.",
+  "theory_resource": {
+    "title": "Efficient Estimation of Word Representations",
+    "url": "https://arxiv.org/abs/1301.3781",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Word Vectors Exercise",
+    "url": "https://www.kaggle.com/code/matheon/exercise-word-vectors"
+  },
+  "prerequisites": [
+    70
+  ]
+}

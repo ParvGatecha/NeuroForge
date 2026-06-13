@@ -1,0 +1,31 @@
+{
+  "id": 55,
+  "slug": "data-augmentation",
+  "title": "Data Augmentation",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "cnn",
+    "augmentation",
+    "overfitting"
+  ],
+  "learning_objectives": [
+    "Configure coordinate shifts",
+    "Verify model rotation invariance"
+  ],
+  "description": "Artificially expand image datasets using crop, skew, and rotation filters.",
+  "theory_resource": {
+    "title": "Data Augmentation in Computer Vision",
+    "url": "https://wikipedia.org/wiki/Data_augmentation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Data Augmentation Exercise",
+    "url": "https://www.kaggle.com/code/ryanholbrook/exercise-data-augmentation"
+  },
+  "prerequisites": [
+    54
+  ]
+}
