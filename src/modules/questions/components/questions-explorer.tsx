@@ -23,7 +23,40 @@ import {
   ExternalLink,
   Compass,
   Zap,
+  Check,
 } from "lucide-react";
+
+const formatSectionName = (sec: string) => {
+  return sec
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+};
+
+const sectionsList = [
+  "all",
+  "python",
+  "statistics",
+  "machine-learning",
+  "deep-learning",
+  "llm",
+  "rag",
+  "agents",
+  "system-design",
+];
+
+const resourceTypes = [
+  { value: "all", label: "Platform: All" },
+  { value: "DEEP_ML", label: "Deep-ML" },
+  { value: "KAGGLE", label: "Kaggle" },
+  { value: "HUGGING_FACE", label: "Hugging Face" },
+  { value: "GITHUB", label: "GitHub" },
+  { value: "LANGCHAIN", label: "LangChain" },
+  { value: "LANGGRAPH", label: "LangGraph" },
+  { value: "LLAMAINDEX", label: "LlamaIndex" },
+  { value: "CUSTOM", label: "Custom" },
+  { value: "EXTERNAL", label: "External" },
+];
 
 interface ExplorerProps {
   items: LearningItemMetadata[];
@@ -58,6 +91,27 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
   const [bookmarkedFilter, setBookmarkedFilter] = useState(initialBookmarked);
   const [completedFilter, setCompletedFilter] = useState(initialCompleted);
   const [currentPage, setCurrentPage] = useState(1);
+  const [viewMode, setViewMode] = useState<"sheet" | "explorer">("sheet");
+  const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({
+    "python": true,
+  });
+
+  const toggleSection = (sec: string) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [sec]: !prev[sec]
+    }));
+  };
+
+  const groupedByTrack = useMemo(() => {
+    const groups: { [key: string]: LearningItemMetadata[] } = {};
+    sectionsList.filter(s => s !== "all").forEach(sec => {
+      groups[sec] = items.filter(
+        (item) => item.section.toLowerCase().replace(/\s+/g, "-") === sec
+      );
+    });
+    return groups;
+  }, [items, sectionsList]);
 
   const itemsPerPage = 15;
 
@@ -188,37 +242,7 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
     }
   };
 
-  const formatSectionName = (sec: string) => {
-    return sec
-      .split("-")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
-  };
 
-  const sectionsList = [
-    "all",
-    "python",
-    "statistics",
-    "machine-learning",
-    "deep-learning",
-    "llm",
-    "rag",
-    "agents",
-    "system-design",
-  ];
-
-  const resourceTypes = [
-    { value: "all", label: "Platform: All" },
-    { value: "DEEP_ML", label: "Deep-ML" },
-    { value: "KAGGLE", label: "Kaggle" },
-    { value: "HUGGING_FACE", label: "Hugging Face" },
-    { value: "GITHUB", label: "GitHub" },
-    { value: "LANGCHAIN", label: "LangChain" },
-    { value: "LANGGRAPH", label: "LangGraph" },
-    { value: "LLAMAINDEX", label: "LlamaIndex" },
-    { value: "CUSTOM", label: "Custom" },
-    { value: "EXTERNAL", label: "External" },
-  ];
 
   return (
     <div className="space-y-6">
@@ -264,261 +288,542 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
         <div className="absolute right-0 top-0 -mr-16 -mt-16 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
       </div>
 
-      {/* Filter & Search Bar */}
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 animate-fade-in-up [animation-delay:100ms]">
-        {/* Search */}
-        <div className="relative lg:col-span-2">
-          <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-          <input
-            type="text"
-            placeholder="Search learning resources by title, tag, or description..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-sm"
-          />
-        </div>
-
-        {/* Filters Selects */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 lg:col-span-2">
-          {/* Difficulty */}
-          <select
-            value={difficultyFilter}
-            onChange={(e) => setDifficultyFilter(e.target.value)}
-            className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          >
-            <option value="all">Difficulty: All</option>
-            <option value="Easy">Easy</option>
-            <option value="Medium">Medium</option>
-            <option value="Hard">Hard</option>
-          </select>
-
-          {/* Resource Type */}
-          <select
-            value={resourceTypeFilter}
-            onChange={(e) => setResourceTypeFilter(e.target.value)}
-            className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          >
-            {resourceTypes.map((t) => (
-              <option key={t.value} value={t.value}>
-                {t.label}
-              </option>
-            ))}
-          </select>
-
-          {/* Completion */}
-          <select
-            value={completedFilter}
-            onChange={(e) => setCompletedFilter(e.target.value)}
-            className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-          >
-            <option value="all">Status: All</option>
-            <option value="completed">Completed</option>
-            <option value="uncompleted">In Progress</option>
-          </select>
-
-          {/* Bookmark toggle */}
+      {/* View Toggle Tabs (TakeUForward style switch) */}
+      <div className="flex items-center justify-between border-b border-border/30 pb-2 animate-fade-in-up [animation-delay:80ms]">
+        <div className="flex gap-1.5 p-1 bg-secondary/55 rounded-xl border border-border/40">
           <button
-            onClick={() => setBookmarkedFilter(!bookmarkedFilter)}
-            className={`flex items-center justify-center gap-1.5 h-11 rounded-xl border px-3 text-sm font-medium transition-all ${
-              bookmarkedFilter
-                ? "bg-amber-500/10 border-amber-500/30 text-amber-500"
-                : "border-border bg-background/50 hover:bg-secondary text-muted-foreground hover:text-foreground"
+            onClick={() => setViewMode("sheet")}
+            className={`flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-lg transition-all ${
+              viewMode === "sheet"
+                ? "bg-background text-primary dark:text-blue-400 shadow-sm"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            <Star className={`h-4 w-4 ${bookmarkedFilter ? "fill-amber-500" : ""}`} />
-            <span>Bookmarked</span>
+            <Layers className="h-4 w-4" />
+            <span>Roadmap Sheet View</span>
           </button>
-        </div>
-      </div>
-
-      {/* Section Filter Tags list */}
-      <div className="flex flex-wrap gap-1.5 pb-2 border-b border-border/40 overflow-x-auto scrollbar-none animate-fade-in-up [animation-delay:150ms]">
-        {sectionsList.map((sec) => (
           <button
-            key={sec}
-            onClick={() => setSectionFilter(sec)}
-            className={`whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all ${
-              sectionFilter === sec
-                ? "bg-primary border-primary text-primary-foreground shadow-lg shadow-primary/25"
-                : "border-border bg-background/40 hover:bg-secondary text-muted-foreground hover:text-foreground"
+            onClick={() => setViewMode("explorer")}
+            className={`flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-lg transition-all ${
+              viewMode === "explorer"
+                ? "bg-background text-primary dark:text-blue-400 shadow-sm"
+                : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            {sec === "all" ? "All Tracks" : formatSectionName(sec)}
+            <Compass className="h-4 w-4" />
+            <span>Explorer List View</span>
           </button>
-        ))}
-      </div>
+        </div>
 
-      {/* Learning Items List */}
-      <div className="space-y-3 animate-fade-in-up [animation-delay:200ms]">
-        {paginatedItems.length > 0 ? (
-          paginatedItems.map((q) => {
-            const isCompleted = completedLearningItems.includes(q.id);
-            const isBookmarked = bookmarks.includes(q.id);
-            const platformDetails = getPlatformDetails(q.practice_resource?.platform || "EXTERNAL");
-            const PlatformIcon = platformDetails.icon;
-
-            return (
-              <div
-                key={q.id}
-                className="glass-card relative overflow-hidden rounded-xl border border-border/40 p-4 transition-all duration-200 hover:border-primary/45 hover:shadow-lg dark:hover:shadow-primary/5 flex flex-col md:flex-row md:items-center justify-between gap-4"
-              >
-                <div className="flex items-start gap-4 flex-1">
-                  {/* Status Checkbox */}
-                  <button
-                    onClick={async (e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      if (isCompleted) {
-                        try {
-                          await uncompleteLearningItem(q.id);
-                        } catch (err) {
-                          console.error("Failed to uncomplete item", err);
-                        }
-                      } else {
-                        try {
-                          const xpReward = (q.estimated_time_minutes || 15) * 10;
-                          await completeLearningItem(q.id, xpReward);
-                        } catch (err) {
-                          console.error("Failed to complete item", err);
-                        }
-                      }
-                    }}
-                    className={`mt-0.5 rounded-full p-0.5 transition-all focus:outline-none focus:ring-2 focus:ring-primary/50 cursor-pointer ${
-                      isCompleted
-                        ? "text-emerald-500 hover:text-rose-500 hover:scale-105"
-                        : "text-muted-foreground/30 hover:text-primary hover:scale-105"
-                    }`}
-                    title={isCompleted ? "Mark as In Progress (Uncheck)" : "Mark as Completed"}
-                    aria-label={isCompleted ? "Mark as In Progress" : "Mark as Completed"}
-                  >
-                    <CheckCircle className={`h-5 w-5 transition-transform duration-200 ${isCompleted ? "fill-emerald-500/10" : ""}`} />
-                  </button>
-
-                  <div className="space-y-1.5 min-w-0">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-xs font-bold text-muted-foreground">#{q.id}</span>
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground/80">
-                        {q.section}
-                      </span>
-                      <span className="text-muted-foreground/40">•</span>
-                      <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-primary dark:text-blue-400">
-                        <Clock className="h-3 w-3" />
-                        {q.estimated_time_minutes} min
-                      </span>
-                    </div>
-
-                    <Link
-                      href={`/learning-items/${q.slug}`}
-                      className="block text-base font-bold leading-snug hover:text-primary hover:underline transition-all text-foreground truncate"
-                    >
-                      {q.title}
-                    </Link>
-                  </div>
-                </div>
-
-                {/* Right Side Badges & actions */}
-                <div className="flex items-center justify-between md:justify-end gap-3 border-t border-border/20 pt-3 md:border-none md:pt-0">
-                  <div className="flex items-center gap-2">
-                    {/* Platform Badge */}
-                    <span
-                      className={`inline-flex items-center gap-1.5 rounded-md border px-2 py-0.5 text-xs font-bold ${platformDetails.color}`}
-                    >
-                      <PlatformIcon className="h-3.5 w-3.5" />
-                      {platformDetails.label}
-                    </span>
-
-                    {/* Difficulty Badge */}
-                    <span
-                      className={`inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-bold ${difficultyColors(
-                        q.difficulty
-                      )}`}
-                    >
-                      {q.difficulty}
-                    </span>
-                  </div>
-
-                  {/* Bookmark Button */}
-                  <div className="flex items-center gap-1.5 pl-3 border-l border-border/40">
-                    <button
-                      onClick={() => toggleBookmark(q.id)}
-                      className={`rounded-lg p-2 transition-colors hover:bg-secondary ${
-                        isBookmarked
-                          ? "text-amber-500 hover:text-amber-600"
-                          : "text-muted-foreground/40 hover:text-foreground"
-                      }`}
-                      aria-label="Toggle Bookmark"
-                    >
-                      <Star className={`h-4.5 w-4.5 ${isBookmarked ? "fill-amber-500" : ""}`} />
-                    </button>
-
-                    <Link
-                      href={`/learning-items/${q.slug}`}
-                      className="rounded-lg bg-primary/10 hover:bg-primary/20 text-primary dark:text-blue-400 p-2 transition-colors"
-                      title="View Details"
-                    >
-                      <ChevronRight className="h-4.5 w-4.5" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            );
-          })
-        ) : (
-          <div className="glass-panel rounded-xl py-12 px-4 text-center border border-border/40">
-            <Layers className="mx-auto h-12 w-12 text-muted-foreground/45" />
-            <h3 className="mt-4 text-lg font-bold">No resources found</h3>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Try adjusting your search query or reset filters.
-            </p>
-            <button
-              onClick={() => {
-                setSearchQuery("");
-                setSectionFilter("all");
-                setDifficultyFilter("all");
-                setResourceTypeFilter("all");
-                setBookmarkedFilter(false);
-                setCompletedFilter("all");
-              }}
-              className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/95 transition-all shadow-md shadow-primary/25"
-            >
-              Reset Filters
-            </button>
-          </div>
+        {viewMode === "sheet" && (
+          <button
+            onClick={() => {
+              const allExpanded = Object.keys(groupedByTrack).reduce((acc, key) => {
+                acc[key] = true;
+                return acc;
+              }, {} as { [key: string]: boolean });
+              setExpandedSections(allExpanded);
+            }}
+            className="text-xs font-semibold text-primary dark:text-blue-400 hover:underline flex items-center gap-1"
+          >
+            Expand All Sections
+          </button>
         )}
       </div>
 
-      {/* Pagination Controls */}
-      {totalPages > 1 && (
-        <div className="flex items-center justify-center gap-1.5 pt-4 border-t border-border/30 animate-fade-in-up [animation-delay:250ms]">
-          <button
-            onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
-            disabled={currentPage === 1}
-            className="h-9 rounded-lg px-3 border border-border bg-background/50 text-sm font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-secondary transition-all"
-          >
-            Previous
-          </button>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-            <button
-              key={page}
-              onClick={() => setCurrentPage(page)}
-              className={`h-9 w-9 rounded-lg text-sm font-semibold transition-all ${
-                currentPage === page
-                  ? "bg-primary text-primary-foreground"
-                  : "border border-border bg-background/50 hover:bg-secondary text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {page}
-            </button>
-          ))}
-          <button
-            onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
-            disabled={currentPage === totalPages}
-            className="h-9 rounded-lg px-3 border border-border bg-background/50 text-sm font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-secondary transition-all"
-          >
-            Next
-          </button>
+      {viewMode === "sheet" ? (
+        <div className="space-y-4 animate-fade-in-up [animation-delay:150ms]">
+          {sectionsList.filter(sec => sec !== "all").map((sec, idx) => {
+            const trackItems = groupedByTrack[sec] || [];
+            const completedCount = trackItems.filter(q => completedLearningItems.includes(q.id)).length;
+            const totalCount = trackItems.length;
+            const percentage = totalCount > 0 ? Math.round((completedCount / totalCount) * 100) : 0;
+            const isExpanded = !!expandedSections[sec];
+            const radius = 10;
+            const circumference = 2 * Math.PI * radius;
+            const strokeDashoffset = circumference - (percentage / 100) * circumference;
+            
+            return (
+              <div 
+                key={sec} 
+                className="glass-panel overflow-hidden rounded-2xl border border-border/30 shadow-sm transition-all"
+              >
+                {/* Accordion Header */}
+                <button
+                  onClick={() => toggleSection(sec)}
+                  className="w-full flex flex-col sm:flex-row sm:items-center justify-between p-5 text-left hover:bg-secondary/15 transition-all gap-4 focus:outline-none cursor-pointer"
+                >
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 text-primary dark:text-blue-400 font-extrabold border border-primary/20 shrink-0">
+                      {idx + 1}
+                    </div>
+                    <div>
+                      <h3 className="text-base font-extrabold tracking-tight text-foreground">
+                        Step {idx + 1}: {formatSectionName(sec)}
+                      </h3>
+                      <p className="text-xs text-muted-foreground mt-0.5 font-medium">
+                        {totalCount} resources • Curated theory & exercises
+                      </p>
+                    </div>
+                  </div>
+                  
+                  {/* Progress and Expand icon */}
+                  <div className="flex items-center gap-5 shrink-0 ml-auto sm:ml-0">
+                    <div className="flex items-center gap-3">
+                      <div className="text-right">
+                        <span className="text-sm font-extrabold text-foreground">{completedCount} / {totalCount}</span>
+                        <span className="text-[10px] text-muted-foreground block font-bold">Completed</span>
+                      </div>
+                      
+                      <div className="relative h-7 w-7 flex items-center justify-center shrink-0">
+                        <svg className="absolute -rotate-90 transform h-7 w-7">
+                          <circle
+                            cx="14"
+                            cy="14"
+                            r={radius}
+                            className="stroke-muted/30 dark:stroke-muted/15"
+                            strokeWidth="2"
+                            fill="transparent"
+                          />
+                          <circle
+                            cx="14"
+                            cy="14"
+                            r={radius}
+                            className="stroke-cyan-500 dark:stroke-cyan-400 transition-all duration-300"
+                            strokeWidth="2.5"
+                            strokeDasharray={circumference}
+                            strokeDashoffset={strokeDashoffset}
+                            strokeLinecap="round"
+                            fill="transparent"
+                          />
+                        </svg>
+                        <span className="text-[8px] font-black text-cyan-500 dark:text-cyan-400 z-10">{percentage}%</span>
+                      </div>
+                    </div>
+                    
+                    <ChevronRight className={`h-5 w-5 text-muted-foreground transition-transform duration-200 ${isExpanded ? 'rotate-90 text-primary dark:text-blue-400' : ''}`} />
+                  </div>
+                </button>
+                
+                {/* Accordion Content */}
+                {isExpanded && (
+                  <div className="border-t border-border/20 p-5 bg-card/10">
+                    {trackItems.length > 0 ? (
+                      <div className="overflow-x-auto rounded-xl border border-border/30 bg-background/25">
+                        <table className="w-full border-collapse text-left text-sm">
+                          <thead className="bg-muted/30 text-[10px] uppercase font-bold text-muted-foreground border-b border-border/30">
+                            <tr>
+                              <th className="py-3 px-4 text-center w-12">Status</th>
+                              <th className="py-3 px-4 w-12">ID</th>
+                              <th className="py-3 px-4">Topic / Concept</th>
+                              <th className="py-3 px-4 w-28">Difficulty</th>
+                              <th className="py-3 px-4 w-40">Theory Resource</th>
+                              <th className="py-3 px-4 w-40">Practice Link</th>
+                              <th className="py-3 px-4 text-center w-12">Save</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-border/20">
+                            {trackItems.map((q) => {
+                              const isItemCompleted = completedLearningItems.includes(q.id);
+                              const isItemBookmarked = bookmarks.includes(q.id);
+                              const platformDetails = getPlatformDetails(q.practice_resource?.platform || "EXTERNAL");
+                              const PlatformIcon = platformDetails.icon;
+                              
+                              return (
+                                <tr 
+                                  key={q.id} 
+                                  className={`transition-colors hover:bg-secondary/15 ${
+                                    isItemCompleted ? "bg-emerald-500/[0.015] dark:bg-emerald-500/[0.005]" : ""
+                                  }`}
+                                >
+                                  {/* Completion Toggle checkbox */}
+                                  <td className="py-3.5 px-4 text-center">
+                                    <button
+                                      onClick={async (e) => {
+                                        e.preventDefault();
+                                        e.stopPropagation();
+                                        if (isItemCompleted) {
+                                          try {
+                                            await uncompleteLearningItem(q.id);
+                                          } catch (err) {
+                                            console.error("Failed to uncomplete item", err);
+                                          }
+                                        } else {
+                                          try {
+                                            const xpReward = (q.estimated_time_minutes || 15) * 10;
+                                            await completeLearningItem(q.id, xpReward);
+                                          } catch (err) {
+                                            console.error("Failed to complete item", err);
+                                          }
+                                        }
+                                      }}
+                                      className="focus:outline-none focus:ring-2 focus:ring-primary/40 rounded-full inline-flex cursor-pointer transition-transform duration-150 active:scale-95"
+                                      title={isItemCompleted ? "Mark as In Progress (Uncheck)" : "Mark as Completed"}
+                                    >
+                                      {isItemCompleted ? (
+                                        <div className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 dark:bg-emerald-600 text-white shadow-sm animate-scale-in">
+                                          <Check className="h-3.5 w-3.5 stroke-[3.5]" />
+                                        </div>
+                                      ) : (
+                                        <div className="flex h-5 w-5 items-center justify-center rounded-full border-2 border-muted-foreground/30 dark:border-muted-foreground/45 hover:border-primary dark:hover:border-blue-400 bg-background transition-all" />
+                                      )}
+                                    </button>
+                                  </td>
+                                  
+                                  {/* ID */}
+                                  <td className="py-3.5 px-4 font-mono text-xs text-muted-foreground font-bold">
+                                    #{q.id}
+                                  </td>
+                                  
+                                  {/* Concept Title */}
+                                  <td className="py-3.5 px-4 min-w-0">
+                                    <div className="flex flex-col gap-0.5">
+                                      <Link
+                                        href={`/learning-items/${q.slug}`}
+                                        className="font-bold text-foreground hover:text-primary dark:hover:text-blue-400 hover:underline transition-colors block text-sm sm:text-base leading-snug"
+                                      >
+                                        {q.title}
+                                      </Link>
+                                      <span className="text-xs text-muted-foreground line-clamp-1">
+                                        {q.description}
+                                      </span>
+                                    </div>
+                                  </td>
+                                  
+                                  {/* Difficulty */}
+                                  <td className="py-3.5 px-4">
+                                    <span className={`inline-flex rounded-md border px-2 py-0.5 text-[10px] uppercase tracking-wider font-bold ${difficultyColors(q.difficulty)}`}>
+                                      {q.difficulty}
+                                    </span>
+                                  </td>
+                                  
+                                  {/* Theory link */}
+                                  <td className="py-3.5 px-4">
+                                    {q.theory_resource ? (
+                                      <a
+                                        href={q.theory_resource.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary dark:text-blue-400 hover:text-primary/80 dark:hover:text-blue-300 hover:underline max-w-[150px] truncate transition-colors"
+                                      >
+                                        <BookOpen className="h-3.5 w-3.5 shrink-0" />
+                                        <span className="truncate">{q.theory_resource.title}</span>
+                                        <ExternalLink className="h-3 w-3 shrink-0" />
+                                      </a>
+                                    ) : (
+                                      <span className="text-xs text-muted-foreground">-</span>
+                                    )}
+                                  </td>
+                                  
+                                  {/* Practice Link */}
+                                  <td className="py-3.5 px-4">
+                                    {q.practice_resource ? (
+                                      <a
+                                        href={q.practice_resource.url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className={`inline-flex items-center gap-1.5 rounded border px-2 py-0.5 text-[10px] font-bold transition-all hover:scale-[1.02] shadow-sm ${platformDetails.color}`}
+                                      >
+                                        <PlatformIcon className="h-3.5 w-3.5" />
+                                        <span>{platformDetails.label}</span>
+                                        <ExternalLink className="h-3 w-3 shrink-0" />
+                                      </a>
+                                    ) : (
+                                      <span className="text-xs text-muted-foreground">-</span>
+                                    )}
+                                  </td>
+                                  
+                                  {/* Save / Bookmark */}
+                                  <td className="py-3.5 px-4 text-center">
+                                    <button
+                                      onClick={() => toggleBookmark(q.id)}
+                                      className={`rounded-lg p-1.5 transition-colors hover:bg-secondary ${
+                                        isItemBookmarked
+                                          ? "text-amber-500 hover:text-amber-600"
+                                          : "text-muted-foreground/30 hover:text-foreground"
+                                      }`}
+                                      aria-label="Toggle Bookmark"
+                                    >
+                                      <Star className={`h-4.5 w-4.5 transition-all ${isItemBookmarked ? "fill-amber-500 text-amber-500 scale-110 filter drop-shadow-[0_0_4px_rgba(245,158,11,0.4)]" : ""}`} />
+                                    </button>
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                    ) : (
+                      <p className="text-sm text-muted-foreground text-center py-4">
+                        No resources inside this section.
+                      </p>
+                    )}
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
+      ) : (
+        <>
+          {/* Filter & Search Bar */}
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 animate-fade-in-up [animation-delay:100ms]">
+            {/* Search */}
+            <div className="relative lg:col-span-2">
+              <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <input
+                type="text"
+                placeholder="Search learning resources by title, tag, or description..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-sm"
+              />
+            </div>
+
+            {/* Filters Selects */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 lg:col-span-2">
+              {/* Difficulty */}
+              <select
+                value={difficultyFilter}
+                onChange={(e) => setDifficultyFilter(e.target.value)}
+                className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                <option value="all">Difficulty: All</option>
+                <option value="Easy">Easy</option>
+                <option value="Medium">Medium</option>
+                <option value="Hard">Hard</option>
+              </select>
+
+              {/* Resource Type */}
+              <select
+                value={resourceTypeFilter}
+                onChange={(e) => setResourceTypeFilter(e.target.value)}
+                className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                {resourceTypes.map((t) => (
+                  <option key={t.value} value={t.value}>
+                    {t.label}
+                  </option>
+                ))}
+              </select>
+
+              {/* Completion */}
+              <select
+                value={completedFilter}
+                onChange={(e) => setCompletedFilter(e.target.value)}
+                className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                <option value="all">Status: All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">In Progress</option>
+              </select>
+
+              {/* Bookmark toggle */}
+              <button
+                onClick={() => setBookmarkedFilter(!bookmarkedFilter)}
+                className={`flex items-center justify-center gap-1.5 h-11 rounded-xl border px-3 text-sm font-medium transition-all ${
+                  bookmarkedFilter
+                    ? "bg-amber-500/10 border-amber-500/30 text-amber-500"
+                    : "border-border bg-background/50 hover:bg-secondary text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                <Star className={`h-4 w-4 ${bookmarkedFilter ? "fill-amber-500" : ""}`} />
+                <span>Bookmarked</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Section Filter Tags list */}
+          <div className="flex flex-wrap gap-1.5 pb-2 border-b border-border/40 overflow-x-auto scrollbar-none animate-fade-in-up [animation-delay:150ms]">
+            {sectionsList.map((sec) => (
+              <button
+                key={sec}
+                onClick={() => setSectionFilter(sec)}
+                className={`whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all ${
+                  sectionFilter === sec
+                    ? "bg-primary border-primary text-primary-foreground shadow-lg shadow-primary/25"
+                    : "border-border bg-background/40 hover:bg-secondary text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {sec === "all" ? "All Tracks" : formatSectionName(sec)}
+              </button>
+            ))}
+          </div>
+
+          {/* Learning Items List */}
+          <div className="space-y-3 animate-fade-in-up [animation-delay:200ms]">
+            {paginatedItems.length > 0 ? (
+              paginatedItems.map((q) => {
+                const isCompleted = completedLearningItems.includes(q.id);
+                const isBookmarked = bookmarks.includes(q.id);
+                const platformDetails = getPlatformDetails(q.practice_resource?.platform || "EXTERNAL");
+                const PlatformIcon = platformDetails.icon;
+
+                return (
+                  <div
+                    key={q.id}
+                    className="glass-card relative overflow-hidden rounded-xl border border-border/40 p-4 transition-all duration-200 hover:border-primary/45 hover:shadow-lg dark:hover:shadow-primary/5 flex flex-col md:flex-row md:items-center justify-between gap-4"
+                  >
+                    <div className="flex items-start gap-4 flex-1">
+                      {/* Status Checkbox */}
+                      <button
+                        onClick={async (e) => {
+                          e.preventDefault();
+                          e.stopPropagation();
+                          if (isCompleted) {
+                            try {
+                              await uncompleteLearningItem(q.id);
+                            } catch (err) {
+                              console.error("Failed to uncomplete item", err);
+                            }
+                          } else {
+                            try {
+                              const xpReward = (q.estimated_time_minutes || 15) * 10;
+                              await completeLearningItem(q.id, xpReward);
+                            } catch (err) {
+                              console.error("Failed to complete item", err);
+                            }
+                          }
+                        }}
+                        className={`mt-0.5 rounded-full p-0.5 transition-all focus:outline-none focus:ring-2 focus:ring-primary/50 cursor-pointer ${
+                          isCompleted
+                            ? "text-emerald-500 hover:text-rose-500 hover:scale-105"
+                            : "text-muted-foreground/30 hover:text-primary hover:scale-105"
+                        }`}
+                        title={isCompleted ? "Mark as In Progress (Uncheck)" : "Mark as Completed"}
+                        aria-label={isCompleted ? "Mark as In Progress" : "Mark as Completed"}
+                      >
+                        <CheckCircle className={`h-5 w-5 transition-transform duration-200 ${isCompleted ? "fill-emerald-500/10" : ""}`} />
+                      </button>
+
+                      <div className="space-y-1.5 min-w-0">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-xs font-bold text-muted-foreground">#{q.id}</span>
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground/80">
+                            {q.section}
+                          </span>
+                          <span className="text-muted-foreground/40">•</span>
+                          <span className="inline-flex items-center gap-1 text-[10px] font-semibold text-primary dark:text-blue-400">
+                            <Clock className="h-3 w-3" />
+                            {q.estimated_time_minutes} min
+                          </span>
+                        </div>
+
+                        <Link
+                          href={`/learning-items/${q.slug}`}
+                          className="block text-base font-bold leading-snug hover:text-primary hover:underline transition-all text-foreground truncate"
+                        >
+                          {q.title}
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* Right Side Badges & actions */}
+                    <div className="flex items-center justify-between md:justify-end gap-3 border-t border-border/20 pt-3 md:border-none md:pt-0">
+                      <div className="flex items-center gap-2">
+                        {/* Platform Badge */}
+                        <span
+                          className={`inline-flex items-center gap-1.5 rounded-md border px-2 py-0.5 text-xs font-bold ${platformDetails.color}`}
+                        >
+                          <PlatformIcon className="h-3.5 w-3.5" />
+                          {platformDetails.label}
+                        </span>
+
+                        {/* Difficulty Badge */}
+                        <span
+                          className={`inline-flex items-center rounded-md border px-2 py-0.5 text-xs font-bold ${difficultyColors(
+                            q.difficulty
+                          )}`}
+                        >
+                          {q.difficulty}
+                        </span>
+                      </div>
+
+                      {/* Bookmark Button */}
+                      <div className="flex items-center gap-1.5 pl-3 border-l border-border/40">
+                        <button
+                          onClick={() => toggleBookmark(q.id)}
+                          className={`rounded-lg p-2 transition-colors hover:bg-secondary ${
+                            isBookmarked
+                              ? "text-amber-500 hover:text-amber-600"
+                              : "text-muted-foreground/40 hover:text-foreground"
+                          }`}
+                          aria-label="Toggle Bookmark"
+                        >
+                          <Star className={`h-4.5 w-4.5 ${isBookmarked ? "fill-amber-500" : ""}`} />
+                        </button>
+
+                        <Link
+                          href={`/learning-items/${q.slug}`}
+                          className="rounded-lg bg-primary/10 hover:bg-primary/20 text-primary dark:text-blue-400 p-2 transition-colors"
+                          title="View Details"
+                        >
+                          <ChevronRight className="h-4.5 w-4.5" />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })
+            ) : (
+              <div className="glass-panel rounded-xl py-12 px-4 text-center border border-border/40">
+                <Layers className="mx-auto h-12 w-12 text-muted-foreground/45" />
+                <h3 className="mt-4 text-lg font-bold">No resources found</h3>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Try adjusting your search query or reset filters.
+                </p>
+                <button
+                  onClick={() => {
+                    setSearchQuery("");
+                    setSectionFilter("all");
+                    setDifficultyFilter("all");
+                    setResourceTypeFilter("all");
+                    setBookmarkedFilter(false);
+                    setCompletedFilter("all");
+                  }}
+                  className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground hover:bg-primary/95 transition-all shadow-md shadow-primary/25"
+                >
+                  Reset Filters
+                </button>
+              </div>
+            )}
+          </div>
+
+          {/* Pagination Controls */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-1.5 pt-4 border-t border-border/30 animate-fade-in-up [animation-delay:250ms]">
+              <button
+                onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                disabled={currentPage === 1}
+                className="h-9 rounded-lg px-3 border border-border bg-background/50 text-sm font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-secondary transition-all"
+              >
+                Previous
+              </button>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <button
+                  key={page}
+                  onClick={() => setCurrentPage(page)}
+                  className={`h-9 w-9 rounded-lg text-sm font-semibold transition-all ${
+                    currentPage === page
+                      ? "bg-primary text-primary-foreground"
+                      : "border border-border bg-background/50 hover:bg-secondary text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+              <button
+                onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                disabled={currentPage === totalPages}
+                className="h-9 rounded-lg px-3 border border-border bg-background/50 text-sm font-semibold disabled:opacity-40 disabled:cursor-not-allowed hover:bg-secondary transition-all"
+              >
+                Next
+              </button>
+            </div>
+          )}
+        </>
       )}
     </div>
   );
 }
+

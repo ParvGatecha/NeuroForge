@@ -39,9 +39,11 @@ export function SettingsView() {
         setEmail(user.email || "");
         try {
           const settings = await getSettingsAction(user.id);
-          setEmailNotifications(settings.emailNotifications);
-          setMarketingEmails(settings.marketingEmails);
-          setPublicProfile(settings.publicProfile);
+          if (settings) {
+            setEmailNotifications(settings.emailNotifications);
+            setMarketingEmails(settings.marketingEmails);
+            setPublicProfile(settings.publicProfile);
+          }
         } catch (e) {
           console.error("Failed to load settings", e);
         }

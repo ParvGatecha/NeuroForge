@@ -65,7 +65,7 @@ export function Header() {
           <Link href="/dashboard" className="flex items-center gap-2">
             <GraduationCap className="h-6 w-6 text-primary dark:text-blue-400" />
             <span className="bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-xl font-bold tracking-tight text-transparent">
-              NeuroForge
+              TensorTrack
             </span>
           </Link>
 
@@ -136,13 +136,33 @@ export function Header() {
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
 
-          {/* User Profile (Fallback mock) */}
-          {user && (
+          {/* User Profile (Desktop) */}
+          {user ? (
             <div className="flex items-center gap-2 border-l border-border/40 pl-4">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary dark:text-blue-400">
                 <User className="h-4 w-4" />
               </div>
-              <span className="hidden lg:inline text-sm font-medium">{user.name || "Alex"}</span>
+              <span className="hidden lg:inline text-sm font-medium">{user.name}</span>
+              <button
+                onClick={async () => {
+                  const { createClient } = await import("@/shared/lib/supabase/client");
+                  const supabase = createClient();
+                  await supabase.auth.signOut();
+                  window.location.reload();
+                }}
+                className="text-xs text-muted-foreground hover:text-foreground pl-2 font-bold cursor-pointer transition-colors"
+              >
+                Sign Out
+              </button>
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 border-l border-border/40 pl-4">
+              <Link
+                href="/login"
+                className="rounded-xl bg-primary px-3 py-1.5 text-xs font-bold text-primary-foreground hover:bg-primary/95 transition-all shadow-md shadow-primary/20"
+              >
+                Sign In
+              </Link>
             </div>
           )}
 
@@ -199,6 +219,39 @@ export function Header() {
               </div>
             </div>
           )}
+
+          {/* Mobile Profile / Auth Button */}
+          <div className="border-t border-border/45 pt-3 px-3">
+            {user ? (
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary/10 text-primary dark:text-blue-400">
+                    <User className="h-3.5 w-3.5" />
+                  </div>
+                  <span className="text-sm font-medium">{user.name}</span>
+                </div>
+                <button
+                  onClick={async () => {
+                    const { createClient } = await import("@/shared/lib/supabase/client");
+                    const supabase = createClient();
+                    await supabase.auth.signOut();
+                    window.location.reload();
+                  }}
+                  className="text-xs text-muted-foreground hover:text-foreground font-bold cursor-pointer transition-colors"
+                >
+                  Sign Out
+                </button>
+              </div>
+            ) : (
+              <Link
+                href="/login"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full h-9 bg-primary text-primary-foreground font-bold rounded-xl flex items-center justify-center text-xs hover:bg-primary/95 transition-all shadow-md shadow-primary/20"
+              >
+                Sign In
+              </Link>
+            )}
+          </div>
         </div>
       )}
     </header>

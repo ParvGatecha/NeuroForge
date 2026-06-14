@@ -1,6 +1,6 @@
-# NeuroForge Curriculum Roadmap Content Summary
+# TensorTrack Curriculum Roadmap Content Summary
     
-This report provides a comprehensive summary of the Learning Items in the NeuroForge roadmap (v2), a structured platform for AI Engineers to track and navigate external educational resources.
+This report provides a comprehensive summary of the Learning Items in the TensorTrack roadmap (v2), a structured platform for AI Engineers to track and navigate external educational resources.
 
 ## Repository Overview
 

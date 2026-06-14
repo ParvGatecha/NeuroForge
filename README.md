@@ -1,6 +1,6 @@
-# NeuroForge MVP - AI Engineer Upskilling Platform
+# TensorTrack MVP - AI Engineer Upskilling Platform
 
-Welcome to **NeuroForge**, a production-ready, roadmap-driven learning and interview preparation platform designed specifically for AI and Machine Learning Engineers.
+Welcome to **TensorTrack**, a production-ready, roadmap-driven learning and interview preparation platform designed specifically for AI and Machine Learning Engineers.
 
 This platform launches with **100 pre-loaded, first-principles questions** categorized across 8 core tracks.
 
@@ -68,8 +68,8 @@ npm install
 ### 3. Environment Setup
 A default local `.env` is already provided:
 ```env
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/neuroforge?schema=public"
-BETTER_AUTH_SECRET="some-secret-key-at-least-32-chars-long-neuroforge"
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/tensortrack?schema=public"
+BETTER_AUTH_SECRET="some-secret-key-at-least-32-chars-long-tensortrack"
 BETTER_AUTH_URL="http://localhost:3000"
 ```
 

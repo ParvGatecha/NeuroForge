@@ -11,7 +11,7 @@ function getFilesRecursively(dir: string): string[] {
 }
 
 function main() {
-  console.log("Building NeuroForge search index...");
+  console.log("Building TensorTrack search index...");
   const contentDir = path.join(__dirname, "../content");
   const outputFile = path.join(__dirname, "../content/search_index.json");
 

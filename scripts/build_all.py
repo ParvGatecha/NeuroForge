@@ -3,7 +3,7 @@ import json
 import sys
 
 def main():
-    print("Starting NeuroForge repository builder...")
+    print("Starting TensorTrack repository builder...")
     
     # Define directories
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -142,14 +142,14 @@ def main():
     with open(report_path, 'w', encoding='utf-8') as f:
         f.write(report_content)
     print(f"Content report written: {report_path}")
-    print("NeuroForge repository built successfully!")
+    print("TensorTrack repository built successfully!")
 
 def generate_report_content(all_items, section_counts, difficulty_counts):
     total = len(all_items)
     
-    markdown = f"""# NeuroForge Curriculum Roadmap Content Summary
+    markdown = f"""# TensorTrack Curriculum Roadmap Content Summary
     
-This report provides a comprehensive summary of the Learning Items in the NeuroForge roadmap (v2), a structured platform for AI Engineers to track and navigate external educational resources.
+This report provides a comprehensive summary of the Learning Items in the TensorTrack roadmap (v2), a structured platform for AI Engineers to track and navigate external educational resources.
 
 ## Repository Overview
 

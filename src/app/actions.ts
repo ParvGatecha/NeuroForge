@@ -4,55 +4,99 @@ import { dbService } from "@/shared/lib/db-service";
 import { prisma } from "@/shared/lib/prisma";
 import fs from "fs";
 import path from "path";
+import { createClient } from "@/shared/lib/supabase/server";
 
-export async function getCurrentUserAction(userId = "dev-user-id") {
-  return await dbService.getCurrentUser(userId);
+async function getUserId(): Promise<string | null> {
+  try {
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) return user.id;
+  } catch (e) {
+    console.error("Failed to get Supabase user", e);
+  }
+  return null;
 }
 
-export async function getCompletedLearningItemsAction(userId = "dev-user-id") {
+export async function getCurrentUserAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return null;
+  
+  let sbUser = null;
+  try {
+    const supabase = await createClient();
+    const { data } = await supabase.auth.getUser();
+    sbUser = data.user;
+  } catch (e) {
+    console.error("Failed to get Supabase user in getCurrentUserAction", e);
+  }
+
+  return await dbService.getCurrentUser(userId, sbUser);
+}
+
+export async function getCompletedLearningItemsAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return [];
   return await dbService.getCompletedLearningItems(userId);
 }
 
-export async function getDetailedProgressAction(userId = "dev-user-id") {
+export async function getDetailedProgressAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return [];
   return await dbService.getDetailedProgress(userId);
 }
 
-export async function getBookmarksAction(userId = "dev-user-id") {
+export async function getBookmarksAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return [];
   return await dbService.getBookmarks(userId);
 }
 
-export async function toggleBookmarkAction(learningItemId: number, userId = "dev-user-id") {
+export async function toggleBookmarkAction(learningItemId: number, targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return false;
   return await dbService.toggleBookmark(userId, learningItemId);
 }
 
 export async function completeLearningItemAction(
   learningItemId: number,
   xpReward: number,
-  userId = "dev-user-id"
+  targetUserId?: string
 ) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return { success: false, error: "Not authenticated" };
   return await dbService.completeLearningItem(userId, learningItemId, xpReward);
 }
 
 export async function uncompleteLearningItemAction(
   learningItemId: number,
-  userId = "dev-user-id"
+  targetUserId?: string
 ) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return { success: false, error: "Not authenticated" };
   return await dbService.uncompleteLearningItem(userId, learningItemId);
 }
 
-export async function getSettingsAction(userId = "dev-user-id") {
+export async function getSettingsAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return null;
   return await dbService.getSettings(userId);
 }
 
-export async function updateSettingsAction(data: any, userId = "dev-user-id") {
+export async function updateSettingsAction(data: any, targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return null;
   return await dbService.updateSettings(userId, data);
 }
 
-export async function getStreakAction(userId = "dev-user-id") {
+export async function getStreakAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return null;
   return await dbService.getStreak(userId);
 }
 
-export async function getUserAchievementsAction(userId = "dev-user-id") {
+export async function getUserAchievementsAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return [];
   return await dbService.getUserAchievements(userId);
 }
 
@@ -114,7 +158,9 @@ export async function rebuildSearchIndexAction() {
   return { success: true, count: searchIndex.length };
 }
 
-export async function resetUserProgressAction(userId = "dev-user-id") {
+export async function resetUserProgressAction(targetUserId?: string) {
+  const userId = targetUserId || (await getUserId());
+  if (!userId) return { success: false, error: "Not authenticated" };
   try {
     await prisma.$queryRaw`SELECT 1`;
 

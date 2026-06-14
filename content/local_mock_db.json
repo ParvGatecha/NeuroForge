@@ -3,22 +3,30 @@
     {
       "id": "dev-user-id",
       "name": "Alex AI",
-      "email": "alex@neuroforge.ai",
+      "email": "alex@tensortrack.ai",
       "role": "ADMIN",
-      "xp": 250,
-      "level": 2,
+      "xp": 400,
+      "level": 3,
       "createdAt": "2026-06-11T10:10:41.268Z"
     }
   ],
-  "progress": [],
+  "progress": [
+    {
+      "id": "r3ndq287kq",
+      "userId": "dev-user-id",
+      "learningItemId": 1,
+      "completedAt": "2026-06-14T10:55:26.840Z",
+      "xpEarned": 150
+    }
+  ],
   "bookmarks": [],
   "streaks": [
     {
       "id": "dev-streak-id",
       "userId": "dev-user-id",
-      "currentCount": 1,
-      "longestCount": 1,
-      "lastActive": "2026-06-13T05:28:39.653Z"
+      "currentCount": 2,
+      "longestCount": 2,
+      "lastActive": "2026-06-14T10:55:26.840Z"
     }
   ],
   "userAchievements": [

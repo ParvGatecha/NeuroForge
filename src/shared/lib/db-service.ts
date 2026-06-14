@@ -69,7 +69,7 @@ const DEFAULT_MOCK_DB: MockDatabase = {
     {
       id: "dev-user-id",
       name: "Alex AI",
-      email: "alex@neuroforge.ai",
+      email: "alex@tensortrack.ai",
       role: "ADMIN",
       xp: 120,
       level: 2,
@@ -140,17 +140,28 @@ function writeMockDb(dbData: MockDatabase) {
 
 // Global flag to track if Postgres is reachable
 let isPostgresAvailable = true;
+let lastConnectionCheckTime = 0;
+const DB_CHECK_THROTTLE_MS = 30000; // Only run the SELECT 1 check at most once every 30 seconds if DB is healthy
 
 async function checkDbConnection(): Promise<boolean> {
+  const now = Date.now();
+  
+  // If we checked recently and database was healthy, skip select 1 query
+  if (isPostgresAvailable && (now - lastConnectionCheckTime < DB_CHECK_THROTTLE_MS)) {
+    return true;
+  }
+
   try {
     await prisma.$queryRaw`SELECT 1`;
     isPostgresAvailable = true;
+    lastConnectionCheckTime = now;
     return true;
   } catch (e) {
     if (isPostgresAvailable) {
       console.warn("⚠️ PostgreSQL Database not reachable. Falling back to local file-based mock database.");
       isPostgresAvailable = false;
     }
+    lastConnectionCheckTime = now;
     return false;
   }
 }
@@ -159,7 +170,7 @@ export const dbService = {
   /**
    * Get active user session details
    */
-  async getCurrentUser(customUserId?: string): Promise<MockUser> {
+  async getCurrentUser(customUserId?: string, supabaseUser?: any): Promise<MockUser> {
     const activeUserId = customUserId || "dev-user-id";
     const dbConnected = await checkDbConnection();
 
@@ -171,14 +182,18 @@ export const dbService = {
 
         if (!user) {
           // Auto create user in DB if not exists (for seamless dev experience)
+          const isDev = activeUserId === "dev-user-id";
+          const email = supabaseUser?.email || (isDev ? "alex@tensortrack.ai" : "user@example.com");
+          const name = supabaseUser?.user_metadata?.name || supabaseUser?.user_metadata?.full_name || email.split("@")[0];
+
           user = await prisma.user.create({
             data: {
               id: activeUserId,
-              name: "Alex AI",
-              email: "alex@neuroforge.ai",
-              role: "ADMIN",
-              xp: 120,
-              level: 2,
+              name: name,
+              email: email,
+              role: isDev ? "ADMIN" : "USER",
+              xp: isDev ? 120 : 0,
+              level: isDev ? 2 : 1,
             },
           });
           // Also create default settings and streak
@@ -186,7 +201,12 @@ export const dbService = {
             data: { userId: activeUserId, theme: "dark" },
           });
           await prisma.streak.create({
-            data: { userId: activeUserId, currentCount: 2, longestCount: 5, lastActive: new Date(Date.now() - 24 * 60 * 60 * 1000) },
+            data: { 
+              userId: activeUserId, 
+              currentCount: isDev ? 2 : 0, 
+              longestCount: isDev ? 5 : 0, 
+              lastActive: isDev ? new Date(Date.now() - 24 * 60 * 60 * 1000) : null 
+            },
           });
         }
         return {
@@ -210,7 +230,7 @@ export const dbService = {
       user = {
         id: activeUserId,
         name: "Alex AI",
-        email: "alex@neuroforge.ai",
+        email: "alex@tensortrack.ai",
         role: "ADMIN",
         xp: 120,
         level: 2,
@@ -348,7 +368,7 @@ export const dbService = {
       user = {
         id: userId,
         name: "Alex AI",
-        email: "alex@neuroforge.ai",
+        email: "alex@tensortrack.ai",
         role: "ADMIN",
         xp: 120,
         level: 2,

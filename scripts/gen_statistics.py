@@ -9,7 +9,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 10,
         "tags": ["descriptive-statistics", "metrics", "data-analysis"],
         "learning_objectives": [
@@ -55,7 +55,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 10,
         "tags": ["probability", "conditional-probability", "foundations"],
         "learning_objectives": [
@@ -99,7 +99,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 15,
         "tags": ["bayes-theorem", "probability", "conditional-probability"],
         "learning_objectives": [
@@ -144,7 +144,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 10,
         "tags": ["probability-distributions", "binomial", "normal"],
         "learning_objectives": [
@@ -189,7 +189,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 15,
         "tags": ["sampling-distributions", "clt", "simulation"],
         "learning_objectives": [
@@ -234,7 +234,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 15,
         "tags": ["hypothesis-testing", "p-values", "a-b-testing"],
         "learning_objectives": [
@@ -279,7 +279,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 15,
         "tags": ["hypothesis-testing", "power-analysis", "a-b-testing"],
         "learning_objectives": [
@@ -324,7 +324,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 15,
         "tags": ["z-score", "t-distribution", "inference"],
         "learning_objectives": [
@@ -369,7 +369,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 20,
         "tags": ["anova", "hypothesis-testing", "variance"],
         "learning_objectives": [
@@ -415,7 +415,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 15,
         "tags": ["correlation", "spearman", "pearson", "confounders"],
         "learning_objectives": [
@@ -460,7 +460,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 20,
         "tags": ["parameter-estimation", "mle", "math"],
         "learning_objectives": [
@@ -505,7 +505,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 15,
         "tags": ["confidence-intervals", "estimation", "inference"],
         "learning_objectives": [
@@ -550,7 +550,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 25,
         "tags": ["bias-variance", "mathematics", "machine-learning-theory"],
         "learning_objectives": [
@@ -595,7 +595,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 20,
         "tags": ["multiple-testing", "bonferroni", "fdr", "inference"],
         "learning_objectives": [
@@ -640,7 +640,7 @@ def get_questions():
         "section": "Statistics",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Mathematical Statistics",
+        "tensortrack_skill": "Mathematical Statistics",
         "estimated_time_minutes": 25,
         "tags": ["bayesian-inference", "mcmc", "sampling"],
         "learning_objectives": [

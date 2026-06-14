@@ -9,7 +9,7 @@ def get_questions():
         "section": "System Design",
         "difficulty": "Easy",
         "question_type": "system_design",
-        "neuroforge_skill": "Machine Learning System Design",
+        "tensortrack_skill": "Machine Learning System Design",
         "estimated_time_minutes": 15,
         "tags": ["system-design", "streaming", "inference-pipeline"],
         "learning_objectives": [
@@ -56,7 +56,7 @@ def get_questions():
         "section": "System Design",
         "difficulty": "Medium",
         "question_type": "system_design",
-        "neuroforge_skill": "Machine Learning System Design",
+        "tensortrack_skill": "Machine Learning System Design",
         "estimated_time_minutes": 25,
         "tags": ["system-design", "serving", "vllm", "concurrency"],
         "learning_objectives": [
@@ -103,7 +103,7 @@ def get_questions():
         "section": "System Design",
         "difficulty": "Medium",
         "question_type": "system_design",
-        "neuroforge_skill": "Machine Learning System Design",
+        "tensortrack_skill": "Machine Learning System Design",
         "estimated_time_minutes": 20,
         "tags": ["system-design", "recommendation-system", "two-stage-architecture"],
         "learning_objectives": [
@@ -150,7 +150,7 @@ def get_questions():
         "section": "System Design",
         "difficulty": "Medium",
         "question_type": "system_design",
-        "neuroforge_skill": "Machine Learning System Design",
+        "tensortrack_skill": "Machine Learning System Design",
         "estimated_time_minutes": 20,
         "tags": ["system-design", "multimodal", "clip", "vector-search"],
         "learning_objectives": [
@@ -197,7 +197,7 @@ def get_questions():
         "section": "System Design",
         "difficulty": "Hard",
         "question_type": "system_design",
-        "neuroforge_skill": "Machine Learning System Design",
+        "tensortrack_skill": "Machine Learning System Design",
         "estimated_time_minutes": 30,
         "tags": ["system-design", "agents", "production-architecture", "safety"],
         "learning_objectives": [

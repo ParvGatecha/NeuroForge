@@ -9,7 +9,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 10,
         "tags": ["neural-networks", "activations", "foundations"],
         "learning_objectives": [
@@ -53,7 +53,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 10,
         "tags": ["neural-networks", "forward-pass", "shapes"],
         "learning_objectives": [
@@ -98,7 +98,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 15,
         "tags": ["backpropagation", "gradients", "math"],
         "learning_objectives": [
@@ -143,7 +143,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 10,
         "tags": ["loss-functions", "cross-entropy", "gradients"],
         "learning_objectives": [
@@ -188,7 +188,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 15,
         "tags": ["gradients", "vanishing-gradients", "resnet"],
         "learning_objectives": [
@@ -233,7 +233,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 20,
         "tags": ["optimizers", "adam", "sgd-momentum"],
         "learning_objectives": [
@@ -279,7 +279,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 15,
         "tags": ["regularization", "dropout", "inference"],
         "learning_objectives": [
@@ -324,7 +324,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 20,
         "tags": ["normalization", "batch-norm", "layer-norm"],
         "learning_objectives": [
@@ -369,7 +369,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 15,
         "tags": ["cnn", "shapes", "receptive-field"],
         "learning_objectives": [
@@ -413,7 +413,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 20,
         "tags": ["rnn", "lstm", "gru"],
         "learning_objectives": [
@@ -460,7 +460,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 15,
         "tags": ["autoencoders", "unsupervised-learning", "dimensionality-reduction"],
         "learning_objectives": [
@@ -505,7 +505,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 15,
         "tags": ["transfer-learning", "fine-tuning", "methodology"],
         "learning_objectives": [
@@ -551,7 +551,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 25,
         "tags": ["attention", "transformers", "math"],
         "learning_objectives": [
@@ -596,7 +596,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 25,
         "tags": ["transformers", "attention", "causal-masking"],
         "learning_objectives": [
@@ -641,7 +641,7 @@ def get_questions():
         "section": "Deep Learning",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Deep Learning Architecture",
+        "tensortrack_skill": "Deep Learning Architecture",
         "estimated_time_minutes": 25,
         "tags": ["distributed-training", "data-parallelism", "model-parallelism", "zero"],
         "learning_objectives": [

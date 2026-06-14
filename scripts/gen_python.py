@@ -9,7 +9,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 10,
         "tags": ["memory-optimization", "generators", "list-comprehensions"],
         "learning_objectives": [
@@ -54,7 +54,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 15,
         "tags": ["decorators", "functional-programming", "logging"],
         "learning_objectives": [
@@ -99,7 +99,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 10,
         "tags": ["arguments", "syntax", "unpacking"],
         "learning_objectives": [
@@ -144,7 +144,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 15,
         "tags": ["context-managers", "resource-cleanup", "exception-handling"],
         "learning_objectives": [
@@ -189,7 +189,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 20,
         "tags": ["oop", "dunder-methods", "magic-methods"],
         "learning_objectives": [
@@ -234,7 +234,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 15,
         "tags": ["iterators", "protocols", "generators"],
         "learning_objectives": [
@@ -279,7 +279,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 20,
         "tags": ["concurrency", "multiprocessing", "threading", "gil"],
         "learning_objectives": [
@@ -324,7 +324,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 20,
         "tags": ["asyncio", "asynchronous", "concurrency"],
         "learning_objectives": [
@@ -369,7 +369,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 25,
         "tags": ["metaclasses", "advanced-oop", "validation"],
         "learning_objectives": [
@@ -414,7 +414,7 @@ def get_questions():
         "section": "Python",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Python Concurrency & Memory",
+        "tensortrack_skill": "Python Concurrency & Memory",
         "estimated_time_minutes": 25,
         "tags": ["memory-management", "garbage-collection", "weakref"],
         "learning_objectives": [

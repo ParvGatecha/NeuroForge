@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NeuroForge - AI Engineer Prep & Upskilling",
+  title: "TensorTrack - AI Engineer Prep & Upskilling",
   description: "A structured learning and interview preparation platform for AI Engineers.",
 };
 

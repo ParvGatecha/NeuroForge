@@ -9,7 +9,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 10,
         "tags": ["regression", "supervised-learning", "linear-algebra"],
         "learning_objectives": [
@@ -54,7 +54,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 10,
         "tags": ["optimization", "gradient-descent", "math"],
         "learning_objectives": [
@@ -99,7 +99,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["logistic-regression", "classification", "sigmoid"],
         "learning_objectives": [
@@ -144,7 +144,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 10,
         "tags": ["knn", "lazy-learning", "distance-metrics"],
         "learning_objectives": [
@@ -189,7 +189,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["decision-trees", "entropy", "gini"],
         "learning_objectives": [
@@ -233,7 +233,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 10,
         "tags": ["cross-validation", "data-leakage", "methodology"],
         "learning_objectives": [
@@ -277,7 +277,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["regularization", "lasso", "ridge"],
         "learning_objectives": [
@@ -321,7 +321,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 20,
         "tags": ["svm", "kernel-trick", "optimization"],
         "learning_objectives": [
@@ -365,7 +365,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["ensemble", "random-forests", "bagging"],
         "learning_objectives": [
@@ -410,7 +410,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 20,
         "tags": ["ensemble", "gradient-boosting", "boosting"],
         "learning_objectives": [
@@ -455,7 +455,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["clustering", "unsupervised-learning", "k-means"],
         "learning_objectives": [
@@ -500,7 +500,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 20,
         "tags": ["pca", "dimensionality-reduction", "linear-algebra"],
         "learning_objectives": [
@@ -545,7 +545,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["metrics", "classification", "evaluation"],
         "learning_objectives": [
@@ -590,7 +590,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["imbalanced-data", "smote", "class-weights"],
         "learning_objectives": [
@@ -634,7 +634,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 15,
         "tags": ["hyperparameter-tuning", "bayesian-optimization", "random-search"],
         "learning_objectives": [
@@ -678,7 +678,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 20,
         "tags": ["feature-engineering", "data-preprocessing", "target-encoding"],
         "learning_objectives": [
@@ -722,7 +722,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 25,
         "tags": ["xgboost", "tree-boosting", "gradient-boosting-math"],
         "learning_objectives": [
@@ -767,7 +767,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 20,
         "tags": ["naive-bayes", "probability", "laplace-smoothing"],
         "learning_objectives": [
@@ -812,7 +812,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 25,
         "tags": ["gmm", "expectation-maximization", "unsupervised-learning"],
         "learning_objectives": [
@@ -856,7 +856,7 @@ def get_questions():
         "section": "Machine Learning",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Classical Machine Learning",
+        "tensortrack_skill": "Classical Machine Learning",
         "estimated_time_minutes": 25,
         "tags": ["manifold-learning", "t-sne", "umap", "kernel-pca"],
         "learning_objectives": [

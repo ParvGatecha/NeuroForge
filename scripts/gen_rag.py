@@ -9,7 +9,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 10,
         "tags": ["chunking", "data-ingest", "preprocessing"],
         "learning_objectives": [
@@ -53,7 +53,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 15,
         "tags": ["vector-search", "hnsw", "ivf"],
         "learning_objectives": [
@@ -97,7 +97,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 15,
         "tags": ["rag", "pipelines", "architecture"],
         "learning_objectives": [
@@ -142,7 +142,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 15,
         "tags": ["hierarchical-chunking", "retrieval", "search-precision"],
         "learning_objectives": [
@@ -187,7 +187,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 20,
         "tags": ["hybrid-search", "rrf", "bm25"],
         "learning_objectives": [
@@ -232,7 +232,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 15,
         "tags": ["reranking", "cross-encoders", "bi-encoders"],
         "learning_objectives": [
@@ -277,7 +277,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 15,
         "tags": ["query-transformation", "query-rewriting", "search-recall"],
         "learning_objectives": [
@@ -321,7 +321,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 20,
         "tags": ["evaluation", "ragas", "metrics"],
         "learning_objectives": [
@@ -365,7 +365,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 25,
         "tags": ["metadata-filtering", "graph-rag", "knowledge-graphs"],
         "learning_objectives": [
@@ -410,7 +410,7 @@ def get_questions():
         "section": "RAG",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Retrieval-Augmented Generation",
+        "tensortrack_skill": "Retrieval-Augmented Generation",
         "estimated_time_minutes": 25,
         "tags": ["lost-in-the-middle", "context-compression", "llmlingua"],
         "learning_objectives": [

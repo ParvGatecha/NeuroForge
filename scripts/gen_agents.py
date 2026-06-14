@@ -9,7 +9,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 10,
         "tags": ["agents", "react-pattern", "foundations"],
         "learning_objectives": [
@@ -53,7 +53,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 20,
         "tags": ["agents", "react-pattern", "execution-loop"],
         "learning_objectives": [
@@ -98,7 +98,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 10,
         "tags": ["memory", "vector-databases", "context-management"],
         "learning_objectives": [
@@ -143,7 +143,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 15,
         "tags": ["tool-calling", "json-schema", "validation"],
         "learning_objectives": [
@@ -188,7 +188,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 20,
         "tags": ["state-management", "graphs", "langgraph"],
         "learning_objectives": [
@@ -233,7 +233,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 15,
         "tags": ["planning", "reflection", "self-correction"],
         "learning_objectives": [
@@ -278,7 +278,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 20,
         "tags": ["multi-agent", "orchestration", "collaboration"],
         "learning_objectives": [
@@ -323,7 +323,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 20,
         "tags": ["error-handling", "fallbacks", "self-healing"],
         "learning_objectives": [
@@ -368,7 +368,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 25,
         "tags": ["agentic-rag", "routing", "self-grading"],
         "learning_objectives": [
@@ -413,7 +413,7 @@ def get_questions():
         "section": "Agents",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "AI Agent Engineering",
+        "tensortrack_skill": "AI Agent Engineering",
         "estimated_time_minutes": 25,
         "tags": ["web-agents", "rpa", "dom-parsing"],
         "learning_objectives": [

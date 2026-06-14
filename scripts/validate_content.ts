@@ -40,7 +40,7 @@ function getFilesRecursively(dir: string): string[] {
 }
 
 function main() {
-  console.log("Starting NeuroForge content validation...");
+  console.log("Starting TensorTrack content validation...");
   const contentDir = path.join(__dirname, "../content");
   
   if (!fs.existsSync(contentDir)) {

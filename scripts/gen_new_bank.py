@@ -3,7 +3,7 @@ import json
 import shutil
 
 def main():
-    print("Initializing NeuroForge Question Bank v2 Generation...")
+    print("Initializing TensorTrack Question Bank v2 Generation...")
     
     base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     content_dir = os.path.join(base_dir, "content")
@@ -2474,9 +2474,9 @@ def generate_validation_report(items, index_data):
         for q_id, url in non_direct_urls:
             non_direct_analysis += f" - ID {q_id}: {url}\n"
             
-    markdown = f"""# NeuroForge Question Bank v2 Validation Report
+    markdown = f"""# TensorTrack Question Bank v2 Validation Report
 
-This validation report checks and ensures the integrity of the generated NeuroForge Question Bank v2 dataset.
+This validation report checks and ensures the integrity of the generated TensorTrack Question Bank v2 dataset.
 
 ## Summary Metrics
 

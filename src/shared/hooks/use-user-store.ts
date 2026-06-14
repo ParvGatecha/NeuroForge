@@ -8,6 +8,7 @@ import {
   completeLearningItemAction,
   uncompleteLearningItemAction,
 } from "@/app/actions";
+import { getLevelFromXp } from "@/modules/progress/xp";
 
 interface UserState {
   user: any | null;
@@ -32,10 +33,12 @@ export const useUserStore = create<UserState>((set, get) => ({
   fetchUserData: async () => {
     set({ isLoading: true });
     try {
-      const user = await getCurrentUserAction();
-      const streak = await getStreakAction();
-      const completed = await getCompletedLearningItemsAction();
-      const bookmarks = await getBookmarksAction();
+      const [user, streak, completed, bookmarks] = await Promise.all([
+        getCurrentUserAction(),
+        getStreakAction(),
+        getCompletedLearningItemsAction(),
+        getBookmarksAction(),
+      ]);
       set({ user, streak, completedLearningItems: completed, bookmarks });
     } catch (e) {
       console.error("Error fetching user data in store", e);
@@ -66,41 +69,77 @@ export const useUserStore = create<UserState>((set, get) => ({
   },
 
   completeLearningItem: async (learningItemId: number, xpReward: number) => {
-    const { completedLearningItems } = get();
+    const { completedLearningItems, user } = get();
     if (completedLearningItems.includes(learningItemId)) {
       return { success: true, alreadyCompleted: true };
     }
 
+    // Optimistically update on client immediately
+    const updatedCompleted = [...completedLearningItems, learningItemId];
+    const updatedUser = user
+      ? {
+          ...user,
+          xp: user.xp + xpReward,
+          level: getLevelFromXp(user.xp + xpReward),
+        }
+      : null;
+    
+    set({ completedLearningItems: updatedCompleted, user: updatedUser });
+
     try {
       const result = await completeLearningItemAction(learningItemId, xpReward);
-      const user = await getCurrentUserAction();
-      const streak = await getStreakAction();
-      const completed = await getCompletedLearningItemsAction();
+      
+      // Parallelize state refreshes in background to align details (level ups, streaks, achievements)
+      const [freshUser, freshStreak, freshCompleted] = await Promise.all([
+        getCurrentUserAction(),
+        getStreakAction(),
+        getCompletedLearningItemsAction(),
+      ]);
 
-      set({ user, streak, completedLearningItems: completed });
+      set({ user: freshUser, streak: freshStreak, completedLearningItems: freshCompleted });
       return result;
     } catch (e) {
       console.error("Failed to complete learning item", e);
+      // Revert state on failure
+      set({ completedLearningItems, user });
       throw e;
     }
   },
 
   uncompleteLearningItem: async (learningItemId: number) => {
-    const { completedLearningItems } = get();
+    const { completedLearningItems, user } = get();
     if (!completedLearningItems.includes(learningItemId)) {
       return { success: true, alreadyUncompleted: true };
     }
 
+    // Optimistically update on client immediately
+    const updatedCompleted = completedLearningItems.filter((id) => id !== learningItemId);
+    const updatedUser = user
+      ? {
+          ...user,
+          xp: Math.max(0, user.xp - 100),
+          level: getLevelFromXp(Math.max(0, user.xp - 100)),
+        }
+      : null;
+
+    set({ completedLearningItems: updatedCompleted, user: updatedUser });
+
     try {
       const result = await uncompleteLearningItemAction(learningItemId);
-      const user = await getCurrentUserAction();
-      const streak = await getStreakAction();
-      const completed = await getCompletedLearningItemsAction();
 
-      set({ user, streak, completedLearningItems: completed });
+      // Parallelize state refreshes in background
+      const [freshUser, freshStreak, freshCompleted] = await Promise.all([
+        getCurrentUserAction(),
+        getStreakAction(),
+        getCompletedLearningItemsAction(),
+      ]);
+
+      set({ user: freshUser, streak: freshStreak, completedLearningItems: freshCompleted });
       return result;
     } catch (e) {
       console.error("Failed to uncomplete learning item", e);
+      // Revert state on failure
+      set({ completedLearningItems, user });
       throw e;
     }
   },

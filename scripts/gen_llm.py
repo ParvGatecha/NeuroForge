@@ -9,7 +9,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 15,
         "tags": ["tokenization", "nlp", "bpe"],
         "learning_objectives": [
@@ -54,7 +54,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 10,
         "tags": ["decoding", "generation", "sampling"],
         "learning_objectives": [
@@ -98,7 +98,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 10,
         "tags": ["prompting", "in-context-learning", "chain-of-thought"],
         "learning_objectives": [
@@ -143,7 +143,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 10,
         "tags": ["embeddings", "vector-search", "similarity"],
         "learning_objectives": [
@@ -188,7 +188,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Easy",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 10,
         "tags": ["attention-complexity", "context-window", "kv-cache"],
         "learning_objectives": [
@@ -233,7 +233,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 15,
         "tags": ["fine-tuning", "sft", "loss-masking"],
         "learning_objectives": [
@@ -278,7 +278,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 20,
         "tags": ["peft", "lora", "math"],
         "learning_objectives": [
@@ -323,7 +323,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 20,
         "tags": ["rlhf", "dpo", "alignment"],
         "learning_objectives": [
@@ -367,7 +367,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 20,
         "tags": ["quantization", "model-compression", "edge-deployment"],
         "learning_objectives": [
@@ -412,7 +412,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 20,
         "tags": ["kv-cache", "gqa", "vllm"],
         "learning_objectives": [
@@ -458,7 +458,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 15,
         "tags": ["hallucination", "self-consistency", "evaluation"],
         "learning_objectives": [
@@ -503,7 +503,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 25,
         "tags": ["flash-attention", "gpu-hardware", "tiling"],
         "learning_objectives": [
@@ -548,7 +548,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 25,
         "tags": ["speculative-decoding", "inference-acceleration", "sampling"],
         "learning_objectives": [
@@ -592,7 +592,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Medium",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 25,
         "tags": ["moe", "mixture-of-experts", "load-balancing"],
         "learning_objectives": [
@@ -637,7 +637,7 @@ def get_questions():
         "section": "LLM",
         "difficulty": "Hard",
         "question_type": "coding",
-        "neuroforge_skill": "Large Language Models",
+        "tensortrack_skill": "Large Language Models",
         "estimated_time_minutes": 25,
         "tags": ["rope", "positional-encoding", "transformers-math"],
         "learning_objectives": [

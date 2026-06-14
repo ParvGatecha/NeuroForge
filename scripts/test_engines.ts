@@ -53,7 +53,7 @@ function testRoadmapEngine() {
 }
 
 function runAllTests() {
-  console.log("Starting NeuroForge unit tests...");
+  console.log("Starting TensorTrack unit tests...");
   testXpEngine();
   testRoadmapEngine();
   console.log("\n🎉 All tests completed successfully!");

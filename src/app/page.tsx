@@ -34,7 +34,7 @@ export default function Home() {
           <div className="flex items-center gap-2">
             <GraduationCap className="h-6 w-6 text-primary" />
             <span className="bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-xl font-extrabold tracking-tight text-transparent">
-              NeuroForge
+              TensorTrack
             </span>
           </div>
           <div className="flex items-center gap-4">
@@ -70,7 +70,7 @@ export default function Home() {
                 </span>
               </h1>
               <p className="mx-auto mt-4 max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-                NeuroForge curates the best educational resources on the internet and organizes them into a guided learning path. Track your progress, build streaks, and verify objectives.
+                TensorTrack curates the best educational resources on the internet and organizes them into a guided learning path. Track your progress, build streaks, and verify objectives.
               </p>
             </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
       {/* Landing Footer */}
       <footer className="border-t border-border/40 bg-muted/20 py-8 px-4 sm:px-6 lg:px-8 text-center text-xs text-muted-foreground">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-          <span className="font-semibold">© 2026 NeuroForge. All rights reserved.</span>
+          <span className="font-semibold">© 2026 TensorTrack. All rights reserved.</span>
           <div className="flex items-center gap-4">
             <Link href="/learning-items" className="hover:underline">Learning Items</Link>
             <Link href="/dashboard" className="hover:underline">Dashboard</Link>
