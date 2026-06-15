@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://tensor-track.vercel.app',
   },
+  verification: {
+    google: '4K9KQwXmaycyqJ8k5XFxwk_4H1k2PQytG7UPj0jCDp8',
+  },
 };
 
 export default function Home() {
