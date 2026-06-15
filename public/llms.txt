@@ -1,0 +1,30 @@
+# TensorTrack
+
+> TensorTrack is a structured AI engineering learning platform that takes developers from Python basics to building production AI systems.
+
+## What it is
+A gamified, first-principles curriculum for AI engineering with XP tracking, streaks, and 100+ curated resources. Free to use.
+
+## Curriculum Tracks (in order)
+1. Python for AI — fundamentals, concurrency, async, generators
+2. Statistics & Math — probability, linear algebra, calculus for ML
+3. Classical Machine Learning — scikit-learn, supervised/unsupervised learning
+4. Deep Learning — neural networks, CNNs, RNNs, PyTorch
+5. Large Language Models — transformers, fine-tuning, RLHF, evaluation
+6. RAG Systems — vector databases, chunking, retrieval, reranking
+7. AI Agents — tool use, planning, memory, multi-agent systems
+8. System Design for AI — scalability, MLOps, deployment, monitoring
+
+## Resource Sources
+Content curated from: fast.ai, Andrej Karpathy lectures, Kaggle, Hugging Face docs, Papers with Code, RealPython, Google DeepMind research.
+
+## Target Audience
+- Software engineers transitioning into AI/ML roles
+- CS students preparing for AI engineer interviews
+- Developers who want to go beyond API wrappers to real AI engineering
+
+## URL
+https://tensor-track.vercel.app
+
+## Contact
+GitHub: https://github.com/ParvGatecha/NeuroForge

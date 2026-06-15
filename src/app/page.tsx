@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Metadata } from "next";
 import {
   GraduationCap,
   ArrowRight,
@@ -13,6 +14,14 @@ import {
   Bot,
   Sparkles,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: 'TensorTrack — AI Engineer Roadmap & Learning Platform',
+  description: 'Go from Python basics to building AI agents. TensorTrack gives you a structured, first-principles curriculum for becoming an AI engineer — with XP tracking and curated resources.',
+  alternates: {
+    canonical: 'https://tensor-track.vercel.app',
+  },
+};
 
 export default function Home() {
   const tracks = [

@@ -1,0 +1,17 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /dashboard
+
+# *
+User-agent: *
+Disallow: /api/
+
+# Host
+Host: https://tensor-track.vercel.app
+
+# Sitemaps
+Sitemap: https://tensor-track.vercel.app/sitemap.xml
