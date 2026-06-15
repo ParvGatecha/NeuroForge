@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "tsx scripts/validate_content.ts && tsx scripts/build_search_index.ts && next build",
+    "build": "tsx scripts/validate_content.ts && tsx scripts/build_search_index.ts && next build && next-sitemap",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "eslint",
