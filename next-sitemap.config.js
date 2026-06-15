@@ -7,12 +7,17 @@ module.exports = {
       { userAgent: '*', allow: '/' },
       { userAgent: '*', disallow: '/dashboard' },
       { userAgent: '*', disallow: '/api/' },
-    ],
-    additionalSitemaps: [
-      'https://tensor-track.vercel.app/sitemap.xml',
-    ],
+    ]
   },
-  exclude: ['/dashboard', '/dashboard/*', '/api/*'],
+  exclude: [
+  '/dashboard',
+  '/dashboard/*',
+  '/api/*',
+  '/admin',
+  '/login',
+  '/saved-items',
+  '/settings',
+  ],
   changefreq: 'weekly',
   priority: 0.7,
   additionalPaths: async (config) => {
