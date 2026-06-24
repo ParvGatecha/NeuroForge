@@ -160,40 +160,40 @@ This report provides a comprehensive summary of the Learning Items in the Tensor
 
 | Section | Target Count | Actual Count | Easy | Medium | Hard | Difficulty Split |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Python** | 10 | {section_counts['python']} | {difficulty_counts['python']['Easy']} | {difficulty_counts['python']['Medium']} | {difficulty_counts['python']['Hard']} | 30% / 50% / 20% |
-| **Statistics** | 15 | {section_counts['statistics']} | {difficulty_counts['statistics']['Easy']} | {difficulty_counts['statistics']['Medium']} | {difficulty_counts['statistics']['Hard']} | 33% / 47% / 20% |
-| **Machine Learning** | 20 | {section_counts['machine-learning']} | {difficulty_counts['machine-learning']['Easy']} | {difficulty_counts['machine-learning']['Medium']} | {difficulty_counts['machine-learning']['Hard']} | 30% / 50% / 20% |
-| **Deep Learning** | 15 | {section_counts['deep-learning']} | {difficulty_counts['deep-learning']['Easy']} | {difficulty_counts['deep-learning']['Medium']} | {difficulty_counts['deep-learning']['Hard']} | 33% / 47% / 20% |
-| **LLM** | 15 | {section_counts['llm']} | {difficulty_counts['llm']['Easy']} | {difficulty_counts['llm']['Medium']} | {difficulty_counts['llm']['Hard']} | 33% / 47% / 20% |
-| **RAG** | 10 | {section_counts['rag']} | {difficulty_counts['rag']['Easy']} | {difficulty_counts['rag']['Medium']} | {difficulty_counts['rag']['Hard']} | 30% / 50% / 20% |
-| **Agents** | 10 | {section_counts['agents']} | {difficulty_counts['agents']['Easy']} | {difficulty_counts['agents']['Medium']} | {difficulty_counts['agents']['Hard']} | 30% / 50% / 20% |
-| **System Design** | 5 | {section_counts['system-design']} | {difficulty_counts['system-design']['Easy']} | {difficulty_counts['system-design']['Medium']} | {difficulty_counts['system-design']['Hard']} | 20% / 60% / 20% |
-| **Total** | **100** | **{total}** | **{sum(d['Easy'] for d in difficulty_counts.values())}** | **{sum(d['Medium'] for d in difficulty_counts.values())}** | **{sum(d['Hard'] for d in difficulty_counts.values())}** | **31% / 49% / 20%** |
+| **Python** | 20 | {section_counts['python']} | {difficulty_counts['python']['Easy']} | {difficulty_counts['python']['Medium']} | {difficulty_counts['python']['Hard']} | 30% / 50% / 20% |
+| **Statistics** | 30 | {section_counts['statistics']} | {difficulty_counts['statistics']['Easy']} | {difficulty_counts['statistics']['Medium']} | {difficulty_counts['statistics']['Hard']} | 33% / 47% / 20% |
+| **Machine Learning** | 40 | {section_counts['machine-learning']} | {difficulty_counts['machine-learning']['Easy']} | {difficulty_counts['machine-learning']['Medium']} | {difficulty_counts['machine-learning']['Hard']} | 30% / 50% / 20% |
+| **Deep Learning** | 30 | {section_counts['deep-learning']} | {difficulty_counts['deep-learning']['Easy']} | {difficulty_counts['deep-learning']['Medium']} | {difficulty_counts['deep-learning']['Hard']} | 33% / 47% / 20% |
+| **LLM** | 30 | {section_counts['llm']} | {difficulty_counts['llm']['Easy']} | {difficulty_counts['llm']['Medium']} | {difficulty_counts['llm']['Hard']} | 33% / 47% / 20% |
+| **RAG** | 20 | {section_counts['rag']} | {difficulty_counts['rag']['Easy']} | {difficulty_counts['rag']['Medium']} | {difficulty_counts['rag']['Hard']} | 30% / 50% / 20% |
+| **Agents** | 20 | {section_counts['agents']} | {difficulty_counts['agents']['Easy']} | {difficulty_counts['agents']['Medium']} | {difficulty_counts['agents']['Hard']} | 30% / 50% / 20% |
+| **System Design** | 10 | {section_counts['system-design']} | {difficulty_counts['system-design']['Easy']} | {difficulty_counts['system-design']['Medium']} | {difficulty_counts['system-design']['Hard']} | 20% / 60% / 20% |
+| **Total** | **200** | **{total}** | **{sum(d['Easy'] for d in difficulty_counts.values())}** | **{sum(d['Medium'] for d in difficulty_counts.values())}** | **{sum(d['Hard'] for d in difficulty_counts.values())}** | **30% / 50% / 20%** |
 
 ## Curriculum Track Descriptions
 
-### 1. Python (10 Learning Items)
-Curated items covering memory comparison, lazy execution, function metadata preservation, dynamic decorators, async concurrency, garbage collection, and meta-class checking.
+### 1. Python (20 Learning Items)
+Curated items covering memory comparison, lazy execution, function metadata preservation, dynamic decorators, async concurrency, garbage collection, custom context managers, dataclasses, abstract base classes, descriptors, and multiprocessing performance.
 
-### 2. Statistics (15 Learning Items)
-Focuses on Skewness, probability, Bayes theorem, PDFs, CLT, MLE, MSE, FDR, and metropolis-hastings MCMC.
+### 2. Statistics (30 Learning Items)
+Focuses on Skewness, probability, Bayes theorem, PDFs, CLT, MLE, MSE, FDR, metropolis-hastings MCMC, Gibbs sampling, and covariance eigenvalues.
 
-### 3. Machine Learning (20 Learning Items)
-Covers Normal Equation regression, SGD step dynamics, Gini impurity, Bayesian hyperparameter tuning, XGBoost split math, EM algorithm, and t-SNE / UMAP dimensional reductions.
+### 3. Machine Learning (40 Learning Items)
+Covers Normal Equation regression, SGD step dynamics, Gini impurity, Bayesian hyperparameter tuning, XGBoost split math, EM algorithm, t-SNE / UMAP dimensional reductions, metric calculations, and SVMs.
 
-### 4. Deep Learning (15 Learning Items)
-Includes backpropagation gradients, SGD/Adam parameter updates, CNN layer maps, LSTM cell architectures, scaled dot-product attention queries/keys/values, and ZeRO distributed memory layers.
+### 4. Deep Learning (30 Learning Items)
+Includes backpropagation gradients, SGD/Adam parameter updates, CNN layer maps, LSTM cell architectures, scaled dot-product attention queries/keys/values, ZeRO distributed memory layers, activation implementations, and weight initializations.
 
-### 5. Large Language Models (LLM) (15 Learning Items)
-Covers BPE word tokenization, Temperature decoding logic, PEFT LoRA adapter matrices, Quantizations, FlashAttention SRAM tiling, Speculative decoding validation, and Rotary positional embeddings (RoPE).
+### 5. Large Language Models (LLM) (30 Learning Items)
+Covers BPE word tokenization, Temperature decoding logic, PEFT LoRA adapter matrices, Quantizations, FlashAttention SRAM tiling, Speculative decoding validation, Rotary positional embeddings (RoPE), beam search, top-p nucleus sampling, and evaluation scores (BLEU, ROUGE).
 
-### 6. Retrieval-Augmented Generation (RAG) (10 Learning Items)
-Includes semantic splits, HNSW vectors, hybrid searches (RRF), cross-encoder rerankers, RAGAs evaluation loops, andLost-in-the-Middle context compression.
+### 6. Retrieval-Augmented Generation (RAG) (20 Learning Items)
+Includes semantic splits, HNSW vectors, hybrid searches (RRF), cross-encoder rerankers, RAGAs evaluation loops, Lost-in-the-Middle context compression, metadata filtering, HyDE, and knowledge graphs.
 
-### 7. AI Agents (10 Learning Items)
-Covers ReAct loop executions, function call schemas, state graph routing, task decomposition, and error recoveries.
+### 7. AI Agents (20 Learning Items)
+Covers ReAct loop executions, function call schemas, state graph routing, task decomposition, memory systems, self-reflection refinement, human supervision gates, and exception-handling self-healing.
 
-### 8. System Design (5 Learning Items)
+### 8. System Design (10 Learning Items)
 Architectural case studies covering online fraud filters, low-latency LLM serving (vLLM), multi-stage recommendation pipelines, multimodal searches, and multi-agent service desks.
 """
     return markdown

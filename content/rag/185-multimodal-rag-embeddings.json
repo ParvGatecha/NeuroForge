@@ -1,0 +1,31 @@
+{
+  "id": 185,
+  "slug": "multimodal-rag-embeddings",
+  "title": "Multimodal Retrieval Systems",
+  "section": "RAG",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "multimodal",
+    "clip",
+    "rag"
+  ],
+  "learning_objectives": [
+    "Map image and text embeds to joint spaces",
+    "Execute multimodal vector queries returning mixed outputs"
+  ],
+  "description": "Deploy multimodal search services coordinating text and image inputs.",
+  "theory_resource": {
+    "title": "CLIP Multimodal Alignment Paper",
+    "url": "https://arxiv.org/abs/2103.00020",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "CLIP Similarity Search Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip"
+  },
+  "prerequisites": [
+    84
+  ]
+}

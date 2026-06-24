@@ -1,0 +1,31 @@
+{
+  "id": 143,
+  "slug": "k-fold-cross-validation",
+  "title": "K-Fold Cross-Validation Split",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "cross-validation",
+    "validation",
+    "resampling"
+  ],
+  "learning_objectives": [
+    "Partition dataset into K equal folders",
+    "Execute train/validation rotations avoiding evaluation bias"
+  ],
+  "description": "Implement rotating K-fold splits assessing parameter reliability across variable datasets.",
+  "theory_resource": {
+    "title": "Cross Validation Overview",
+    "url": "https://en.wikipedia.org/wiki/Cross-validation_(analysis)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Cross-Validation Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-cross-validation"
+  },
+  "prerequisites": [
+    34
+  ]
+}

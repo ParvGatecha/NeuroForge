@@ -1,0 +1,31 @@
+{
+  "id": 113,
+  "slug": "exponential-distribution-intervals",
+  "title": "Exponential Distribution & Wait Times",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "exponential",
+    "continuous",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Model wait time intervals between Poisson processes",
+    "Calculate memoryless continuous probability limits"
+  ],
+  "description": "Utilize continuous exponential distribution equations estimating temporal distance between events.",
+  "theory_resource": {
+    "title": "Exponential Distribution Overview",
+    "url": "https://en.wikipedia.org/wiki/Exponential_distribution",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Gaussian Probability Density Function Exercise",
+    "url": "https://deep-ml.com/problems/80"
+  },
+  "prerequisites": [
+    14
+  ]
+}

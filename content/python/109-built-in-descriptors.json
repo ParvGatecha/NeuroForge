@@ -1,0 +1,31 @@
+{
+  "id": 109,
+  "slug": "built-in-descriptors",
+  "title": "Python Property Descriptors",
+  "section": "Python",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "descriptors",
+    "properties",
+    "oop"
+  ],
+  "learning_objectives": [
+    "Define dynamic attributes using __get__ and __set__ descriptors",
+    "Encapsulate reusable validation logic across class properties"
+  ],
+  "description": "Understand how Python's descriptor protocol powers properties and custom access logic.",
+  "theory_resource": {
+    "title": "Python Functions and Docstrings",
+    "url": "https://docs.python.org/3/howto/descriptor.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Scalar Multiplication Exercise",
+    "url": "https://deep-ml.com/problems/5"
+  },
+  "prerequisites": [
+    102
+  ]
+}

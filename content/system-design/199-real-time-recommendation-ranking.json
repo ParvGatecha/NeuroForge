@@ -1,0 +1,31 @@
+{
+  "id": 199,
+  "slug": "real-time-recommendation-ranking",
+  "title": "Multi-stage Recommendation Services",
+  "section": "System Design",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "recommendations",
+    "ranking",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Structure candidates retrieval layers narrowing item pools",
+    "Run fine-grained ranking calculations to output selections"
+  ],
+  "description": "Structure retrieval and fine-grained ranking stages to build recommendation pipelines.",
+  "theory_resource": {
+    "title": "Recommender System Overview",
+    "url": "https://en.wikipedia.org/wiki/Recommender_system",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Recommender Systems Exercise",
+    "url": "https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch"
+  },
+  "prerequisites": [
+    98
+  ]
+}

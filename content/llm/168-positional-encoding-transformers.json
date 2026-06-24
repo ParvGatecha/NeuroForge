@@ -1,0 +1,31 @@
+{
+  "id": 168,
+  "slug": "positional-encoding-transformers",
+  "title": "Sinusoidal Positional Encoding",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "transformers",
+    "positional-encoding",
+    "nlp"
+  ],
+  "learning_objectives": [
+    "Formulate sinusoidal coordinates for token sequences",
+    "Incorporate positional arrays into dense token embeddings"
+  ],
+  "description": "Inject token order relationships using sinusoidal positional encoding waves.",
+  "theory_resource": {
+    "title": "Sinusoidal Positional Encoding",
+    "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning_architecture)#Positional_encoding",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Positional Encoding Exercise",
+    "url": "https://deep-ml.com/problems/47"
+  },
+  "prerequisites": [
+    168
+  ]
+}

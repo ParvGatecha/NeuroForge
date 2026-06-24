@@ -1,0 +1,31 @@
+{
+  "id": 120,
+  "slug": "conditional-expectation-variance",
+  "title": "Conditional Expectation and Variance",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "probability",
+    "expectation",
+    "variance"
+  ],
+  "learning_objectives": [
+    "Derive expectations conditioned on random variables",
+    "Apply the law of total variance on compound models"
+  ],
+  "description": "Analyze system behavior changes by measuring expectations conditioned on subset parameters.",
+  "theory_resource": {
+    "title": "Conditional Expectation Overview",
+    "url": "https://en.wikipedia.org/wiki/Conditional_expectation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Correlation Matrix Exercise",
+    "url": "https://deep-ml.com/problems/37"
+  },
+  "prerequisites": [
+    20
+  ]
+}

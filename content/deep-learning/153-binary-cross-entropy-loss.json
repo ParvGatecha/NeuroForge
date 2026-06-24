@@ -1,0 +1,31 @@
+{
+  "id": 153,
+  "slug": "binary-cross-entropy-loss",
+  "title": "Binary Cross Entropy Loss",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "loss",
+    "binary-cross-entropy",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Calculate log-loss metrics for binary classification outputs",
+    "Prevent mathematical underflows using log-sigmoid operations"
+  ],
+  "description": "Evaluate binary prediction probability variance profiles using log-loss calculations.",
+  "theory_resource": {
+    "title": "Cross Entropy Loss Overview",
+    "url": "https://en.wikipedia.org/wiki/Cross_entropy",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "BCE Loss Exercise",
+    "url": "https://deep-ml.com/problems/70"
+  },
+  "prerequisites": [
+    152
+  ]
+}

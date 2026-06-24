@@ -1,0 +1,31 @@
+{
+  "id": 115,
+  "slug": "maximum-aposteriori-estimation",
+  "title": "Maximum A Posteriori (MAP)",
+  "section": "Statistics",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "map",
+    "bayesian",
+    "estimation"
+  ],
+  "learning_objectives": [
+    "Formulate Maximum A Posteriori objective functions",
+    "Incorporate prior distributions into standard MLE formulas"
+  ],
+  "description": "Perform Bayesian point estimation integrating prior distribution constraints onto target model variables.",
+  "theory_resource": {
+    "title": "Maximum A Posteriori Overview",
+    "url": "https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Conditional Probability Exercise",
+    "url": "https://deep-ml.com/problems/85"
+  },
+  "prerequisites": [
+    114
+  ]
+}

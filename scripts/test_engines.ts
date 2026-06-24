@@ -33,19 +33,22 @@ function testRoadmapEngine() {
   console.log("Testing Roadmap Sequencing Engine...");
 
   const all = getAllLearningItems();
-  assert(all.length === 100, `Expected 100 learning items, got ${all.length}`);
+  assert(all.length === 200, `Expected 200 learning items, got ${all.length}`);
 
   const next1 = getRecommendedNextLearningItem([]);
   assert(next1 !== null && next1.id === 1, `Recommended first item should be ID 1, got ${next1?.id}`);
 
-  const completedPython = Array.from({ length: 10 }, (_, i) => i + 1);
+  const completedPython = [
+    ...Array.from({ length: 10 }, (_, i) => i + 1),
+    ...Array.from({ length: 10 }, (_, i) => i + 101)
+  ];
   const next2 = getRecommendedNextLearningItem(completedPython);
   assert(
     next2 !== null && next2.id === 11,
     `Recommended after Python should be statistics (ID 11), got ${next2?.id}`
   );
 
-  const completedAll = Array.from({ length: 100 }, (_, i) => i + 1);
+  const completedAll = Array.from({ length: 200 }, (_, i) => i + 1);
   const next3 = getRecommendedNextLearningItem(completedAll);
   assert(next3 === null, `Recommended when all completed should be null, got ${next3}`);
 

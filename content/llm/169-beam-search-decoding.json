@@ -1,0 +1,31 @@
+{
+  "id": 169,
+  "slug": "beam-search-decoding",
+  "title": "Beam Search Decoding Algorithm",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "decoding",
+    "beam-search",
+    "llm"
+  ],
+  "learning_objectives": [
+    "Track top-K probability token paths dynamically",
+    "Prune low confidence generation branches to extract predictions"
+  ],
+  "description": "Manage generation outputs by tracking top-K probability sequences using beam search pruning.",
+  "theory_resource": {
+    "title": "Beam Search Overview",
+    "url": "https://en.wikipedia.org/wiki/Beam_search",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Beam Search Exercise",
+    "url": "https://deep-ml.com/problems/89"
+  },
+  "prerequisites": [
+    62
+  ]
+}

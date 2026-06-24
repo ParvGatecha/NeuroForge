@@ -1,0 +1,31 @@
+{
+  "id": 165,
+  "slug": "tf-idf-vectorizer-scratch",
+  "title": "TF-IDF Vectorizer",
+  "section": "LLM",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "nlp",
+    "tf-idf",
+    "text-processing"
+  ],
+  "learning_objectives": [
+    "Compute term frequency values within documents",
+    "Calculate inverse document frequency weights across corpora"
+  ],
+  "description": "Implement document term weighting configurations using TF-IDF calculations.",
+  "theory_resource": {
+    "title": "TF-IDF Overview",
+    "url": "https://en.wikipedia.org/wiki/Tf%E2%85%93idf",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "TF-IDF Exercise",
+    "url": "https://deep-ml.com/problems/98"
+  },
+  "prerequisites": [
+    61
+  ]
+}

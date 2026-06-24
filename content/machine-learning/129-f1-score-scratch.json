@@ -1,0 +1,32 @@
+{
+  "id": 129,
+  "slug": "f1-score-scratch",
+  "title": "F1-Score Calculation",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "f1-score",
+    "classification"
+  ],
+  "learning_objectives": [
+    "Compute harmonic mean of precision and recall",
+    "Assess balanced classification levels under skewed distributions"
+  ],
+  "description": "Synthesize precision and recall into a single metric using the harmonic F1 equation.",
+  "theory_resource": {
+    "title": "F1 Score Overview",
+    "url": "https://en.wikipedia.org/wiki/F-score",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "F1 Score Exercise",
+    "url": "https://deep-ml.com/problems/28"
+  },
+  "prerequisites": [
+    127,
+    128
+  ]
+}

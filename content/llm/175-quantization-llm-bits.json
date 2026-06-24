@@ -1,0 +1,31 @@
+{
+  "id": 175,
+  "slug": "quantization-llm-bits",
+  "title": "LLM Model Quantization (4-bit)",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "quantization",
+    "optimization",
+    "compression"
+  ],
+  "learning_objectives": [
+    "Map continuous weight parameters to discrete 4-bit integer values",
+    "Scale weight parameters dynamically using absolute limits"
+  ],
+  "description": "Quantize float parameters to 4-bit configurations to compress model footprint.",
+  "theory_resource": {
+    "title": "ZeroQuant Optimization Paper",
+    "url": "https://arxiv.org/abs/2208.07339",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Tokenization Exercise",
+    "url": "https://www.kaggle.com/code/tuckerarrants/k-means-and-bpe-tokenization-from-scratch"
+  },
+  "prerequisites": [
+    174
+  ]
+}

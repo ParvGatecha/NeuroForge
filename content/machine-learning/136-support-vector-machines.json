@@ -1,0 +1,31 @@
+{
+  "id": 136,
+  "slug": "support-vector-machines",
+  "title": "Support Vector Machine Boundaries",
+  "section": "Machine Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "svm",
+    "classification",
+    "optimization"
+  ],
+  "learning_objectives": [
+    "Formulate hinge loss optimization limits",
+    "Design linear SVM boundaries maximizing gap sizes"
+  ],
+  "description": "Construct support vector classification boundaries maximizing margins using hinge loss equations.",
+  "theory_resource": {
+    "title": "Support Vector Machine Overview",
+    "url": "https://en.wikipedia.org/wiki/Support_vector_machine",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Hinge Loss Exercise",
+    "url": "https://deep-ml.com/problems/71"
+  },
+  "prerequisites": [
+    39
+  ]
+}

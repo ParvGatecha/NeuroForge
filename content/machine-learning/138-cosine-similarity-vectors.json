@@ -1,0 +1,31 @@
+{
+  "id": 138,
+  "slug": "cosine-similarity-vectors",
+  "title": "Cosine Similarity Metric",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "cosine-similarity",
+    "vectors"
+  ],
+  "learning_objectives": [
+    "Compute dot product angles between numeric arrays",
+    "Evaluate semantic distance measurements ignoring vector sizes"
+  ],
+  "description": "Compute vector angle orientations to assess similarity independent of magnitude metrics.",
+  "theory_resource": {
+    "title": "Cosine Similarity Overview",
+    "url": "https://en.wikipedia.org/wiki/Cosine_similarity",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Cosine Similarity Exercise",
+    "url": "https://deep-ml.com/problems/36"
+  },
+  "prerequisites": [
+    20
+  ]
+}

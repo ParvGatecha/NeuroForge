@@ -1,0 +1,31 @@
+{
+  "id": 197,
+  "slug": "distributed-training-zero",
+  "title": "ZeRO Memory Optimizations",
+  "section": "System Design",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "distributed-training",
+    "zero",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Partition training parameters, gradients, and optimizer states",
+    "Minimize network communication overheads during synchronization steps"
+  ],
+  "description": "Partition training parameters, gradients, and optimizer states to scale model training.",
+  "theory_resource": {
+    "title": "ZeRO Memory Optimization Paper",
+    "url": "https://arxiv.org/abs/1910.02054",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Recommender Systems Exercise",
+    "url": "https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch"
+  },
+  "prerequisites": [
+    98
+  ]
+}

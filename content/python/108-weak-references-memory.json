@@ -1,0 +1,31 @@
+{
+  "id": 108,
+  "slug": "weak-references-memory",
+  "title": "Weak References & Memory Optimization",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "memory-management",
+    "weakref",
+    "garbage-collection"
+  ],
+  "learning_objectives": [
+    "Prevent circular reference memory leaks using weak references",
+    "Construct clean element caches using WeakValueDictionary"
+  ],
+  "description": "Avoid reference cycles and memory leaks in large caching structures using the weakref module.",
+  "theory_resource": {
+    "title": "Python Functions and Docstrings",
+    "url": "https://docs.python.org/3/library/weakref.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Matrix Vector Product Exercise",
+    "url": "https://deep-ml.com/problems/1"
+  },
+  "prerequisites": [
+    104
+  ]
+}

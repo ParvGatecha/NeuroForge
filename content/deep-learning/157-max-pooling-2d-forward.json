@@ -1,0 +1,31 @@
+{
+  "id": 157,
+  "slug": "max-pooling-2d-forward",
+  "title": "Max Pooling 2D Forward Pass",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "cnn",
+    "pooling",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Reduce spatial map dimensions using max pools",
+    "Track maximum indices for sub-sampling gradients"
+  ],
+  "description": "Downsample feature map shapes using sliding maximum window operations.",
+  "theory_resource": {
+    "title": "Max Pooling Layer Overview",
+    "url": "https://en.wikipedia.org/wiki/Convolutional_neural_network#Pooling_layer",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Max Pooling Exercise",
+    "url": "https://deep-ml.com/problems/53"
+  },
+  "prerequisites": [
+    156
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 119,
+  "slug": "confidence-intervals-bootstrap",
+  "title": "Bootstrap Confidence Intervals",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "bootstrap",
+    "confidence-intervals",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Perform resampling with replacement on sample arrays",
+    "Calculate confidence bounds using percentile bootstrap outputs"
+  ],
+  "description": "Estimate population sample confidence metrics dynamically by computing bootsrap resampled groups.",
+  "theory_resource": {
+    "title": "Bootstrapping Overview",
+    "url": "https://en.wikipedia.org/wiki/Bootstrapping_(statistics)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Covariance Matrix Exercise",
+    "url": "https://deep-ml.com/problems/10"
+  },
+  "prerequisites": [
+    12
+  ]
+}

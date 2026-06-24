@@ -1,0 +1,31 @@
+{
+  "id": 180,
+  "slug": "query-expansion-hypothetical",
+  "title": "Query Expansion & HyDE",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "query-expansion",
+    "hyde",
+    "rag"
+  ],
+  "learning_objectives": [
+    "Generate hypothetical answer models using base prompts",
+    "Project hypothetical outputs onto vector database spaces"
+  ],
+  "description": "Expand query semantics using hypothetical answer embeddings to improve lookup rates.",
+  "theory_resource": {
+    "title": "HyDE: Hypothetical Document Embeddings Paper",
+    "url": "https://arxiv.org/abs/2212.10496",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangChain Support Bot Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag"
+  },
+  "prerequisites": [
+    77
+  ]
+}

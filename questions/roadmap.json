@@ -99,7 +99,107 @@
     "llm-serving-vllm",
     "search-recommendation-pipeline",
     "multimodal-search-clip",
-    "agentic-customer-support-desk"
+    "agentic-customer-support-desk",
+    "custom-context-managers",
+    "dataclasses-validation",
+    "abstract-base-classes",
+    "advanced-generators-send",
+    "python-multiprocessing-pool",
+    "custom-metaclasses",
+    "python-threading-locks",
+    "weak-references-memory",
+    "built-in-descriptors",
+    "functools-lru-cache",
+    "probability-distributions-pmf",
+    "poisson-distribution-events",
+    "exponential-distribution-intervals",
+    "beta-prior-distributions",
+    "maximum-aposteriori-estimation",
+    "linear-regression-t-stats",
+    "anova-multiple-comparisons",
+    "fdr-benjamini-hochberg",
+    "confidence-intervals-bootstrap",
+    "conditional-expectation-variance",
+    "central-moment-calculations",
+    "law-large-numbers-sim",
+    "chebyshev-bounds-anomaly",
+    "mcmc-gibbs-sampling",
+    "eigenvalues-covariance",
+    "train-test-split-indices",
+    "recall-metric-scratch",
+    "precision-metric-scratch",
+    "f1-score-scratch",
+    "dice-coefficient-overlap",
+    "jaccard-index-sets",
+    "gini-impurity-splits",
+    "shannon-entropy-split",
+    "principal-component-analysis",
+    "one-hot-encoding-dense",
+    "support-vector-machines",
+    "elastic-net-regularization",
+    "cosine-similarity-vectors",
+    "hierarchical-clustering-linkage",
+    "dbscan-clustering-density",
+    "adaboost-ensemble-weights",
+    "hyperparameter-grid-search",
+    "k-fold-cross-validation",
+    "feature-importance-permutation",
+    "collinearity-variance-inflation",
+    "leaky-relu-activation",
+    "sigmoid-activation-pass",
+    "softmax-activation-pass",
+    "elu-activation-pass",
+    "selu-activation-pass",
+    "l1-l2-loss-scratch",
+    "cross-entropy-loss-scratch",
+    "binary-cross-entropy-loss",
+    "huber-loss-scratch",
+    "layer-normalization-scratch",
+    "conv2d-forward-scratch",
+    "max-pooling-2d-forward",
+    "gru-cell-forward-scratch",
+    "weight-initialization-xavier",
+    "weight-initialization-he",
+    "gelu-activation-pass",
+    "hard-sigmoid-activation",
+    "hard-swish-activation",
+    "perplexity-evaluation",
+    "tf-idf-vectorizer-scratch",
+    "self-attention-scratch",
+    "multi-head-attention-layer",
+    "positional-encoding-transformers",
+    "beam-search-decoding",
+    "nucleus-sampling-top-p",
+    "temperature-scaling-logits",
+    "bleu-score-evaluation",
+    "rouge-score-evaluation",
+    "fine-tuning-lora-adapters",
+    "quantization-llm-bits",
+    "vector-db-indexing",
+    "chunking-strategies-rag",
+    "metadata-filtering-retrieval",
+    "hybrid-search-sparse-dense",
+    "query-expansion-hypothetical",
+    "reranking-cross-encoders",
+    "context-compression-filtering",
+    "rag-context-precision-recall",
+    "graph-rag-knowledge",
+    "multimodal-rag-embeddings",
+    "react-agent-loop",
+    "tool-calling-llm",
+    "multi-agent-orchestration",
+    "agentic-state-graphs",
+    "task-decomposition-agents",
+    "self-reflection-refinement",
+    "agentic-memory-systems",
+    "human-in-the-loop-agents",
+    "agent-error-recovery",
+    "web-scraping-agents",
+    "low-latency-serving-pipelines",
+    "distributed-training-zero",
+    "multimodal-search-clip-deployment",
+    "real-time-recommendation-ranking",
+    "agentic-desk-scalability"
   ],
   "prerequisites": {
     "1": [],
@@ -402,6 +502,310 @@
     "100": [
       95,
       85
+    ],
+    "101": [
+      1
+    ],
+    "102": [
+      4
+    ],
+    "103": [
+      8
+    ],
+    "104": [
+      101
+    ],
+    "105": [
+      9
+    ],
+    "106": [
+      103
+    ],
+    "107": [
+      10
+    ],
+    "108": [
+      104
+    ],
+    "109": [
+      102
+    ],
+    "110": [
+      2
+    ],
+    "111": [
+      11
+    ],
+    "112": [
+      24
+    ],
+    "113": [
+      14
+    ],
+    "114": [
+      13
+    ],
+    "115": [
+      114
+    ],
+    "116": [
+      23,
+      17
+    ],
+    "117": [
+      19
+    ],
+    "118": [
+      18
+    ],
+    "119": [
+      12
+    ],
+    "120": [
+      20
+    ],
+    "121": [
+      15
+    ],
+    "122": [
+      15
+    ],
+    "123": [
+      12
+    ],
+    "124": [
+      13
+    ],
+    "125": [
+      25
+    ],
+    "126": [
+      28
+    ],
+    "127": [
+      28
+    ],
+    "128": [
+      28
+    ],
+    "129": [
+      127,
+      128
+    ],
+    "130": [
+      129
+    ],
+    "131": [
+      130
+    ],
+    "132": [
+      44
+    ],
+    "133": [
+      132
+    ],
+    "134": [
+      42,
+      25
+    ],
+    "135": [
+      32
+    ],
+    "136": [
+      39
+    ],
+    "137": [
+      40,
+      41
+    ],
+    "138": [
+      20
+    ],
+    "139": [
+      43
+    ],
+    "140": [
+      139
+    ],
+    "141": [
+      30
+    ],
+    "142": [
+      34
+    ],
+    "143": [
+      34
+    ],
+    "144": [
+      27
+    ],
+    "145": [
+      37
+    ],
+    "146": [
+      46
+    ],
+    "147": [
+      46
+    ],
+    "148": [
+      47
+    ],
+    "149": [
+      146
+    ],
+    "150": [
+      149
+    ],
+    "151": [
+      48
+    ],
+    "152": [
+      51
+    ],
+    "153": [
+      152
+    ],
+    "154": [
+      151
+    ],
+    "155": [
+      59
+    ],
+    "156": [
+      52
+    ],
+    "157": [
+      156
+    ],
+    "158": [
+      60
+    ],
+    "159": [
+      56
+    ],
+    "160": [
+      159
+    ],
+    "161": [
+      63
+    ],
+    "162": [
+      147
+    ],
+    "163": [
+      64
+    ],
+    "164": [
+      62
+    ],
+    "165": [
+      61
+    ],
+    "166": [
+      57
+    ],
+    "167": [
+      166
+    ],
+    "168": [
+      168
+    ],
+    "169": [
+      62
+    ],
+    "170": [
+      62
+    ],
+    "171": [
+      62
+    ],
+    "172": [
+      164
+    ],
+    "173": [
+      172
+    ],
+    "174": [
+      167
+    ],
+    "175": [
+      174
+    ],
+    "176": [
+      76
+    ],
+    "177": [
+      176
+    ],
+    "178": [
+      76
+    ],
+    "179": [
+      78
+    ],
+    "180": [
+      77
+    ],
+    "181": [
+      79
+    ],
+    "182": [
+      81
+    ],
+    "183": [
+      80
+    ],
+    "184": [
+      181
+    ],
+    "185": [
+      84
+    ],
+    "186": [
+      86
+    ],
+    "187": [
+      87
+    ],
+    "188": [
+      89
+    ],
+    "189": [
+      88
+    ],
+    "190": [
+      90
+    ],
+    "191": [
+      91
+    ],
+    "192": [
+      92
+    ],
+    "193": [
+      93
+    ],
+    "194": [
+      94
+    ],
+    "195": [
+      95
+    ],
+    "196": [
+      97
+    ],
+    "197": [
+      98
+    ],
+    "198": [
+      99
+    ],
+    "199": [
+      98
+    ],
+    "200": [
+      100
     ]
   },
   "section_dependencies": {

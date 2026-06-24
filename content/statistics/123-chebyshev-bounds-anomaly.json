@@ -1,0 +1,31 @@
+{
+  "id": 123,
+  "slug": "chebyshev-bounds-anomaly",
+  "title": "Chebyshev's Inequality Bounds",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "chebyshev",
+    "inequality",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Determine upper probability bounds for deviations from means",
+    "Apply Chebyshev rules for anomaly detection without assumption of normality"
+  ],
+  "description": "Derive absolute probability bounds for variable variance deviations on non-normal distributions.",
+  "theory_resource": {
+    "title": "Chebyshev's Inequality Overview",
+    "url": "https://en.wikipedia.org/wiki/Chebyshev%27s_inequality",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Chebyshev Inequality Exercise",
+    "url": "https://deep-ml.com/problems/83"
+  },
+  "prerequisites": [
+    12
+  ]
+}

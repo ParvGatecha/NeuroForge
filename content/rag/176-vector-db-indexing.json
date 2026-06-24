@@ -1,0 +1,31 @@
+{
+  "id": 176,
+  "slug": "vector-db-indexing",
+  "title": "Vector DB Indexing Concepts",
+  "section": "RAG",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "vector-db",
+    "rag",
+    "hnsw"
+  ],
+  "learning_objectives": [
+    "Explain difference between flat, IVF, and HNSW indexes",
+    "Select indexing configurations balancing retrieval latency and recall limits"
+  ],
+  "description": "Explore flat, IVF, and HNSW index formats balancing search speed and accuracy.",
+  "theory_resource": {
+    "title": "Vector Database Indexing Overview",
+    "url": "https://en.wikipedia.org/wiki/Vector_database",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "CLIP Similarity Search Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip"
+  },
+  "prerequisites": [
+    76
+  ]
+}

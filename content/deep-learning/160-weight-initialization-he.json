@@ -1,0 +1,31 @@
+{
+  "id": 160,
+  "slug": "weight-initialization-he",
+  "title": "He/Kaiming Weight Initialization",
+  "section": "Deep Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "initialization",
+    "he-init",
+    "kaiming"
+  ],
+  "learning_objectives": [
+    "Formulate initialization scaling parameters for ReLU units",
+    "Prevent activation saturation using Kaiming scaling bounds"
+  ],
+  "description": "Initialize model parameters using Kaiming scaling profiles tailored for ReLU layers.",
+  "theory_resource": {
+    "title": "Kaiming Initialization Overview",
+    "url": "https://en.wikipedia.org/wiki/He_initialization",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Kaiming Initialization Exercise",
+    "url": "https://deep-ml.com/problems/77"
+  },
+  "prerequisites": [
+    159
+  ]
+}

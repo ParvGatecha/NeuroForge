@@ -1,0 +1,32 @@
+{
+  "id": 134,
+  "slug": "principal-component-analysis",
+  "title": "Principal Component Analysis (PCA)",
+  "section": "Machine Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "pca",
+    "dimensionality-reduction",
+    "linear-algebra"
+  ],
+  "learning_objectives": [
+    "Center high dimensional data profiles",
+    "Project parameters onto principal covariance components"
+  ],
+  "description": "Implement linear dimensionality reduction models projecting records onto variance direction paths.",
+  "theory_resource": {
+    "title": "Principal Component Analysis Overview",
+    "url": "https://en.wikipedia.org/wiki/Principal_component_analysis",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "PCA Exercise",
+    "url": "https://deep-ml.com/problems/19"
+  },
+  "prerequisites": [
+    42,
+    25
+  ]
+}

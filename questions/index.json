@@ -1,18 +1,18 @@
 {
-  "total_questions": 100,
+  "total_questions": 200,
   "section_counts": {
-    "Python": 10,
-    "Statistics": 15,
-    "Machine Learning": 20,
-    "Deep Learning": 15,
-    "LLM": 15,
-    "RAG": 10,
-    "Agents": 10,
-    "System Design": 5
+    "Python": 20,
+    "Statistics": 30,
+    "Machine Learning": 40,
+    "Deep Learning": 30,
+    "LLM": 30,
+    "RAG": 20,
+    "Agents": 20,
+    "System Design": 10
   },
   "difficulty_counts": {
-    "Easy": 30,
-    "Medium": 50,
-    "Hard": 20
+    "Easy": 60,
+    "Medium": 100,
+    "Hard": 40
   }
 }

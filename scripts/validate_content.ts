@@ -60,8 +60,8 @@ function main() {
 
   console.log(`Found ${jsonFiles.length} learning item files to validate.`);
   
-  if (jsonFiles.length !== 100) {
-    console.warn(`Warning: Expected exactly 100 learning items, found ${jsonFiles.length}.`);
+  if (jsonFiles.length !== 200) {
+    console.warn(`Warning: Expected exactly 200 learning items, found ${jsonFiles.length}.`);
   }
 
   let errorsCount = 0;

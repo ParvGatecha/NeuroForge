@@ -1,0 +1,31 @@
+{
+  "id": 195,
+  "slug": "web-scraping-agents",
+  "title": "Autonomous Web Navigating Agents",
+  "section": "Agents",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "web-browsing",
+    "scraping",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Navigate DOM trees selecting interactive nodes",
+    "Execute browser click and input actions dynamically"
+  ],
+  "description": "Control headless browsers autonomously using DOM interaction schemas.",
+  "theory_resource": {
+    "title": "Playwright Automation API",
+    "url": "https://playwright.dev/python/docs/intro",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    95
+  ]
+}

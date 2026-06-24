@@ -1,0 +1,31 @@
+{
+  "id": 184,
+  "slug": "graph-rag-knowledge",
+  "title": "Graph RAG & Knowledge Graphs",
+  "section": "RAG",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "graph-rag",
+    "knowledge-graph",
+    "rag"
+  ],
+  "learning_objectives": [
+    "Combine entity relations into graph structures",
+    "Query relational entity graphs to contextualize prompts"
+  ],
+  "description": "Integrate entity-relationship graphs to enhance RAG systems with relational facts.",
+  "theory_resource": {
+    "title": "From Local to Global: Graph RAG Paper",
+    "url": "https://arxiv.org/abs/2404.16130",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "CLIP Similarity Search Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip"
+  },
+  "prerequisites": [
+    181
+  ]
+}

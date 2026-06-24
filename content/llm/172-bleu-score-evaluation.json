@@ -1,0 +1,31 @@
+{
+  "id": 172,
+  "slug": "bleu-score-evaluation",
+  "title": "BLEU Evaluation Metric",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "nlp",
+    "metrics",
+    "bleu"
+  ],
+  "learning_objectives": [
+    "Compute n-gram precision overlaps between texts",
+    "Apply brevity penalty adjustments on short model translations"
+  ],
+  "description": "Evaluate translation generation accuracy by computing n-gram overlap BLEU scores.",
+  "theory_resource": {
+    "title": "BLEU Metric Overview",
+    "url": "https://en.wikipedia.org/wiki/BLEU",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "BLEU Score Exercise",
+    "url": "https://deep-ml.com/problems/97"
+  },
+  "prerequisites": [
+    164
+  ]
+}

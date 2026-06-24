@@ -1,0 +1,31 @@
+{
+  "id": 135,
+  "slug": "one-hot-encoding-dense",
+  "title": "One-Hot Encoding Implementation",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "feature-engineering",
+    "one-hot",
+    "preprocessing"
+  ],
+  "learning_objectives": [
+    "Map categorical string entries to binary arrays",
+    "Manage vocabulary indexes dynamically avoiding overlaps"
+  ],
+  "description": "Convert categorical data lists into sparse binary representation blocks.",
+  "theory_resource": {
+    "title": "One-Hot Encoding Overview",
+    "url": "https://en.wikipedia.org/wiki/One-hot",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "One-Hot Encoding Exercise",
+    "url": "https://deep-ml.com/problems/21"
+  },
+  "prerequisites": [
+    32
+  ]
+}

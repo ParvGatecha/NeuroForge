@@ -1,0 +1,31 @@
+{
+  "id": 162,
+  "slug": "hard-sigmoid-activation",
+  "title": "Hard Sigmoid Activation Function",
+  "section": "LLM",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "hard-sigmoid",
+    "llm"
+  ],
+  "learning_objectives": [
+    "Compute piece-wise linear approximation of sigmoid",
+    "Optimize runtime execution using hard-sigmoid parameters"
+  ],
+  "description": "Implement piece-wise linear hard sigmoid activation paths optimized for compute savings.",
+  "theory_resource": {
+    "title": "Hard Sigmoid Activation Overview",
+    "url": "https://en.wikipedia.org/wiki/Hard_sigmoid",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Hard Sigmoid Exercise",
+    "url": "https://deep-ml.com/problems/103"
+  },
+  "prerequisites": [
+    147
+  ]
+}

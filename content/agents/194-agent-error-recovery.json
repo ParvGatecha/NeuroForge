@@ -1,0 +1,31 @@
+{
+  "id": 194,
+  "slug": "agent-error-recovery",
+  "title": "Error Recovery & Self-Healing",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "error-recovery",
+    "resilience",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Catch and log tool execution exceptions",
+    "Generate recovery strategies resolving task errors dynamically"
+  ],
+  "description": "Enable autonomous error recovery loops to debug and fix execution failures.",
+  "theory_resource": {
+    "title": "Exception Handling Design Patterns",
+    "url": "https://en.wikipedia.org/wiki/Exception_handling",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    94
+  ]
+}

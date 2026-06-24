@@ -1,0 +1,31 @@
+{
+  "id": 132,
+  "slug": "gini-impurity-splits",
+  "title": "Gini Impurity Calculation",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "decision-trees",
+    "gini",
+    "machine-learning"
+  ],
+  "learning_objectives": [
+    "Calculate subgroup label distributions",
+    "Compute Gini impurity levels across partition branches"
+  ],
+  "description": "Calculate split group label distributions using Gini impurity math models.",
+  "theory_resource": {
+    "title": "Decision Tree Gini Index",
+    "url": "https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Gini Impurity Exercise",
+    "url": "https://deep-ml.com/problems/32"
+  },
+  "prerequisites": [
+    44
+  ]
+}

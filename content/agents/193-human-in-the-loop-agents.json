@@ -1,0 +1,31 @@
+{
+  "id": 193,
+  "slug": "human-in-the-loop-agents",
+  "title": "Human-in-the-Loop Supervision",
+  "section": "Agents",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "hitl",
+    "safety",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Interrupt execution graph steps requesting approvals",
+    "Accept human instructions to adjust path directions"
+  ],
+  "description": "Establish human feedback gates to approve or adjust agent action steps.",
+  "theory_resource": {
+    "title": "Human in the Loop Design Principles",
+    "url": "https://en.wikipedia.org/wiki/Human-in-the-loop",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    93
+  ]
+}

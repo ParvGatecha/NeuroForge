@@ -1,0 +1,31 @@
+{
+  "id": 133,
+  "slug": "shannon-entropy-split",
+  "title": "Shannon Entropy Calculation",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "decision-trees",
+    "entropy",
+    "machine-learning"
+  ],
+  "learning_objectives": [
+    "Compute information entropy limits of classification trees",
+    "Determine split information gains based on Shannon metrics"
+  ],
+  "description": "Compute partition entropy and details information gains to optimize decision tree splits.",
+  "theory_resource": {
+    "title": "Shannon Entropy Overview",
+    "url": "https://en.wikipedia.org/wiki/Entropy_(information_theory)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Shannon Entropy Exercise",
+    "url": "https://deep-ml.com/problems/33"
+  },
+  "prerequisites": [
+    132
+  ]
+}

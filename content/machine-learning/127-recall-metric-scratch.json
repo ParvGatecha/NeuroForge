@@ -1,0 +1,31 @@
+{
+  "id": 127,
+  "slug": "recall-metric-scratch",
+  "title": "Recall Metric Calculation",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "recall",
+    "classification"
+  ],
+  "learning_objectives": [
+    "Formulate positive detection ratios relative to ground truth",
+    "Examine true positive vs false negative counts across classification maps"
+  ],
+  "description": "Assess model ability to capture positive instances using ground truth comparisons.",
+  "theory_resource": {
+    "title": "Precision and Recall Overview",
+    "url": "https://en.wikipedia.org/wiki/Precision_and_recall",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Recall Metric Exercise",
+    "url": "https://deep-ml.com/problems/29"
+  },
+  "prerequisites": [
+    28
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 158,
+  "slug": "gru-cell-forward-scratch",
+  "title": "GRU Cell Forward Pass",
+  "section": "Deep Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "rnn",
+    "gru",
+    "sequence-modeling"
+  ],
+  "learning_objectives": [
+    "Compute reset and update gate operations",
+    "Manage state transitions through gate configurations"
+  ],
+  "description": "Implement gated recurrent unit update logic resolving temporal dependencies.",
+  "theory_resource": {
+    "title": "Gated Recurrent Unit Overview",
+    "url": "https://en.wikipedia.org/wiki/Gated_recurrent_unit",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "GRU Forward Exercise",
+    "url": "https://deep-ml.com/problems/56"
+  },
+  "prerequisites": [
+    60
+  ]
+}

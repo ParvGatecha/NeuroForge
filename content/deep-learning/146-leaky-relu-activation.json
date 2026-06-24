@@ -1,0 +1,31 @@
+{
+  "id": 146,
+  "slug": "leaky-relu-activation",
+  "title": "Leaky ReLU Activation Function",
+  "section": "Deep Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "leaky-relu",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Implement forward pass using leaky scaling coefficients",
+    "Derive step backpropagation derivatives mapping positive/negative bounds"
+  ],
+  "description": "Implement Leaky ReLU activation functions to mitigate vanishing gradients in negative bounds.",
+  "theory_resource": {
+    "title": "Leaky ReLU Activation",
+    "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#Leaky_ReLU",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Leaky ReLU Exercise",
+    "url": "https://deep-ml.com/problems/26"
+  },
+  "prerequisites": [
+    46
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 198,
+  "slug": "multimodal-search-clip-deployment",
+  "title": "Deploying CLIP Vector Databases",
+  "section": "System Design",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "clip",
+    "multimodal-search",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Deploy image-text vector databases utilizing CLIP models",
+    "Minimize query latency using IVFFlat vector index partitions"
+  ],
+  "description": "Deploy image-text vector databases using CLIP models to power multimodal search.",
+  "theory_resource": {
+    "title": "CLIP Contrastive Model Paper",
+    "url": "https://arxiv.org/abs/2103.00020",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "CLIP Image Similarity Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip"
+  },
+  "prerequisites": [
+    99
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 159,
+  "slug": "weight-initialization-xavier",
+  "title": "Xavier/Glorot Weight Initialization",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "initialization",
+    "xavier",
+    "glorot"
+  ],
+  "learning_objectives": [
+    "Calculate fan-in and fan-out parameters of model layers",
+    "Sample weights dynamically maintaining variance limits across inputs"
+  ],
+  "description": "Initialize layer weights using Xavier scaling variance bounds to prevent saturation.",
+  "theory_resource": {
+    "title": "Xavier Initialization Overview",
+    "url": "https://en.wikipedia.org/wiki/He_initialization",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Xavier Initialization Exercise",
+    "url": "https://deep-ml.com/problems/76"
+  },
+  "prerequisites": [
+    56
+  ]
+}

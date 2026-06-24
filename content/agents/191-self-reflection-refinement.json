@@ -1,0 +1,31 @@
+{
+  "id": 191,
+  "slug": "self-reflection-refinement",
+  "title": "Agent Self-Reflection & Feedback",
+  "section": "Agents",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "self-reflection",
+    "refinement",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Analyze execution outputs seeking errors",
+    "Refine generation attempts using self-criticism logs"
+  ],
+  "description": "Build self-reflection loops allowing agents to critique and fix their own outputs.",
+  "theory_resource": {
+    "title": "Reflexion: Language Agents with Memory Paper",
+    "url": "https://arxiv.org/abs/2303.11366",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    91
+  ]
+}

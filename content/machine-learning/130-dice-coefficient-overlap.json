@@ -1,0 +1,31 @@
+{
+  "id": 130,
+  "slug": "dice-coefficient-overlap",
+  "title": "Dice Similarity Coefficient",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "dice-coefficient",
+    "similarity"
+  ],
+  "learning_objectives": [
+    "Formulate overlapping bounds between target sets",
+    "Map segmentation prediction groups to visual mask records"
+  ],
+  "description": "Measure overlapping area size differences across target masks using Dice similarity equations.",
+  "theory_resource": {
+    "title": "Dice Similarity Coefficient Overview",
+    "url": "https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Dice Coefficient Exercise",
+    "url": "https://deep-ml.com/problems/34"
+  },
+  "prerequisites": [
+    129
+  ]
+}

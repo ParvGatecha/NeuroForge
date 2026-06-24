@@ -1,0 +1,31 @@
+{
+  "id": 140,
+  "slug": "dbscan-clustering-density",
+  "title": "DBSCAN Density-Based Clustering",
+  "section": "Machine Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "clustering",
+    "dbscan",
+    "unsupervised"
+  ],
+  "learning_objectives": [
+    "Differentiate core, border, and noise samples in DBSCAN",
+    "Implement range query algorithms searching density groupings"
+  ],
+  "description": "Identify dense spatial cluster groupings mapping outlier points to custom noise classes.",
+  "theory_resource": {
+    "title": "DBSCAN Clustering Overview",
+    "url": "https://en.wikipedia.org/wiki/DBSCAN",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Random Forests Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-random-forests"
+  },
+  "prerequisites": [
+    139
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 116,
+  "slug": "linear-regression-t-stats",
+  "title": "T-Statistics in Linear Regression",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "t-test",
+    "regression",
+    "inference"
+  ],
+  "learning_objectives": [
+    "Calculate regression coefficient standard errors",
+    "Verify significance of linear predictors using t-statistics"
+  ],
+  "description": "Validate linear coefficient fit significance using standard errors and t-distribution mappings.",
+  "theory_resource": {
+    "title": "T-Statistic Overview",
+    "url": "https://en.wikipedia.org/wiki/T-statistic",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Coefficient of Determination Exercise",
+    "url": "https://deep-ml.com/problems/69"
+  },
+  "prerequisites": [
+    23,
+    17
+  ]
+}

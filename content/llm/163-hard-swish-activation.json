@@ -1,0 +1,31 @@
+{
+  "id": 163,
+  "slug": "hard-swish-activation",
+  "title": "Hard Swish Activation Function",
+  "section": "LLM",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "hard-swish",
+    "llm"
+  ],
+  "learning_objectives": [
+    "Formulate linear approximations of Swish activations",
+    "Compute backpropagation step gradients across linear boundary points"
+  ],
+  "description": "Implement piece-wise linear hard swish activations to reduce runtime computing overhead.",
+  "theory_resource": {
+    "title": "Hard Swish Function Overview",
+    "url": "https://en.wikipedia.org/wiki/Swish_function#Hard_Swish",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Hard Swish Exercise",
+    "url": "https://deep-ml.com/problems/104"
+  },
+  "prerequisites": [
+    64
+  ]
+}

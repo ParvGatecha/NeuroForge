@@ -1,0 +1,31 @@
+{
+  "id": 145,
+  "slug": "collinearity-variance-inflation",
+  "title": "Variance Inflation Factor (VIF)",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "multicollinearity",
+    "regression",
+    "vif"
+  ],
+  "learning_objectives": [
+    "Identify multicollinear relationships in predictor matrices",
+    "Calculate coefficient variance inflation factor limits"
+  ],
+  "description": "Compute VIF coefficients identifying collinear features to prevent linear overfit.",
+  "theory_resource": {
+    "title": "Variance Inflation Factor Overview",
+    "url": "https://en.wikipedia.org/wiki/Variance_inflation_factor",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Linear Regression Normal Equation Exercise",
+    "url": "https://deep-ml.com/problems/14"
+  },
+  "prerequisites": [
+    37
+  ]
+}

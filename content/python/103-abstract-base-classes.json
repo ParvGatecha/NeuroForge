@@ -1,0 +1,31 @@
+{
+  "id": 103,
+  "slug": "abstract-base-classes",
+  "title": "Abstract Base Classes (ABCs)",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "oop",
+    "abc",
+    "inheritance"
+  ],
+  "learning_objectives": [
+    "Define interfaces using Abstract Base Classes",
+    "Enforce method implementation in child subclasses"
+  ],
+  "description": "Design robust interfaces and enforce code patterns in downstream classes using abc.",
+  "theory_resource": {
+    "title": "Python Functions and Docstrings",
+    "url": "https://docs.python.org/3/library/abc.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Working with External Libraries Exercise",
+    "url": "https://www.kaggle.com/code/residentmario/exercise-creating-reading-and-writing"
+  },
+  "prerequisites": [
+    8
+  ]
+}

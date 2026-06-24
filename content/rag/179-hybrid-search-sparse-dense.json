@@ -1,0 +1,31 @@
+{
+  "id": 179,
+  "slug": "hybrid-search-sparse-dense",
+  "title": "Hybrid Search (Sparse + Dense)",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "hybrid-search",
+    "bm25",
+    "dense-vector"
+  ],
+  "learning_objectives": [
+    "Combine BM25 sparse matches and dense vector outputs",
+    "Recalibrate joint ranking lists using Reciprocal Rank Fusion (RRF)"
+  ],
+  "description": "Combine BM25 keyword matches and dense vector matches using Reciprocal Rank Fusion.",
+  "theory_resource": {
+    "title": "Hybrid Search Architectures",
+    "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangChain Support Bot Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag"
+  },
+  "prerequisites": [
+    78
+  ]
+}

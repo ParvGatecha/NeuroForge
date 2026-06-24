@@ -1,0 +1,31 @@
+{
+  "id": 104,
+  "slug": "advanced-generators-send",
+  "title": "Advanced Generators & Coroutines",
+  "section": "Python",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "generators",
+    "coroutines",
+    "concurrency"
+  ],
+  "learning_objectives": [
+    "Pass data into generators using the send() method",
+    "Manage stateful generator execution loops"
+  ],
+  "description": "Control execution flow and pass values back into a running generator stream using .send().",
+  "theory_resource": {
+    "title": "Python Modules and Packages",
+    "url": "https://realpython.com/introduction-to-python-generators/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Softmax Activation Function Exercise",
+    "url": "https://deep-ml.com/problems/11"
+  },
+  "prerequisites": [
+    101
+  ]
+}

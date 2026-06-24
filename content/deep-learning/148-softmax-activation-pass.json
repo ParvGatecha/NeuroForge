@@ -1,0 +1,31 @@
+{
+  "id": 148,
+  "slug": "softmax-activation-pass",
+  "title": "Softmax Activation Function",
+  "section": "Deep Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "softmax",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Calculate logit exponents across classification parameters",
+    "Normalize outputs into a sum-to-one probability vector"
+  ],
+  "description": "Construct standard Softmax activation layers normalizing logits into multi-class probability outputs.",
+  "theory_resource": {
+    "title": "Softmax Activation Overview",
+    "url": "https://en.wikipedia.org/wiki/Softmax_function",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Softmax Activation Exercise",
+    "url": "https://deep-ml.com/problems/23"
+  },
+  "prerequisites": [
+    47
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 151,
+  "slug": "l1-l2-loss-scratch",
+  "title": "L1 and L2 Loss Functions",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "loss",
+    "l1-loss",
+    "l2-loss"
+  ],
+  "learning_objectives": [
+    "Implement Mean Absolute and Mean Squared Error losses",
+    "Derive gradients for linear optimization steps"
+  ],
+  "description": "Calculate and optimize L1 absolute error and L2 squared error loss profiles.",
+  "theory_resource": {
+    "title": "Loss Functions Overview",
+    "url": "https://en.wikipedia.org/wiki/Loss_functions_for_classification",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "MSE Loss Exercise",
+    "url": "https://deep-ml.com/problems/67"
+  },
+  "prerequisites": [
+    48
+  ]
+}

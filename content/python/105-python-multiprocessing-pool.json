@@ -1,0 +1,31 @@
+{
+  "id": 105,
+  "slug": "python-multiprocessing-pool",
+  "title": "Multiprocessing & Parallel Execution",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "multiprocessing",
+    "parallelism",
+    "performance"
+  ],
+  "learning_objectives": [
+    "Bypass the GIL using the multiprocessing module",
+    "Distribute work across CPU cores with Pool.map"
+  ],
+  "description": "Bypass Python's Global Interpreter Lock (GIL) by distributing compute-heavy work across processes.",
+  "theory_resource": {
+    "title": "Python Functions and Docstrings",
+    "url": "https://docs.python.org/3/library/multiprocessing.html",
+    "type": "documentation"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Working with External Libraries Exercise",
+    "url": "https://www.kaggle.com/code/residentmario/exercise-indexing-selecting-assigning"
+  },
+  "prerequisites": [
+    9
+  ]
+}

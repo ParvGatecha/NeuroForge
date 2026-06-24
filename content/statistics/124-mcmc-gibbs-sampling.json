@@ -1,0 +1,31 @@
+{
+  "id": 124,
+  "slug": "mcmc-gibbs-sampling",
+  "title": "Gibbs Sampling in MCMC",
+  "section": "Statistics",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "mcmc",
+    "gibbs-sampling",
+    "bayesian"
+  ],
+  "learning_objectives": [
+    "Perform multidimensional variable updates iteratively",
+    "Analyze conditional updates mapping complex joint probability topologies"
+  ],
+  "description": "Implement multi-variable sampling algorithms sequentially using conditional coordinate update sequences.",
+  "theory_resource": {
+    "title": "Gibbs Sampling Overview",
+    "url": "https://en.wikipedia.org/wiki/Gibbs_sampling",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Markov Chains Exercise",
+    "url": "https://deep-ml.com/problems/132"
+  },
+  "prerequisites": [
+    13
+  ]
+}

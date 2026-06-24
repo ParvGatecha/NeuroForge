@@ -1,0 +1,31 @@
+{
+  "id": 186,
+  "slug": "react-agent-loop",
+  "title": "ReAct Agent Loop Execution",
+  "section": "Agents",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "react",
+    "agents",
+    "reasoning"
+  ],
+  "learning_objectives": [
+    "Structure prompt sequences generating reasoning thoughts",
+    "Execute actions and observe results iteratively"
+  ],
+  "description": "Implement ReAct agent loops alternating reasoning steps with tool execution actions.",
+  "theory_resource": {
+    "title": "ReAct: Synergizing Reasoning and Acting Paper",
+    "url": "https://arxiv.org/abs/2210.03629",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    86
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 147,
+  "slug": "sigmoid-activation-pass",
+  "title": "Sigmoid Activation Function",
+  "section": "Deep Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "sigmoid",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Evaluate logistic curves mapping values to probability bounds",
+    "Derive sigmoid gradient maps based on output parameters"
+  ],
+  "description": "Implement the sigmoid activation function to map linear inputs onto probability values.",
+  "theory_resource": {
+    "title": "Sigmoid Function Overview",
+    "url": "https://en.wikipedia.org/wiki/Sigmoid_function",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Sigmoid Activation Exercise",
+    "url": "https://deep-ml.com/problems/22"
+  },
+  "prerequisites": [
+    46
+  ]
+}

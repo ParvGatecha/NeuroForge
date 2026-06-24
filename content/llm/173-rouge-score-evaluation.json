@@ -1,0 +1,31 @@
+{
+  "id": 173,
+  "slug": "rouge-score-evaluation",
+  "title": "ROUGE Evaluation Metric",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "nlp",
+    "metrics",
+    "rouge"
+  ],
+  "learning_objectives": [
+    "Calculate n-gram recall overlaps on summaries",
+    "Evaluate summary predictions using longest common subsequence lengths"
+  ],
+  "description": "Assess summary generation coverage using n-gram overlap ROUGE recall metrics.",
+  "theory_resource": {
+    "title": "ROUGE Metric Overview",
+    "url": "https://en.wikipedia.org/wiki/ROUGE_(metric)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "ROUGE Score Exercise",
+    "url": "https://deep-ml.com/problems/96"
+  },
+  "prerequisites": [
+    172
+  ]
+}

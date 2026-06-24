@@ -1,0 +1,31 @@
+{
+  "id": 150,
+  "slug": "selu-activation-pass",
+  "title": "SELU Activation Function",
+  "section": "Deep Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "selu",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Apply scale/alpha parameters forcing self-normalizing state updates",
+    "Derive SELU activation gradients for backpropagation checks"
+  ],
+  "description": "Implement SELU activation functions to enable self-normalizing neural network steps.",
+  "theory_resource": {
+    "title": "SELU Activation Overview",
+    "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#SELU",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "SELU Activation Exercise",
+    "url": "https://deep-ml.com/problems/101"
+  },
+  "prerequisites": [
+    149
+  ]
+}

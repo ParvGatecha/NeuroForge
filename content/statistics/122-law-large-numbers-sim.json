@@ -1,0 +1,31 @@
+{
+  "id": 122,
+  "slug": "law-large-numbers-sim",
+  "title": "Law of Large Numbers Simulation",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "lln",
+    "limits",
+    "simulation"
+  ],
+  "learning_objectives": [
+    "Explain difference between weak and strong LLN",
+    "Simulate sampling averages converging to expected means"
+  ],
+  "description": "Simulate and verify sample average convergence patterns towards mathematical expected value limits.",
+  "theory_resource": {
+    "title": "Law of Large Numbers Overview",
+    "url": "https://en.wikipedia.org/wiki/Law_of_large_numbers",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Law of Large Numbers Exercise",
+    "url": "https://deep-ml.com/problems/82"
+  },
+  "prerequisites": [
+    15
+  ]
+}

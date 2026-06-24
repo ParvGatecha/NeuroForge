@@ -1,0 +1,31 @@
+{
+  "id": 174,
+  "slug": "fine-tuning-lora-adapters",
+  "title": "LoRA Adapter Weight Matrices",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "peft",
+    "lora",
+    "fine-tuning"
+  ],
+  "learning_objectives": [
+    "Design low-rank weight update matrices A and B",
+    "Inject parameter updates into model layers minimizing tuning memory footprint"
+  ],
+  "description": "Train low-rank adapter matrices to update weights without modifying base model parameters.",
+  "theory_resource": {
+    "title": "LoRA: Low-Rank Adaptation Paper",
+    "url": "https://arxiv.org/abs/2106.09685",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Tokenization Exercise",
+    "url": "https://www.kaggle.com/code/tuckerarrants/k-means-and-bpe-tokenization-from-scratch"
+  },
+  "prerequisites": [
+    167
+  ]
+}

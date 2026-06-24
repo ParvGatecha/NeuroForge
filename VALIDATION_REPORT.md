@@ -4,25 +4,25 @@ This validation report checks and ensures the integrity of the generated TensorT
 
 ## Summary Metrics
 
-*   **Total Items**: 100 (Target: 100)
+*   **Total Items**: 200 (Target: 200)
 *   **Difficulty Distribution**:
-    *   **Easy**: 30 (30%)
-    *   **Medium**: 50 (50%)
-    *   **Hard**: 20 (20%)
+    *   **Easy**: 60 (30%)
+    *   **Medium**: 100 (50%)
+    *   **Hard**: 40 (20%)
 *   **Section Breakdown**:
-    *   **Python**: 10 (Target: 10)
-    *   **Statistics**: 15 (Target: 15)
-    *   **Machine Learning**: 20 (Target: 20)
-    *   **Deep Learning**: 15 (Target: 15)
-    *   **LLM**: 15 (Target: 15)
-    *   **RAG**: 10 (Target: 10)
-    *   **Agents**: 10 (Target: 10)
-    *   **System Design**: 5 (Target: 5)
+    *   **Python**: 20 (Target: 20)
+    *   **Statistics**: 30 (Target: 30)
+    *   **Machine Learning**: 40 (Target: 40)
+    *   **Deep Learning**: 30 (Target: 30)
+    *   **LLM**: 30 (Target: 30)
+    *   **RAG**: 20 (Target: 20)
+    *   **Agents**: 20 (Target: 20)
+    *   **System Design**: 10 (Target: 10)
 
 ## Integrity Analysis
 
 ### Duplicate URLs Analysis
-No duplicate practice URLs detected.
+WARNING: Duplicate practice URLs found: ['https://www.kaggle.com/code/colinmorris/exercise-hello-python', 'https://www.kaggle.com/code/colinmorris/exercise-strings-and-dictionaries', 'https://www.kaggle.com/code/residentmario/exercise-creating-reading-and-writing', 'https://www.kaggle.com/code/residentmario/exercise-indexing-selecting-assigning', 'https://www.kaggle.com/code/residentmario/exercise-summary-functions-and-maps', 'https://deep-ml.com/problems/78', 'https://deep-ml.com/problems/79', 'https://deep-ml.com/problems/80', 'https://deep-ml.com/problems/85', 'https://deep-ml.com/problems/69', 'https://deep-ml.com/problems/93', 'https://deep-ml.com/problems/95', 'https://deep-ml.com/problems/10', 'https://deep-ml.com/problems/37', 'https://deep-ml.com/problems/132', 'https://deep-ml.com/problems/10', 'https://deep-ml.com/problems/21', 'https://www.kaggle.com/code/dansbecker/exercise-explore-your-data', 'https://www.kaggle.com/code/dansbecker/exercise-random-forests', 'https://www.kaggle.com/code/dansbecker/exercise-underfitting-and-overfitting', 'https://www.kaggle.com/code/alexisbcook/exercise-cross-validation', 'https://www.kaggle.com/code/alexisbcook/exercise-cross-validation', 'https://www.kaggle.com/code/dansbecker/exercise-your-first-machine-learning-model', 'https://deep-ml.com/problems/14', 'https://deep-ml.com/problems/53', 'https://deep-ml.com/problems/76', 'https://www.kaggle.com/code/tuckerarrants/k-means-and-bpe-tokenization-from-scratch', 'https://www.kaggle.com/code/tuckerarrants/k-means-and-bpe-tokenization-from-scratch', 'https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip', 'https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip', 'https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip', 'https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag', 'https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag', 'https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag', 'https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag', 'https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag', 'https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip', 'https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle', 'https://www.kaggle.com/code/awsaf49/vllm-inference-gemma-2-9b', 'https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch', 'https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip', 'https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch', 'https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag']
 
 ### Duplicate Concepts Analysis
 No duplicate concept slugs detected.
@@ -134,3 +134,103 @@ All practice URLs conform to strict direct-exercise guidelines.
 | 98 | Search & Recommendation Pipeline | System Design | KAGGLE | https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch |
 | 99 | Multimodal CLIP Engine | System Design | KAGGLE | https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip |
 | 100 | Agentic Customer Support Desk | System Design | KAGGLE | https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag |
+| 101 | Python Custom Context Managers | Python | KAGGLE | https://www.kaggle.com/code/colinmorris/exercise-hello-python |
+| 102 | Data Validation with Dataclasses | Python | KAGGLE | https://www.kaggle.com/code/colinmorris/exercise-strings-and-dictionaries |
+| 103 | Abstract Base Classes (ABCs) | Python | KAGGLE | https://www.kaggle.com/code/residentmario/exercise-creating-reading-and-writing |
+| 104 | Advanced Generators & Coroutines | Python | DEEP_ML | https://deep-ml.com/problems/11 |
+| 105 | Multiprocessing & Parallel Execution | Python | KAGGLE | https://www.kaggle.com/code/residentmario/exercise-indexing-selecting-assigning |
+| 106 | Metaprogramming & Custom Metaclasses | Python | DEEP_ML | https://deep-ml.com/problems/21 |
+| 107 | Thread Synchronization with Locks | Python | KAGGLE | https://www.kaggle.com/code/residentmario/exercise-summary-functions-and-maps |
+| 108 | Weak References & Memory Optimization | Python | DEEP_ML | https://deep-ml.com/problems/1 |
+| 109 | Python Property Descriptors | Python | DEEP_ML | https://deep-ml.com/problems/5 |
+| 110 | Dynamic Caching with lru_cache | Python | DEEP_ML | https://deep-ml.com/problems/6 |
+| 111 | Probability Mass Functions | Statistics | DEEP_ML | https://deep-ml.com/problems/78 |
+| 112 | Poisson Distribution & Rates | Statistics | DEEP_ML | https://deep-ml.com/problems/79 |
+| 113 | Exponential Distribution & Wait Times | Statistics | DEEP_ML | https://deep-ml.com/problems/80 |
+| 114 | Beta Distribution and Priors | Statistics | DEEP_ML | https://deep-ml.com/problems/84 |
+| 115 | Maximum A Posteriori (MAP) | Statistics | DEEP_ML | https://deep-ml.com/problems/85 |
+| 116 | T-Statistics in Linear Regression | Statistics | DEEP_ML | https://deep-ml.com/problems/69 |
+| 117 | ANOVA & Post-Hoc Tests | Statistics | DEEP_ML | https://deep-ml.com/problems/93 |
+| 118 | False Discovery Rate & Multiple Testing | Statistics | DEEP_ML | https://deep-ml.com/problems/95 |
+| 119 | Bootstrap Confidence Intervals | Statistics | DEEP_ML | https://deep-ml.com/problems/10 |
+| 120 | Conditional Expectation and Variance | Statistics | DEEP_ML | https://deep-ml.com/problems/37 |
+| 121 | Skewness and Kurtosis Moments | Statistics | DEEP_ML | https://deep-ml.com/problems/81 |
+| 122 | Law of Large Numbers Simulation | Statistics | DEEP_ML | https://deep-ml.com/problems/82 |
+| 123 | Chebyshev's Inequality Bounds | Statistics | DEEP_ML | https://deep-ml.com/problems/83 |
+| 124 | Gibbs Sampling in MCMC | Statistics | DEEP_ML | https://deep-ml.com/problems/132 |
+| 125 | Eigenvalues of Covariance Matrices | Statistics | DEEP_ML | https://deep-ml.com/problems/10 |
+| 126 | Train/Test Dataset Split Implementation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/31 |
+| 127 | Recall Metric Calculation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/29 |
+| 128 | Precision Metric Calculation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/30 |
+| 129 | F1-Score Calculation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/28 |
+| 130 | Dice Similarity Coefficient | Machine Learning | DEEP_ML | https://deep-ml.com/problems/34 |
+| 131 | Jaccard Index Calculation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/35 |
+| 132 | Gini Impurity Calculation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/32 |
+| 133 | Shannon Entropy Calculation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/33 |
+| 134 | Principal Component Analysis (PCA) | Machine Learning | DEEP_ML | https://deep-ml.com/problems/19 |
+| 135 | One-Hot Encoding Implementation | Machine Learning | DEEP_ML | https://deep-ml.com/problems/21 |
+| 136 | Support Vector Machine Boundaries | Machine Learning | DEEP_ML | https://deep-ml.com/problems/71 |
+| 137 | Elastic Net Regularization | Machine Learning | DEEP_ML | https://deep-ml.com/problems/62 |
+| 138 | Cosine Similarity Metric | Machine Learning | DEEP_ML | https://deep-ml.com/problems/36 |
+| 139 | Hierarchical Agglomerative Clustering | Machine Learning | KAGGLE | https://www.kaggle.com/code/dansbecker/exercise-explore-your-data |
+| 140 | DBSCAN Density-Based Clustering | Machine Learning | KAGGLE | https://www.kaggle.com/code/dansbecker/exercise-random-forests |
+| 141 | AdaBoost Ensemble Learning | Machine Learning | KAGGLE | https://www.kaggle.com/code/dansbecker/exercise-underfitting-and-overfitting |
+| 142 | Grid Search Hyperparameter Tuning | Machine Learning | KAGGLE | https://www.kaggle.com/code/alexisbcook/exercise-cross-validation |
+| 143 | K-Fold Cross-Validation Split | Machine Learning | KAGGLE | https://www.kaggle.com/code/alexisbcook/exercise-cross-validation |
+| 144 | Permutation Feature Importance | Machine Learning | KAGGLE | https://www.kaggle.com/code/dansbecker/exercise-your-first-machine-learning-model |
+| 145 | Variance Inflation Factor (VIF) | Machine Learning | DEEP_ML | https://deep-ml.com/problems/14 |
+| 146 | Leaky ReLU Activation Function | Deep Learning | DEEP_ML | https://deep-ml.com/problems/26 |
+| 147 | Sigmoid Activation Function | Deep Learning | DEEP_ML | https://deep-ml.com/problems/22 |
+| 148 | Softmax Activation Function | Deep Learning | DEEP_ML | https://deep-ml.com/problems/23 |
+| 149 | ELU Activation Function | Deep Learning | DEEP_ML | https://deep-ml.com/problems/100 |
+| 150 | SELU Activation Function | Deep Learning | DEEP_ML | https://deep-ml.com/problems/101 |
+| 151 | L1 and L2 Loss Functions | Deep Learning | DEEP_ML | https://deep-ml.com/problems/67 |
+| 152 | Cross Entropy Loss Function | Deep Learning | DEEP_ML | https://deep-ml.com/problems/66 |
+| 153 | Binary Cross Entropy Loss | Deep Learning | DEEP_ML | https://deep-ml.com/problems/70 |
+| 154 | Huber Loss Implementation | Deep Learning | DEEP_ML | https://deep-ml.com/problems/68 |
+| 155 | Layer Normalization Implementation | Deep Learning | DEEP_ML | https://deep-ml.com/problems/48 |
+| 156 | Conv2D Layer Forward Pass | Deep Learning | DEEP_ML | https://deep-ml.com/problems/52 |
+| 157 | Max Pooling 2D Forward Pass | Deep Learning | DEEP_ML | https://deep-ml.com/problems/53 |
+| 158 | GRU Cell Forward Pass | Deep Learning | DEEP_ML | https://deep-ml.com/problems/56 |
+| 159 | Xavier/Glorot Weight Initialization | Deep Learning | DEEP_ML | https://deep-ml.com/problems/76 |
+| 160 | He/Kaiming Weight Initialization | Deep Learning | DEEP_ML | https://deep-ml.com/problems/77 |
+| 161 | GELU Activation Function | LLM | DEEP_ML | https://deep-ml.com/problems/105 |
+| 162 | Hard Sigmoid Activation Function | LLM | DEEP_ML | https://deep-ml.com/problems/103 |
+| 163 | Hard Swish Activation Function | LLM | DEEP_ML | https://deep-ml.com/problems/104 |
+| 164 | Perplexity Metric Calculation | LLM | DEEP_ML | https://deep-ml.com/problems/92 |
+| 165 | TF-IDF Vectorizer | LLM | DEEP_ML | https://deep-ml.com/problems/98 |
+| 166 | Self Attention Mechanism | LLM | DEEP_ML | https://deep-ml.com/problems/45 |
+| 167 | Multi-Head Attention Mechanism | LLM | DEEP_ML | https://deep-ml.com/problems/46 |
+| 168 | Sinusoidal Positional Encoding | LLM | DEEP_ML | https://deep-ml.com/problems/47 |
+| 169 | Beam Search Decoding Algorithm | LLM | DEEP_ML | https://deep-ml.com/problems/89 |
+| 170 | Nucleus (Top-p) Sampling | LLM | DEEP_ML | https://deep-ml.com/problems/90 |
+| 171 | Temperature Scaling Logits | LLM | DEEP_ML | https://deep-ml.com/problems/91 |
+| 172 | BLEU Evaluation Metric | LLM | DEEP_ML | https://deep-ml.com/problems/97 |
+| 173 | ROUGE Evaluation Metric | LLM | DEEP_ML | https://deep-ml.com/problems/96 |
+| 174 | LoRA Adapter Weight Matrices | LLM | KAGGLE | https://www.kaggle.com/code/tuckerarrants/k-means-and-bpe-tokenization-from-scratch |
+| 175 | LLM Model Quantization (4-bit) | LLM | KAGGLE | https://www.kaggle.com/code/tuckerarrants/k-means-and-bpe-tokenization-from-scratch |
+| 176 | Vector DB Indexing Concepts | RAG | KAGGLE | https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip |
+| 177 | Document Chunking Strategies | RAG | KAGGLE | https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip |
+| 178 | Metadata Filtering in Retrieval | RAG | KAGGLE | https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip |
+| 179 | Hybrid Search (Sparse + Dense) | RAG | KAGGLE | https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag |
+| 180 | Query Expansion & HyDE | RAG | KAGGLE | https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag |
+| 181 | Reranking with Cross-Encoders | RAG | KAGGLE | https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag |
+| 182 | Context Compression & Filtering | RAG | KAGGLE | https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag |
+| 183 | RAG Context Precision & Recall | RAG | KAGGLE | https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag |
+| 184 | Graph RAG & Knowledge Graphs | RAG | KAGGLE | https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip |
+| 185 | Multimodal Retrieval Systems | RAG | KAGGLE | https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip |
+| 186 | ReAct Agent Loop Execution | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 187 | Function & Tool Calling | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 188 | Multi-Agent Orchestration | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 189 | State Graphs & Routing | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 190 | Hierarchical Task Decomposition | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 191 | Agent Self-Reflection & Feedback | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 192 | Short and Long Term Memory | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 193 | Human-in-the-Loop Supervision | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 194 | Error Recovery & Self-Healing | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 195 | Autonomous Web Navigating Agents | Agents | KAGGLE | https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle |
+| 196 | Low-latency Inference Architectures | System Design | KAGGLE | https://www.kaggle.com/code/awsaf49/vllm-inference-gemma-2-9b |
+| 197 | ZeRO Memory Optimizations | System Design | KAGGLE | https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch |
+| 198 | Deploying CLIP Vector Databases | System Design | KAGGLE | https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip |
+| 199 | Multi-stage Recommendation Services | System Design | KAGGLE | https://www.kaggle.com/code/gpreda/recommender-systems-from-scratch |
+| 200 | Scalability of Agentic Routing Hubs | System Design | KAGGLE | https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag |

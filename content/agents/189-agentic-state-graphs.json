@@ -1,0 +1,31 @@
+{
+  "id": 189,
+  "slug": "agentic-state-graphs",
+  "title": "State Graphs & Routing",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "state-graph",
+    "routing",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Define states and transition routes using graphs",
+    "Execute dynamic state routing decisions using model outputs"
+  ],
+  "description": "Design state-graph structures routing agent paths dynamically based on step evaluations.",
+  "theory_resource": {
+    "title": "State Transition Graph Overview",
+    "url": "https://en.wikipedia.org/wiki/State-transition_table",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    88
+  ]
+}

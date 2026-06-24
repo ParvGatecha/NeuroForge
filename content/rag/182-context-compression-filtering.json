@@ -1,0 +1,31 @@
+{
+  "id": 182,
+  "slug": "context-compression-filtering",
+  "title": "Context Compression & Filtering",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "context-compression",
+    "optimization",
+    "rag"
+  ],
+  "learning_objectives": [
+    "Extract relevant sentences matching input queries",
+    "Reduce input context size parameters avoiding saturation"
+  ],
+  "description": "Compress retrieved context to pass only high-relevancy snippets to LLM inputs.",
+  "theory_resource": {
+    "title": "Lost in the Middle Paper",
+    "url": "https://arxiv.org/abs/2307.03172",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangChain Support Bot Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag"
+  },
+  "prerequisites": [
+    81
+  ]
+}

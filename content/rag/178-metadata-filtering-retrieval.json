@@ -1,0 +1,31 @@
+{
+  "id": 178,
+  "slug": "metadata-filtering-retrieval",
+  "title": "Metadata Filtering in Retrieval",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "metadata",
+    "filtering",
+    "rag"
+  ],
+  "learning_objectives": [
+    "Apply filter criteria on vector search results",
+    "Run pre-filtering vs post-filtering queries"
+  ],
+  "description": "Design pre- and post-filtering search patterns constraints on vector indices.",
+  "theory_resource": {
+    "title": "Vector Search Filtering",
+    "url": "https://en.wikipedia.org/wiki/Vector_database",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "CLIP Similarity Search Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip"
+  },
+  "prerequisites": [
+    76
+  ]
+}

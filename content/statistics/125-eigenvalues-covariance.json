@@ -1,0 +1,31 @@
+{
+  "id": 125,
+  "slug": "eigenvalues-covariance",
+  "title": "Eigenvalues of Covariance Matrices",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "linear-algebra",
+    "covariance",
+    "eigenvalues"
+  ],
+  "learning_objectives": [
+    "Calculate covariance matrix eigenvalues and eigenvectors",
+    "Map variance distribution axes to spatial matrix dimensions"
+  ],
+  "description": "Analyze variance distribution patterns along vector direction axes using eigenvalue calculations.",
+  "theory_resource": {
+    "title": "Covariance Matrix Overview",
+    "url": "https://en.wikipedia.org/wiki/Covariance_matrix",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Covariance Matrix Exercise",
+    "url": "https://deep-ml.com/problems/10"
+  },
+  "prerequisites": [
+    25
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 144,
+  "slug": "feature-importance-permutation",
+  "title": "Permutation Feature Importance",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "explainability",
+    "feature-importance",
+    "interpretability"
+  ],
+  "learning_objectives": [
+    "Shuffle column records to destroy semantic relationships",
+    "Measure drops in validation metrics to rank parameter importance"
+  ],
+  "description": "Measure shifts in prediction performance when feature columns are shuffled to evaluate impact.",
+  "theory_resource": {
+    "title": "Permutation Feature Importance Overview",
+    "url": "https://en.wikipedia.org/wiki/Permutation_feature_importance",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "First ML Model Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-your-first-machine-learning-model"
+  },
+  "prerequisites": [
+    27
+  ]
+}

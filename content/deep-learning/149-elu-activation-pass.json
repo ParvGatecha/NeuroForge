@@ -1,0 +1,31 @@
+{
+  "id": 149,
+  "slug": "elu-activation-pass",
+  "title": "ELU Activation Function",
+  "section": "Deep Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "elu",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Implement Exponential Linear Unit forward activation rules",
+    "Derive ELU gradient outputs for backpropagation steps"
+  ],
+  "description": "Apply ELU activation scaling negative logits exponentially towards smooth zero limits.",
+  "theory_resource": {
+    "title": "ELU Activation Overview",
+    "url": "https://en.wikipedia.org/wiki/Rectifier_(neural_networks)#ELU",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "ELU Activation Exercise",
+    "url": "https://deep-ml.com/problems/100"
+  },
+  "prerequisites": [
+    146
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 166,
+  "slug": "self-attention-scratch",
+  "title": "Self Attention Mechanism",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "transformers",
+    "attention",
+    "self-attention"
+  ],
+  "learning_objectives": [
+    "Compute Q, K, V parameter matrix interactions",
+    "Apply scale factors preventing gradient saturation during softmax passes"
+  ],
+  "description": "Implement scaled dot-product self-attention mechanisms mapping token associations.",
+  "theory_resource": {
+    "title": "Self-Attention Mechanism Overview",
+    "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Self Attention Exercise",
+    "url": "https://deep-ml.com/problems/45"
+  },
+  "prerequisites": [
+    57
+  ]
+}

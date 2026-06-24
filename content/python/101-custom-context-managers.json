@@ -1,0 +1,30 @@
+{
+  "id": 101,
+  "slug": "custom-context-managers",
+  "title": "Python Custom Context Managers",
+  "section": "Python",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "context-managers",
+    "resource-management"
+  ],
+  "learning_objectives": [
+    "Implement class-based context managers",
+    "Create generator context managers using contextlib"
+  ],
+  "description": "Learn to build custom context managers in Python using both class-based __enter__ / __exit__ protocols and the @contextmanager generator utility.",
+  "theory_resource": {
+    "title": "Python List Comprehensions Guide",
+    "url": "https://realpython.com/python-with-statement/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Loops and List Comprehensions Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-hello-python"
+  },
+  "prerequisites": [
+    1
+  ]
+}

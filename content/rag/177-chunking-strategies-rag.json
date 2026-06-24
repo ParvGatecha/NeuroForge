@@ -1,0 +1,31 @@
+{
+  "id": 177,
+  "slug": "chunking-strategies-rag",
+  "title": "Document Chunking Strategies",
+  "section": "RAG",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "chunking",
+    "rag",
+    "preprocessing"
+  ],
+  "learning_objectives": [
+    "Compare fixed-size, recursive character, and semantic chunking",
+    "Configure chunk sizes and overlapping bounds to preserve token context"
+  ],
+  "description": "Segment documents using recursive character and semantic boundaries to optimize context.",
+  "theory_resource": {
+    "title": "Retrieval Augmented Generation Overview",
+    "url": "https://en.wikipedia.org/wiki/Retrieval-augmented_generation",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "CLIP Similarity Search Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/image-similarity-search-with-clip"
+  },
+  "prerequisites": [
+    176
+  ]
+}

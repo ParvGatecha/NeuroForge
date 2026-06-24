@@ -1,0 +1,31 @@
+{
+  "id": 126,
+  "slug": "train-test-split-indices",
+  "title": "Train/Test Dataset Split Implementation",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "ml-foundations",
+    "split",
+    "validation"
+  ],
+  "learning_objectives": [
+    "Split data arrays into train/test groups",
+    "Manage deterministic shuffling parameters across target groups"
+  ],
+  "description": "Build deterministic dataset splitting models avoiding leakages during parameter extraction.",
+  "theory_resource": {
+    "title": "Train Test Validation Splitting",
+    "url": "https://en.wikipedia.org/wiki/Training,_validation,_and_test_data_sets",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Train Test Split Exercise",
+    "url": "https://deep-ml.com/problems/31"
+  },
+  "prerequisites": [
+    28
+  ]
+}

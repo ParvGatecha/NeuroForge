@@ -1,0 +1,31 @@
+{
+  "id": 154,
+  "slug": "huber-loss-scratch",
+  "title": "Huber Loss Implementation",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "loss",
+    "huber-loss",
+    "robust-statistics"
+  ],
+  "learning_objectives": [
+    "Apply threshold parameters balancing L1 and L2 updates",
+    "Derive smooth continuous transition gradients around threshold limits"
+  ],
+  "description": "Apply Huber loss functions to balance absolute and squared updates under noisy datasets.",
+  "theory_resource": {
+    "title": "Huber Loss Overview",
+    "url": "https://en.wikipedia.org/wiki/Huber_loss",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Huber Loss Exercise",
+    "url": "https://deep-ml.com/problems/68"
+  },
+  "prerequisites": [
+    151
+  ]
+}

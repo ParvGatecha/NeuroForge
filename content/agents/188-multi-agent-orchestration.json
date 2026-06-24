@@ -1,0 +1,31 @@
+{
+  "id": 188,
+  "slug": "multi-agent-orchestration",
+  "title": "Multi-Agent Orchestration",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "multi-agent",
+    "orchestration",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Coordinate specialized sub-agents with supervisor models",
+    "Implement inter-agent messaging formats passing context"
+  ],
+  "description": "Orchestrate multi-agent groups passing sub-tasks dynamically between specialized models.",
+  "theory_resource": {
+    "title": "Multi-Agent Systems Overview",
+    "url": "https://en.wikipedia.org/wiki/Multi-agent_system",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    89
+  ]
+}

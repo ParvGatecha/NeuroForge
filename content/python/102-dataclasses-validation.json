@@ -1,0 +1,31 @@
+{
+  "id": 102,
+  "slug": "dataclasses-validation",
+  "title": "Data Validation with Dataclasses",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "dataclasses",
+    "validation",
+    "type-hints"
+  ],
+  "learning_objectives": [
+    "Build structured data models using dataclasses",
+    "Enforce type checking and post-init validations"
+  ],
+  "description": "Structure clean schemas and run dynamic validation rules on instantiation using Python dataclasses.",
+  "theory_resource": {
+    "title": "Python Modules and Packages",
+    "url": "https://realpython.com/python-data-classes/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Functions and Help Exercise",
+    "url": "https://www.kaggle.com/code/colinmorris/exercise-strings-and-dictionaries"
+  },
+  "prerequisites": [
+    4
+  ]
+}

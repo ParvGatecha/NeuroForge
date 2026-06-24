@@ -1,0 +1,31 @@
+{
+  "id": 112,
+  "slug": "poisson-distribution-events",
+  "title": "Poisson Distribution & Rates",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "poisson",
+    "probability",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Model events happening in a fixed time interval",
+    "Calculate Poisson probabilities and rates"
+  ],
+  "description": "Construct discrete event rate models measuring probability ranges over fixed periods.",
+  "theory_resource": {
+    "title": "Poisson Distribution Overview",
+    "url": "https://en.wikipedia.org/wiki/Poisson_distribution",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Binomial Distribution Exercise",
+    "url": "https://deep-ml.com/problems/79"
+  },
+  "prerequisites": [
+    24
+  ]
+}

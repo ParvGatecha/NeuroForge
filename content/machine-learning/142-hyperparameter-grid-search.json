@@ -1,0 +1,31 @@
+{
+  "id": 142,
+  "slug": "hyperparameter-grid-search",
+  "title": "Grid Search Hyperparameter Tuning",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "hyperparameters",
+    "tuning",
+    "grid-search"
+  ],
+  "learning_objectives": [
+    "Construct exhaustive parameter value combinations",
+    "Map validation scores back to select optimal configurations"
+  ],
+  "description": "Identify best model parameter combinations running exhaustive grid search validations.",
+  "theory_resource": {
+    "title": "Hyperparameter Optimization Overview",
+    "url": "https://en.wikipedia.org/wiki/Hyperparameter_optimization",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Cross-Validation Exercise",
+    "url": "https://www.kaggle.com/code/alexisbcook/exercise-cross-validation"
+  },
+  "prerequisites": [
+    34
+  ]
+}

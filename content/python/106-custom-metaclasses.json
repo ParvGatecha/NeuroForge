@@ -1,0 +1,31 @@
+{
+  "id": 106,
+  "slug": "custom-metaclasses",
+  "title": "Metaprogramming & Custom Metaclasses",
+  "section": "Python",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "metaprogramming",
+    "metaclasses",
+    "oop"
+  ],
+  "learning_objectives": [
+    "Interfere with class creation using __new__ and __init__ in metaclasses",
+    "Enforce runtime constraints on class parameters"
+  ],
+  "description": "Learn to intercept, modify, and register class definitions dynamically at load-time.",
+  "theory_resource": {
+    "title": "Python Modules and Packages",
+    "url": "https://realpython.com/python-metaclasses/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "One-Hot Encoding Exercise",
+    "url": "https://deep-ml.com/problems/21"
+  },
+  "prerequisites": [
+    103
+  ]
+}

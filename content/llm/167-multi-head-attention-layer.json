@@ -1,0 +1,31 @@
+{
+  "id": 167,
+  "slug": "multi-head-attention-layer",
+  "title": "Multi-Head Attention Mechanism",
+  "section": "LLM",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "transformers",
+    "attention",
+    "multi-head"
+  ],
+  "learning_objectives": [
+    "Project input representations across multiple attention heads",
+    "Concatenate and project head outputs back to hidden shapes"
+  ],
+  "description": "Project query, key, and value vectors across multiple parallel attention heads.",
+  "theory_resource": {
+    "title": "Multi-Head Attention Overview",
+    "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Multi-Head Attention Exercise",
+    "url": "https://deep-ml.com/problems/46"
+  },
+  "prerequisites": [
+    166
+  ]
+}

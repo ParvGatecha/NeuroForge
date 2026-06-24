@@ -1,0 +1,31 @@
+{
+  "id": 152,
+  "slug": "cross-entropy-loss-scratch",
+  "title": "Cross Entropy Loss Function",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "loss",
+    "cross-entropy",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Formulate negative log-likelihood loss for classification",
+    "Calculate soft labels mapping prediction variance profiles"
+  ],
+  "description": "Implement cross-entropy loss functions evaluating prediction variance relative to categorical labels.",
+  "theory_resource": {
+    "title": "Cross Entropy Loss Overview",
+    "url": "https://en.wikipedia.org/wiki/Cross_entropy",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Cross Entropy Loss Exercise",
+    "url": "https://deep-ml.com/problems/66"
+  },
+  "prerequisites": [
+    51
+  ]
+}

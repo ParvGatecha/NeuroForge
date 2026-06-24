@@ -1,0 +1,31 @@
+{
+  "id": 187,
+  "slug": "tool-calling-llm",
+  "title": "Function & Tool Calling",
+  "section": "Agents",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "tool-calling",
+    "apis",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Declare tool schemas in JSON formats",
+    "Parse model tool calls to execute Python routines"
+  ],
+  "description": "Configure tool schemas enabling models to generate formatted function calling requests.",
+  "theory_resource": {
+    "title": "Web API Structures Overview",
+    "url": "https://en.wikipedia.org/wiki/Web_API",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    87
+  ]
+}

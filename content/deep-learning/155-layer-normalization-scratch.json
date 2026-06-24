@@ -1,0 +1,31 @@
+{
+  "id": 155,
+  "slug": "layer-normalization-scratch",
+  "title": "Layer Normalization Implementation",
+  "section": "Deep Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "layer-normalization",
+    "normalization",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Calculate mean/variance metrics across hidden dimensions",
+    "Verify normalization consistency across variable batch dimensions"
+  ],
+  "description": "Normalize neuron activations across hidden features to stabilize recurrent learning states.",
+  "theory_resource": {
+    "title": "Layer Normalization Overview",
+    "url": "https://en.wikipedia.org/wiki/Layer_normalization",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Layer Normalization Exercise",
+    "url": "https://deep-ml.com/problems/48"
+  },
+  "prerequisites": [
+    59
+  ]
+}

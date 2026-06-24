@@ -1,0 +1,31 @@
+{
+  "id": 131,
+  "slug": "jaccard-index-sets",
+  "title": "Jaccard Index Calculation",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "jaccard",
+    "similarity"
+  ],
+  "learning_objectives": [
+    "Derive Intersection over Union (IoU) ratios",
+    "Compare Jaccard vs Dice values under variable overlaps"
+  ],
+  "description": "Measure similarity of target sets using the intersection over union metric.",
+  "theory_resource": {
+    "title": "Jaccard Index Overview",
+    "url": "https://en.wikipedia.org/wiki/Jaccard_index",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Jaccard Index Exercise",
+    "url": "https://deep-ml.com/problems/35"
+  },
+  "prerequisites": [
+    130
+  ]
+}

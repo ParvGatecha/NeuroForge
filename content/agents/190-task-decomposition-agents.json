@@ -1,0 +1,31 @@
+{
+  "id": 190,
+  "slug": "task-decomposition-agents",
+  "title": "Hierarchical Task Decomposition",
+  "section": "Agents",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "decomposition",
+    "hierarchical",
+    "agents"
+  ],
+  "learning_objectives": [
+    "Decompose compound user objectives into sequential sub-tasks",
+    "Compile sub-task completion reports back to root monitors"
+  ],
+  "description": "Decompose complex requests into nested tasks executed sequentially by sub-agents.",
+  "theory_resource": {
+    "title": "Tree of Thoughts Reasoning Paper",
+    "url": "https://arxiv.org/abs/2305.11562",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Web Automation Exercise",
+    "url": "https://www.kaggle.com/code/harshsingh22/selenium-and-playwright-automation-in-kaggle"
+  },
+  "prerequisites": [
+    90
+  ]
+}

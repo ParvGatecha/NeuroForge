@@ -1,0 +1,31 @@
+{
+  "id": 164,
+  "slug": "perplexity-evaluation",
+  "title": "Perplexity Metric Calculation",
+  "section": "LLM",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "perplexity",
+    "metrics",
+    "llm"
+  ],
+  "learning_objectives": [
+    "Define perplexity as exponentiated cross-entropy loss",
+    "Evaluate model prediction confidence over target text groups"
+  ],
+  "description": "Evaluate model confidence on prediction outputs by calculating sequence perplexity metrics.",
+  "theory_resource": {
+    "title": "Perplexity Overview",
+    "url": "https://en.wikipedia.org/wiki/Perplexity",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Perplexity Exercise",
+    "url": "https://deep-ml.com/problems/92"
+  },
+  "prerequisites": [
+    62
+  ]
+}

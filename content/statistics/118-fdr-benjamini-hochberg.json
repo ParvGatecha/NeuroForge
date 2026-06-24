@@ -1,0 +1,31 @@
+{
+  "id": 118,
+  "slug": "fdr-benjamini-hochberg",
+  "title": "False Discovery Rate & Multiple Testing",
+  "section": "Statistics",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "fdr",
+    "multiple-testing",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Explain multiple comparisons type-I error inflation",
+    "Apply Benjamini-Hochberg FDR adjustments on hypothesis arrays"
+  ],
+  "description": "Manage false discovery rates in large concurrent hypothesis test datasets using BH metrics.",
+  "theory_resource": {
+    "title": "False Discovery Rate Overview",
+    "url": "https://en.wikipedia.org/wiki/False_discovery_rate",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Phi Coefficient Exercise",
+    "url": "https://deep-ml.com/problems/95"
+  },
+  "prerequisites": [
+    18
+  ]
+}

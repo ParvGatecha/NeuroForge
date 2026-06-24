@@ -1,0 +1,31 @@
+{
+  "id": 196,
+  "slug": "low-latency-serving-pipelines",
+  "title": "Low-latency Inference Architectures",
+  "section": "System Design",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "inference",
+    "serving",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Minimize inference request latency over parallel pools",
+    "Design caching layers holding popular prediction targets"
+  ],
+  "description": "Design low-latency model inference pipelines using distributed caching layers.",
+  "theory_resource": {
+    "title": "Client-Server System Design",
+    "url": "https://en.wikipedia.org/wiki/Client%E2%80%93server_model",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "vLLM Serving Exercise",
+    "url": "https://www.kaggle.com/code/awsaf49/vllm-inference-gemma-2-9b"
+  },
+  "prerequisites": [
+    97
+  ]
+}

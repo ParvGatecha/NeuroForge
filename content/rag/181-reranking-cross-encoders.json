@@ -1,0 +1,31 @@
+{
+  "id": 181,
+  "slug": "reranking-cross-encoders",
+  "title": "Reranking with Cross-Encoders",
+  "section": "RAG",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "reranking",
+    "cross-encoder",
+    "rag"
+  ],
+  "learning_objectives": [
+    "Differentiate bi-encoder vector lookups from cross-encoder comparisons",
+    "Score candidate documents relative to query queries"
+  ],
+  "description": "Re-rank candidate documents using cross-encoders to calculate fine-grained relevancy scores.",
+  "theory_resource": {
+    "title": "Cross-Encoder Reranking Paper",
+    "url": "https://arxiv.org/abs/2010.06467",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangChain Support Bot Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag"
+  },
+  "prerequisites": [
+    79
+  ]
+}

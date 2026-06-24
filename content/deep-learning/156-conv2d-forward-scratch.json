@@ -1,0 +1,31 @@
+{
+  "id": 156,
+  "slug": "conv2d-forward-scratch",
+  "title": "Conv2D Layer Forward Pass",
+  "section": "Deep Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "cnn",
+    "convolution",
+    "deep-learning"
+  ],
+  "learning_objectives": [
+    "Apply filter kernels across input tensor dimensions",
+    "Account for stride and zero-padding configurations in outputs"
+  ],
+  "description": "Implement forward spatial filter sweeps calculating convolutional feature maps.",
+  "theory_resource": {
+    "title": "Convolutional Neural Networks Overview",
+    "url": "https://en.wikipedia.org/wiki/Convolutional_neural_network",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Conv2D Exercise",
+    "url": "https://deep-ml.com/problems/52"
+  },
+  "prerequisites": [
+    52
+  ]
+}

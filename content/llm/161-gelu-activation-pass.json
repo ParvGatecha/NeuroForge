@@ -1,0 +1,31 @@
+{
+  "id": 161,
+  "slug": "gelu-activation-pass",
+  "title": "GELU Activation Function",
+  "section": "LLM",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "activation",
+    "gelu",
+    "llm"
+  ],
+  "learning_objectives": [
+    "Formulate Gaussian Error Linear Unit activation rules",
+    "Derive standard GELU backpropagation gradients"
+  ],
+  "description": "Implement GELU activation functions weighting inputs by normal probability thresholds.",
+  "theory_resource": {
+    "title": "GELU Activation Function",
+    "url": "https://en.wikipedia.org/wiki/Activation_function#GELU",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "GELU Activation Exercise",
+    "url": "https://deep-ml.com/problems/105"
+  },
+  "prerequisites": [
+    63
+  ]
+}

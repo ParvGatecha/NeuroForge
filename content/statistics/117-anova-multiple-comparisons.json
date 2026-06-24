@@ -1,0 +1,31 @@
+{
+  "id": 117,
+  "slug": "anova-multiple-comparisons",
+  "title": "ANOVA & Post-Hoc Tests",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "anova",
+    "hypothesis-testing",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Compare multiple group means using F-tests",
+    "Apply Tukey post-hoc corrections on group variables"
+  ],
+  "description": "Run variance analysis tracking variable differences across multiple distinct parameter groups.",
+  "theory_resource": {
+    "title": "Analysis of Variance Overview",
+    "url": "https://en.wikipedia.org/wiki/Analysis_of_variance",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Mean Absolute Error Exercise",
+    "url": "https://deep-ml.com/problems/93"
+  },
+  "prerequisites": [
+    19
+  ]
+}

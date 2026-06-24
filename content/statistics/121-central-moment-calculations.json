@@ -1,0 +1,31 @@
+{
+  "id": 121,
+  "slug": "central-moment-calculations",
+  "title": "Skewness and Kurtosis Moments",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "moments",
+    "skewness",
+    "kurtosis"
+  ],
+  "learning_objectives": [
+    "Calculate standard central statistical moments",
+    "Analyze distribution asymmetry and tail shapes"
+  ],
+  "description": "Evaluate non-symmetrical distribution profile attributes using skewness and kurtosis equations.",
+  "theory_resource": {
+    "title": "Central Moment Overview",
+    "url": "https://en.wikipedia.org/wiki/Moment_(mathematics)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Central Limit Theorem Exercise",
+    "url": "https://deep-ml.com/problems/81"
+  },
+  "prerequisites": [
+    15
+  ]
+}

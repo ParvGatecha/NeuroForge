@@ -1,0 +1,31 @@
+{
+  "id": 107,
+  "slug": "python-threading-locks",
+  "title": "Thread Synchronization with Locks",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "threading",
+    "concurrency",
+    "locks"
+  ],
+  "learning_objectives": [
+    "Identify and resolve race conditions in shared memory",
+    "Synchronize parallel tasks using threading.Lock"
+  ],
+  "description": "Prevent shared-memory race conditions in IO-bound workloads using mutual exclusion thread locks.",
+  "theory_resource": {
+    "title": "Python Modules and Packages",
+    "url": "https://realpython.com/intro-to-python-threading/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Working with External Libraries Exercise",
+    "url": "https://www.kaggle.com/code/residentmario/exercise-summary-functions-and-maps"
+  },
+  "prerequisites": [
+    10
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": 114,
+  "slug": "beta-prior-distributions",
+  "title": "Beta Distribution and Priors",
+  "section": "Statistics",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "beta",
+    "bayesian",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Apply Beta distributions as prior models",
+    "Update prior beliefs with conjugate Bernoulli updates"
+  ],
+  "description": "Master Bayesian priors modeling probabilities dynamically using the continuous Beta function.",
+  "theory_resource": {
+    "title": "Beta Distribution Overview",
+    "url": "https://en.wikipedia.org/wiki/Beta_distribution",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Bayes Theorem Exercise",
+    "url": "https://deep-ml.com/problems/84"
+  },
+  "prerequisites": [
+    13
+  ]
+}

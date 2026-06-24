@@ -1,0 +1,32 @@
+{
+  "id": 137,
+  "slug": "elastic-net-regularization",
+  "title": "Elastic Net Regularization",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "regression",
+    "elastic-net",
+    "regularization"
+  ],
+  "learning_objectives": [
+    "Formulate joint L1 and L2 penalty calculations",
+    "Balance coefficient sparse features vs parameter grouping constraints"
+  ],
+  "description": "Apply joint Lasso and Ridge regularizations to control coefficient growth.",
+  "theory_resource": {
+    "title": "Elastic Net Regularization Overview",
+    "url": "https://en.wikipedia.org/wiki/Elastic_net_regularization",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Elastic Net L1 Exercise",
+    "url": "https://deep-ml.com/problems/62"
+  },
+  "prerequisites": [
+    40,
+    41
+  ]
+}

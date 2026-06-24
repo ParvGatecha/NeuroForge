@@ -1,0 +1,31 @@
+{
+  "id": 128,
+  "slug": "precision-metric-scratch",
+  "title": "Precision Metric Calculation",
+  "section": "Machine Learning",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "metrics",
+    "precision",
+    "classification"
+  ],
+  "learning_objectives": [
+    "Evaluate true predictions against total predicted positive counts",
+    "Manage false positive rates on highly skewed evaluation groups"
+  ],
+  "description": "Evaluate positive prediction accuracy profiles comparing true positives to total flagged positive counts.",
+  "theory_resource": {
+    "title": "Precision and Recall Overview",
+    "url": "https://en.wikipedia.org/wiki/Precision_and_recall",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Precision Metric Exercise",
+    "url": "https://deep-ml.com/problems/30"
+  },
+  "prerequisites": [
+    28
+  ]
+}

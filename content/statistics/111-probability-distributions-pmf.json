@@ -1,0 +1,31 @@
+{
+  "id": 111,
+  "slug": "probability-distributions-pmf",
+  "title": "Probability Mass Functions",
+  "section": "Statistics",
+  "difficulty": "Easy",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "probability",
+    "pmf",
+    "statistics"
+  ],
+  "learning_objectives": [
+    "Understand discrete probability mass functions",
+    "Evaluate PMF bounds and normalized variables"
+  ],
+  "description": "Examine PMFs for discrete variables mapping single events to precise occurrence ratios.",
+  "theory_resource": {
+    "title": "Probability Mass Function Overview",
+    "url": "https://en.wikipedia.org/wiki/Probability_mass_function",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Mean, Median, Mode Exercise",
+    "url": "https://deep-ml.com/problems/78"
+  },
+  "prerequisites": [
+    11
+  ]
+}

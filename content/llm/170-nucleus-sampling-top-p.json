@@ -1,0 +1,31 @@
+{
+  "id": 170,
+  "slug": "nucleus-sampling-top-p",
+  "title": "Nucleus (Top-p) Sampling",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "decoding",
+    "top-p",
+    "nucleus-sampling"
+  ],
+  "learning_objectives": [
+    "Sort token indices by output probability curves",
+    "Truncate low probability vocabulary entries using cumulative top-p thresholds"
+  ],
+  "description": "Filter vocabulary distribution profiles dynamically using cumulative probability limits.",
+  "theory_resource": {
+    "title": "Top-p Sampling Overview",
+    "url": "https://en.wikipedia.org/wiki/Language_model#Sampling_techniques",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Nucleus Sampling Exercise",
+    "url": "https://deep-ml.com/problems/90"
+  },
+  "prerequisites": [
+    62
+  ]
+}

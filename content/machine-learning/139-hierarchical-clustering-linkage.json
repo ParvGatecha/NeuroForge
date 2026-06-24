@@ -1,0 +1,31 @@
+{
+  "id": 139,
+  "slug": "hierarchical-clustering-linkage",
+  "title": "Hierarchical Agglomerative Clustering",
+  "section": "Machine Learning",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "clustering",
+    "hierarchical",
+    "unsupervised"
+  ],
+  "learning_objectives": [
+    "Explain difference between single, complete, and average linkage",
+    "Construct bottom-up agglomerative clustering trees"
+  ],
+  "description": "Perform bottom-up sample grouping trees utilizing average and complete linkage math models.",
+  "theory_resource": {
+    "title": "Hierarchical Clustering Overview",
+    "url": "https://en.wikipedia.org/wiki/Hierarchical_clustering",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Explore Your Data Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-explore-your-data"
+  },
+  "prerequisites": [
+    43
+  ]
+}

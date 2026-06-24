@@ -1,0 +1,31 @@
+{
+  "id": 110,
+  "slug": "functools-lru-cache",
+  "title": "Dynamic Caching with lru_cache",
+  "section": "Python",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 15,
+  "tags": [
+    "caching",
+    "decorators",
+    "optimization"
+  ],
+  "learning_objectives": [
+    "Speed up recursive computations using function memoization",
+    "Tune caching capacities and monitor cache performance metrics"
+  ],
+  "description": "Optimize expensive repetitive functions by caching results automatically with @lru_cache.",
+  "theory_resource": {
+    "title": "Python Modules and Packages",
+    "url": "https://realpython.com/lru-cache-python/",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Mean by Row or Column Exercise",
+    "url": "https://deep-ml.com/problems/6"
+  },
+  "prerequisites": [
+    2
+  ]
+}

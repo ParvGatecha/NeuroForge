@@ -1,0 +1,31 @@
+{
+  "id": 183,
+  "slug": "rag-context-precision-recall",
+  "title": "RAG Context Precision & Recall",
+  "section": "RAG",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "evaluation",
+    "context-relevancy",
+    "metrics"
+  ],
+  "learning_objectives": [
+    "Formulate context precision metrics",
+    "Measure retrieval recall rates relative to ground truth references"
+  ],
+  "description": "Evaluate retrieval chunk precision and recall using reference target spans.",
+  "theory_resource": {
+    "title": "Ragas: Automated Evaluation of RAG Paper",
+    "url": "https://arxiv.org/abs/2309.15217",
+    "type": "research-paper"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangChain Support Bot Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag"
+  },
+  "prerequisites": [
+    80
+  ]
+}

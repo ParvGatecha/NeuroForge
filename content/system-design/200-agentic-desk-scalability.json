@@ -1,0 +1,31 @@
+{
+  "id": 200,
+  "slug": "agentic-desk-scalability",
+  "title": "Scalability of Agentic Routing Hubs",
+  "section": "System Design",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 25,
+  "tags": [
+    "agentic-desks",
+    "scalability",
+    "system-design"
+  ],
+  "learning_objectives": [
+    "Balance user workloads across distributed agent routers",
+    "Manage context queues preventing memory overflows"
+  ],
+  "description": "Scale agent groups by distributing workloads across state-sharing queues.",
+  "theory_resource": {
+    "title": "Load Balancing Architecture Overview",
+    "url": "https://en.wikipedia.org/wiki/Load_balancing_(computing)",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "LangChain Support Bot Exercise",
+    "url": "https://www.kaggle.com/code/saurav9786/langchain-support-bot-with-rag"
+  },
+  "prerequisites": [
+    100
+  ]
+}

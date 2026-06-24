@@ -1,0 +1,31 @@
+{
+  "id": 171,
+  "slug": "temperature-scaling-logits",
+  "title": "Temperature Scaling Logits",
+  "section": "LLM",
+  "difficulty": "Medium",
+  "estimated_time_minutes": 20,
+  "tags": [
+    "decoding",
+    "temperature",
+    "logits"
+  ],
+  "learning_objectives": [
+    "Divide output logit arrays by temperature factors",
+    "Manage generation diversity by shifting logit entropy levels"
+  ],
+  "description": "Adjust output logit distributions to alter generation diversity using temperature scales.",
+  "theory_resource": {
+    "title": "Temperature Scaling Overview",
+    "url": "https://en.wikipedia.org/wiki/Temperature_scaling",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "DEEP_ML",
+    "title": "Temperature Scaling Exercise",
+    "url": "https://deep-ml.com/problems/91"
+  },
+  "prerequisites": [
+    62
+  ]
+}

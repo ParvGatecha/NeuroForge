@@ -1,0 +1,31 @@
+{
+  "id": 141,
+  "slug": "adaboost-ensemble-weights",
+  "title": "AdaBoost Ensemble Learning",
+  "section": "Machine Learning",
+  "difficulty": "Hard",
+  "estimated_time_minutes": 30,
+  "tags": [
+    "boosting",
+    "adaboost",
+    "ensemble"
+  ],
+  "learning_objectives": [
+    "Compute exponential weight modifications for misclassified instances",
+    "Combine weak estimators into a weighted voting group"
+  ],
+  "description": "Implement weak-classifier weight iteration steps focusing learning on misclassified entries.",
+  "theory_resource": {
+    "title": "AdaBoost Overview",
+    "url": "https://en.wikipedia.org/wiki/AdaBoost",
+    "type": "article"
+  },
+  "practice_resource": {
+    "platform": "KAGGLE",
+    "title": "Underfitting and Overfitting Exercise",
+    "url": "https://www.kaggle.com/code/dansbecker/exercise-underfitting-and-overfitting"
+  },
+  "prerequisites": [
+    30
+  ]
+}
