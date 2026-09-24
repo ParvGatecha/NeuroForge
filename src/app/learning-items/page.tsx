@@ -6,7 +6,7 @@ import fs from "fs";
 import path from "path";
 
 export const metadata: Metadata = {
-  title: 'AI Engineering Curriculum — 100+ Curated Resources',
+  title: 'AI Engineering Curriculum — 200 Curated Resources',
   description: "Browse TensorTrack's full AI engineering curriculum: Python, Statistics, Classical ML, Deep Learning, LLMs, RAG, AI Agents, and System Design. Structured, progressive, and free.",
   alternates: {
     canonical: 'https://tensor-track.vercel.app/learning-items',

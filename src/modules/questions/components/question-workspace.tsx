@@ -458,7 +458,7 @@ export function LearningItemWorkspace({ item }: WorkspaceProps) {
             <Trophy className="h-16 w-16 text-amber-500 mx-auto animate-bounce mb-4" />
             <h3 className="text-xl font-black text-foreground">Milestone Unlocked!</h3>
             <p className="mt-1.5 text-sm text-muted-foreground">
-              Incredible work! You've unlocked {unlockedBadges.length} new achievement
+              Incredible work! You&apos;ve unlocked {unlockedBadges.length} new achievement
               {unlockedBadges.length > 1 ? "s" : ""}:
             </p>
 

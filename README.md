@@ -1,21 +1,22 @@
-# TensorTrack MVP - AI Engineer Upskilling Platform
+# TensorTrack - AI Engineer Upskilling Platform
 
 Welcome to **TensorTrack**, a production-ready, roadmap-driven learning and interview preparation platform designed specifically for AI and Machine Learning Engineers.
 
-This platform launches with **100 pre-loaded, first-principles questions** categorized across 8 core tracks.
+This platform launches with **200 pre-loaded, first-principles learning items** categorized across 8 core tracks.
 
 ---
 
 ## 🚀 Key Features
 
+- **AI Engineer Readiness Assessment (`/assessment`)**: A free 10-minute diagnostic evaluating first-principles readiness across 8 engineering tracks, generating a personalized AI engineering profile, viral ASCII score card, and tailored curriculum recommendations.
 - **Linear Learning Roadmap**: Tracks progress sequentially using course prerequisites (`Python Concurrency` ➔ `Math Stats` ➔ `Classical ML` ➔ `Deep Learning` ➔ `LLM` ➔ `RAG` ➔ `AI Agents` ➔ `AI System Design`).
-- **Interactive Code Playground**: Full split-screen workspace with multi-tab description panels,progressive hints, literature references, and an interactive mock Python execution sandbox with console output logging.
-- **Zod Content Validator**: Runs automatically during code builds to validate all 100 question files under `content/questions/` against strict schema rules.
+- **Interactive Learning Workspace**: Multi-tab description panels, theory literature references, direct hands-on practice platform links, and progressive learning objectives.
+- **Zod Content Validator**: Runs automatically during code builds to validate all 200 learning item files under `content/` against strict schema rules.
 - **Gamified Progress Engines**:
   - **XP Engine**: Computes RPG-like exponential leveling progression.
-  - **Streak Engine**: Tracks daily question completion and tracks consecutive activity.
+  - **Streak Engine**: Tracks daily activity and consecutive streak records.
   - **Achievement Auto-Unlocker**: Awards XP bonuses and badge unlocks for hitting milestone targets.
-- **Hybrid Storage Provider**: Seamlessly uses **Prisma/PostgreSQL** in production, but automatically falls back to a **local file-based JSON database (`content/local_mock_db.json`)** if the database server is not reachable. This guarantees the app is functional out-of-the-box in local development.
+- **Hybrid Storage Provider**: Seamlessly uses **Prisma/PostgreSQL** in production, with a local mock database (`content/local_mock_db.json`) for seamless zero-config local development.
 - **High-Performance Client Search**: Leverages `Fuse.js` client-side fuzzy queries on a compiled build-time search index for instant filtering.
 
 ---
@@ -23,10 +24,10 @@ This platform launches with **100 pre-loaded, first-principles questions** categ
 ## 🛠️ Technology Stack
 
 - **Framework**: Next.js 16 (App Router, TypeScript, Tailwind CSS v4)
-- **Database ORM**: Prisma ORM (targeting PostgreSQL for production, with SQLite and JSON-file fallback capability)
-- **Authentication**: Better Auth (configured with Prisma adapter)
-- **State Management**: Zustand (for unified client state synchronization)
-- **Styling**: Vanilla CSS with custom scrollbars, animations, and premium glassmorphic/neon utility classes
+- **Database ORM**: Prisma ORM (targeting PostgreSQL)
+- **Authentication**: Supabase SSR (`@supabase/ssr`)
+- **State Management**: Zustand (for client state synchronization)
+- **Styling**: Tailwind CSS v4 with custom animations, glassmorphism, and theme support
 
 ---
 

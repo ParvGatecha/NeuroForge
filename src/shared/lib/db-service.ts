@@ -156,7 +156,7 @@ async function checkDbConnection(): Promise<boolean> {
     isPostgresAvailable = true;
     lastConnectionCheckTime = now;
     return true;
-  } catch (e) {
+  } catch (_e) {
     if (isPostgresAvailable) {
       console.warn("⚠️ PostgreSQL Database not reachable. Falling back to local file-based mock database.");
       isPostgresAvailable = false;
@@ -716,7 +716,7 @@ export const dbService = {
   },
 
   // Internal helper to update streak (connected DB mode)
-  async updateStreakInternal(userId: string, isCompletion: boolean) {
+  async updateStreakInternal(userId: string, _isCompletion?: boolean) {
     try {
       const { updateUserStreak } = await import("@/modules/progress/streak");
       await updateUserStreak(userId);

@@ -18,7 +18,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'TensorTrack — AI Engineer Roadmap & Learning Platform',
-  description: 'Go from Python basics to building AI agents. TensorTrack gives you a structured, first-principles curriculum for becoming an AI engineer — with XP tracking and curated resources.',
+  description: 'Go from Python basics to building AI agents. TensorTrack gives you a structured, first-principles curriculum for becoming an AI engineer with 200 curated resources and XP tracking.',
   alternates: {
     canonical: 'https://tensor-track.vercel.app',
   },
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const tracks = [
-    { name: "Python Concurrency", count: "10 Items", icon: Binary, desc: "GIL, asyncio, generators, decorators" },
-    { name: "Mathematical Stats", count: "15 Items", icon: Cpu, desc: "MLE, Bayesian, Hypothesis testing, MCMC" },
-    { name: "Classical ML", count: "20 Items", icon: Layers, desc: "Gradient descent, SVMs, trees, expectations" },
-    { name: "Deep Learning", count: "15 Items", icon: Cpu, desc: "Backprop, Adam, CNNs, LSTMs, Transformers" },
-    { name: "Large Language Models", count: "15 Items", icon: Bot, desc: "Tokenizers, RLHF, Quantization, MoE, FlashAttention" },
-    { name: "RAG Engineering", count: "10 Items", icon: Layers, desc: "Chunking, Vector search, Hybrid, Reranking, GraphRAG" },
-    { name: "AI Agent Systems", count: "10 Items", icon: Bot, desc: "ReAct loop, function calling, stateful graphs" },
-    { name: "AI System Design", count: "5 Items", icon: ShieldCheck, desc: "Scalability, serving, caching, distributed training" },
+    { name: "Python Concurrency", count: "20 Items", icon: Binary, desc: "GIL, asyncio, generators, decorators" },
+    { name: "Mathematical Stats", count: "30 Items", icon: Cpu, desc: "MLE, Bayesian, Hypothesis testing, MCMC" },
+    { name: "Classical ML", count: "40 Items", icon: Layers, desc: "Gradient descent, SVMs, trees, expectations" },
+    { name: "Deep Learning", count: "30 Items", icon: Cpu, desc: "Backprop, Adam, CNNs, LSTMs, Transformers" },
+    { name: "Large Language Models", count: "30 Items", icon: Bot, desc: "Tokenizers, RLHF, Quantization, MoE, FlashAttention" },
+    { name: "RAG Engineering", count: "20 Items", icon: Layers, desc: "Chunking, Vector search, Hybrid, Reranking, GraphRAG" },
+    { name: "AI Agent Systems", count: "20 Items", icon: Bot, desc: "ReAct loop, function calling, stateful graphs" },
+    { name: "AI System Design", count: "10 Items", icon: ShieldCheck, desc: "Scalability, serving, caching, distributed training" },
   ];
 
   return (
@@ -48,6 +48,13 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-4">
+            <Link
+              href="/assessment"
+              className="text-sm font-semibold text-primary dark:text-blue-400 hover:underline transition-colors hidden sm:inline-flex items-center gap-1.5"
+            >
+              <Sparkles className="h-3.5 w-3.5" />
+              10-Min Assessment
+            </Link>
             <Link
               href="/learning-items"
               className="text-sm font-semibold text-muted-foreground hover:text-foreground transition-colors"
@@ -66,12 +73,12 @@ export default function Home() {
 
       {/* Hero Section */}
       <main className="flex-1">
-        <section className="relative overflow-hidden py-24 sm:py-32">
+        <section className="relative overflow-hidden pt-20 pb-16 sm:pt-28 sm:pb-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center space-y-8 relative z-10 animate-fade-in-up">
             <div className="mx-auto max-w-3xl space-y-4">
               <div className="inline-flex items-center gap-1.5 rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary dark:text-blue-400 border border-primary/20">
                 <Sparkles className="h-3.5 w-3.5" />
-                100 Curated Resources Pre-loaded
+                200 Curated Resources Pre-loaded
               </div>
               <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-[1.1] text-foreground">
                 Master AI Engineering.
@@ -87,17 +94,18 @@ export default function Home() {
             {/* Hero CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/dashboard"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-bold text-primary-foreground hover:bg-primary/95 transition-all shadow-lg shadow-primary/25"
+                href="/assessment"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary via-indigo-500 to-cyan-500 px-7 py-3.5 text-sm font-black text-white hover:opacity-95 transition-all shadow-xl shadow-primary/30 hover:scale-105"
               >
-                Get Started Free
+                <Sparkles className="h-4 w-4" />
+                Take Free Assessment
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 href="/learning-items"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-background/50 hover:bg-secondary px-6 py-3.5 text-sm font-bold text-muted-foreground hover:text-foreground transition-all"
               >
-                Browse Curriculum
+                Browse 200 Items
               </Link>
             </div>
           </div>
@@ -105,6 +113,43 @@ export default function Home() {
           {/* Decorative glowing backdrops */}
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10" />
           <div className="absolute right-0 top-0 w-96 h-96 bg-cyan-400/5 rounded-full blur-3xl pointer-events-none -z-10" />
+        </section>
+
+        {/* GIANT ASSESSMENT BANNER SECTION */}
+        <section className="relative z-20 pb-16">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div className="glass-panel relative overflow-hidden rounded-3xl p-8 sm:p-12 border-2 border-primary/40 bg-gradient-to-br from-primary/15 via-card/95 to-cyan-500/10 backdrop-blur-2xl shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left transition-all hover:border-primary/60">
+              <div className="space-y-3 max-w-xl">
+                <div className="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/15 px-3 py-1 text-xs font-black text-cyan-400 border border-cyan-500/30">
+                  <Sparkles className="h-3.5 w-3.5" />
+                  Free 10-Minute Skills Diagnostic
+                </div>
+                <h2 className="text-3xl sm:text-4xl font-black text-foreground tracking-tight leading-tight">
+                  How AI Engineer Ready Are You?
+                </h2>
+                <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  Answer 16 first-principles questions across Python, Math, ML, DL, LLMs, RAG, Agents, and System Design. Get an instant proficiency profile and your personalized TensorTrack path.
+                </p>
+              </div>
+
+              <div className="shrink-0 flex flex-col items-center gap-2">
+                <Link
+                  href="/assessment"
+                  className="inline-flex items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-primary via-indigo-500 to-cyan-500 px-8 py-4 text-base font-black text-white hover:opacity-95 shadow-xl shadow-primary/30 transition-all hover:scale-105 cursor-pointer"
+                >
+                  <span>Start Free Assessment</span>
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
+                <span className="text-[11px] text-muted-foreground font-semibold">
+                  No sign-up required • 100% Free
+                </span>
+              </div>
+
+              {/* Ambient Glow */}
+              <div className="absolute right-0 top-0 -mr-20 -mt-20 h-56 w-56 rounded-full bg-primary/25 blur-3xl pointer-events-none" />
+              <div className="absolute left-0 bottom-0 -ml-20 -mb-20 h-56 w-56 rounded-full bg-cyan-500/20 blur-3xl pointer-events-none" />
+            </div>
+          </div>
         </section>
 
         {/* Feature Cards Grid Section */}
@@ -207,6 +252,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }

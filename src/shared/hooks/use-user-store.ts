@@ -10,17 +10,51 @@ import {
 } from "@/app/actions";
 import { getLevelFromXp } from "@/modules/progress/xp";
 
+export interface UserProfile {
+  id: string;
+  name: string | null;
+  email: string;
+  role: "USER" | "ADMIN";
+  xp: number;
+  level: number;
+  createdAt?: string;
+}
+
+export interface UserStreak {
+  id?: string;
+  userId?: string;
+  currentCount: number;
+  longestCount: number;
+  lastActive: string | null;
+}
+
+export interface CompletionResult {
+  success?: boolean;
+  xpEarned?: number;
+  levelUp?: boolean;
+  newAchievements?: Array<{
+    id: string;
+    code: string;
+    name: string;
+    description: string;
+    xpReward: number;
+  }>;
+  alreadyCompleted?: boolean;
+  alreadyUncompleted?: boolean;
+  error?: string;
+}
+
 interface UserState {
-  user: any | null;
-  streak: any | null;
+  user: UserProfile | null;
+  streak: UserStreak | null;
   completedLearningItems: number[];
   bookmarks: number[];
   isLoading: boolean;
 
   fetchUserData: () => Promise<void>;
   toggleBookmark: (learningItemId: number) => Promise<void>;
-  completeLearningItem: (learningItemId: number, xpReward: number) => Promise<any>;
-  uncompleteLearningItem: (learningItemId: number) => Promise<any>;
+  completeLearningItem: (learningItemId: number, optionalXpReward?: number) => Promise<CompletionResult>;
+  uncompleteLearningItem: (learningItemId: number) => Promise<CompletionResult>;
 }
 
 export const useUserStore = create<UserState>((set, get) => ({
@@ -68,7 +102,7 @@ export const useUserStore = create<UserState>((set, get) => ({
     }
   },
 
-  completeLearningItem: async (learningItemId: number, xpReward: number) => {
+  completeLearningItem: async (learningItemId: number, optionalXpReward = 100) => {
     const { completedLearningItems, user } = get();
     if (completedLearningItems.includes(learningItemId)) {
       return { success: true, alreadyCompleted: true };
@@ -79,24 +113,31 @@ export const useUserStore = create<UserState>((set, get) => ({
     const updatedUser = user
       ? {
           ...user,
-          xp: user.xp + xpReward,
-          level: getLevelFromXp(user.xp + xpReward),
+          xp: user.xp + optionalXpReward,
+          level: getLevelFromXp(user.xp + optionalXpReward),
         }
       : null;
     
     set({ completedLearningItems: updatedCompleted, user: updatedUser });
 
     try {
-      const result = await completeLearningItemAction(learningItemId, xpReward);
+      const result = await completeLearningItemAction(learningItemId, optionalXpReward);
       
-      // Parallelize state refreshes in background to align details (level ups, streaks, achievements)
-      const [freshUser, freshStreak, freshCompleted] = await Promise.all([
-        getCurrentUserAction(),
-        getStreakAction(),
-        getCompletedLearningItemsAction(),
-      ]);
+      if ("user" in result && result.user && result.streak && result.completedLearningItems) {
+        set({
+          user: result.user,
+          streak: result.streak,
+          completedLearningItems: result.completedLearningItems,
+        });
+      } else {
+        const [freshUser, freshStreak, freshCompleted] = await Promise.all([
+          getCurrentUserAction(),
+          getStreakAction(),
+          getCompletedLearningItemsAction(),
+        ]);
+        set({ user: freshUser, streak: freshStreak, completedLearningItems: freshCompleted });
+      }
 
-      set({ user: freshUser, streak: freshStreak, completedLearningItems: freshCompleted });
       return result;
     } catch (e) {
       console.error("Failed to complete learning item", e);
@@ -127,14 +168,21 @@ export const useUserStore = create<UserState>((set, get) => ({
     try {
       const result = await uncompleteLearningItemAction(learningItemId);
 
-      // Parallelize state refreshes in background
-      const [freshUser, freshStreak, freshCompleted] = await Promise.all([
-        getCurrentUserAction(),
-        getStreakAction(),
-        getCompletedLearningItemsAction(),
-      ]);
+      if ("user" in result && result.user && result.streak && result.completedLearningItems) {
+        set({
+          user: result.user,
+          streak: result.streak,
+          completedLearningItems: result.completedLearningItems,
+        });
+      } else {
+        const [freshUser, freshStreak, freshCompleted] = await Promise.all([
+          getCurrentUserAction(),
+          getStreakAction(),
+          getCompletedLearningItemsAction(),
+        ]);
+        set({ user: freshUser, streak: freshStreak, completedLearningItems: freshCompleted });
+      }
 
-      set({ user: freshUser, streak: freshStreak, completedLearningItems: freshCompleted });
       return result;
     } catch (e) {
       console.error("Failed to uncomplete learning item", e);

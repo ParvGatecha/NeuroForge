@@ -1,7 +1,14 @@
 import { Header } from "@/shared/components/header";
 import { AdminView } from "@/modules/admin/components/admin-view";
+import { getCurrentUserAction } from "@/app/actions";
+import { redirect } from "next/navigation";
 
-export default function AdminPage() {
+export default async function AdminPage() {
+  const user = await getCurrentUserAction();
+  if (!user || user.role !== "ADMIN") {
+    redirect("/dashboard");
+  }
+
   return (
     <>
       <Header />

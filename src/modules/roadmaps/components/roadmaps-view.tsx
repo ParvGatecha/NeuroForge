@@ -14,7 +14,6 @@ import {
   ChevronDown,
   ChevronUp,
   Clock,
-  BookOpen,
 } from "lucide-react";
 
 interface SectionDetails {

@@ -6,6 +6,8 @@ import fs from "fs";
 import path from "path";
 import { createClient } from "@/shared/lib/supabase/server";
 
+import { getAllLearningItems } from "@/modules/roadmaps/roadmap";
+
 async function getUserId(): Promise<string | null> {
   try {
     const supabase = await createClient();
@@ -17,8 +19,20 @@ async function getUserId(): Promise<string | null> {
   return null;
 }
 
-export async function getCurrentUserAction(targetUserId?: string) {
-  const userId = targetUserId || (await getUserId());
+async function requireAdmin(): Promise<string> {
+  const userId = await getUserId();
+  if (!userId) {
+    throw new Error("Unauthorized: Authentication required");
+  }
+  const user = await dbService.getCurrentUser(userId);
+  if (!user || user.role !== "ADMIN") {
+    throw new Error("Forbidden: Admin privileges required");
+  }
+  return userId;
+}
+
+export async function getCurrentUserAction() {
+  const userId = await getUserId();
   if (!userId) return null;
   
   let sbUser = null;
@@ -51,29 +65,59 @@ export async function getBookmarksAction(targetUserId?: string) {
   return await dbService.getBookmarks(userId);
 }
 
-export async function toggleBookmarkAction(learningItemId: number, targetUserId?: string) {
-  const userId = targetUserId || (await getUserId());
+export async function toggleBookmarkAction(learningItemId: number) {
+  const userId = await getUserId();
   if (!userId) return false;
   return await dbService.toggleBookmark(userId, learningItemId);
 }
 
 export async function completeLearningItemAction(
   learningItemId: number,
-  xpReward: number,
-  targetUserId?: string
+  _optionalClientXp?: number
 ) {
-  const userId = targetUserId || (await getUserId());
+  const userId = await getUserId();
   if (!userId) return { success: false, error: "Not authenticated" };
-  return await dbService.completeLearningItem(userId, learningItemId, xpReward);
+
+  const allItems = getAllLearningItems();
+  const item = allItems.find((i) => i.id === learningItemId);
+  if (!item) return { success: false, error: "Learning item not found" };
+
+  // Calculate XP strictly on the server: estimated_time_minutes * 10
+  const xpReward = item.estimated_time_minutes > 0 ? item.estimated_time_minutes * 10 : 50;
+  const result = await dbService.completeLearningItem(userId, learningItemId, xpReward);
+
+  // Return updated state directly so client avoids multiple round-trips
+  const [user, streak, completedLearningItems] = await Promise.all([
+    dbService.getCurrentUser(userId),
+    dbService.getStreak(userId),
+    dbService.getCompletedLearningItems(userId),
+  ]);
+
+  return {
+    ...result,
+    user,
+    streak,
+    completedLearningItems,
+  };
 }
 
-export async function uncompleteLearningItemAction(
-  learningItemId: number,
-  targetUserId?: string
-) {
-  const userId = targetUserId || (await getUserId());
+export async function uncompleteLearningItemAction(learningItemId: number) {
+  const userId = await getUserId();
   if (!userId) return { success: false, error: "Not authenticated" };
-  return await dbService.uncompleteLearningItem(userId, learningItemId);
+  const result = await dbService.uncompleteLearningItem(userId, learningItemId);
+
+  const [user, streak, completedLearningItems] = await Promise.all([
+    dbService.getCurrentUser(userId),
+    dbService.getStreak(userId),
+    dbService.getCompletedLearningItems(userId),
+  ]);
+
+  return {
+    ...result,
+    user,
+    streak,
+    completedLearningItems,
+  };
 }
 
 export async function getSettingsAction(targetUserId?: string) {
@@ -101,6 +145,8 @@ export async function getUserAchievementsAction(targetUserId?: string) {
 }
 
 export async function rebuildSearchIndexAction() {
+  await requireAdmin();
+
   const contentDir = path.join(process.cwd(), "content");
   const outputFile = path.join(process.cwd(), "content/search_index.json");
 
@@ -177,7 +223,7 @@ export async function resetUserProgressAction(targetUserId?: string) {
       data: { xp: 0, level: 1 },
     });
     return { success: true, dbMode: "postgres" };
-  } catch (e) {
+  } catch (_e) {
     // Fallback to mock DB file
   }
 
@@ -214,12 +260,14 @@ export async function isDatabaseConnectedAction() {
   try {
     await prisma.$queryRaw`SELECT 1`;
     return true;
-  } catch (e) {
+  } catch (_e) {
     return false;
   }
 }
 
 export async function saveLearningItemAction(item: any) {
+  await requireAdmin();
+
   const baseDir = path.join(process.cwd(), "content");
   const sectionSlug = item.section.toLowerCase().replace(/\s+/g, "-");
   const sectionDir = path.join(baseDir, sectionSlug);
@@ -292,6 +340,8 @@ export async function saveLearningItemAction(item: any) {
 }
 
 export async function deleteLearningItemAction(itemId: number) {
+  await requireAdmin();
+
   const baseDir = path.join(process.cwd(), "content");
   const sections = ["python", "statistics", "machine-learning", "deep-learning", "llm", "rag", "agents", "system-design"];
   let deleted = false;
@@ -320,6 +370,8 @@ export async function deleteLearningItemAction(itemId: number) {
 }
 
 export async function bulkImportAction(itemsJson: string) {
+  await requireAdmin();
+
   try {
     const items = JSON.parse(itemsJson);
     const importList = Array.isArray(items) ? items : [items];

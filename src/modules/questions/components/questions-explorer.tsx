@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 import { useUserStore } from "@/shared/hooks/use-user-store";
 import { LearningItemMetadata } from "@/modules/roadmaps/roadmap";
 import Fuse from "fuse.js";
@@ -19,7 +19,6 @@ import {
   Play,
   FileCode,
   Code,
-  Award,
   ExternalLink,
   Compass,
   Zap,
@@ -63,7 +62,6 @@ interface ExplorerProps {
 }
 
 export function LearningItemsExplorer({ items }: ExplorerProps) {
-  const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
@@ -111,9 +109,40 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
       );
     });
     return groups;
-  }, [items, sectionsList]);
+  }, [items]);
 
   const itemsPerPage = 15;
+
+  // Filter change handlers that reset page without triggering cascading renders in effect
+  const handleSearchChange = (val: string) => {
+    setSearchQuery(val);
+    setCurrentPage(1);
+  };
+
+  const handleSectionChange = (sec: string) => {
+    setSectionFilter(sec);
+    setCurrentPage(1);
+  };
+
+  const handleDifficultyChange = (val: string) => {
+    setDifficultyFilter(val);
+    setCurrentPage(1);
+  };
+
+  const handleResourceTypeChange = (val: string) => {
+    setResourceTypeFilter(val);
+    setCurrentPage(1);
+  };
+
+  const handleCompletedChange = (val: string) => {
+    setCompletedFilter(val);
+    setCurrentPage(1);
+  };
+
+  const handleBookmarkedToggle = () => {
+    setBookmarkedFilter(prev => !prev);
+    setCurrentPage(1);
+  };
 
   // Sync state to URL params when filters change (client-side only, no reload)
   useEffect(() => {
@@ -127,7 +156,6 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
 
     const newUrl = `${pathname}?${params.toString()}`;
     window.history.replaceState(null, "", newUrl);
-    setCurrentPage(1); // Reset page on filter change
   }, [
     searchQuery,
     sectionFilter,
@@ -575,7 +603,7 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
                 type="text"
                 placeholder="Search learning resources by title, tag, or description..."
                 value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                onChange={(e) => handleSearchChange(e.target.value)}
                 className="w-full h-11 pl-10 pr-4 rounded-xl border border-border bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-sm"
               />
             </div>
@@ -585,7 +613,7 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
               {/* Difficulty */}
               <select
                 value={difficultyFilter}
-                onChange={(e) => setDifficultyFilter(e.target.value)}
+                onChange={(e) => handleDifficultyChange(e.target.value)}
                 className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option value="all">Difficulty: All</option>
@@ -597,7 +625,7 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
               {/* Resource Type */}
               <select
                 value={resourceTypeFilter}
-                onChange={(e) => setResourceTypeFilter(e.target.value)}
+                onChange={(e) => handleResourceTypeChange(e.target.value)}
                 className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 {resourceTypes.map((t) => (
@@ -610,7 +638,7 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
               {/* Completion */}
               <select
                 value={completedFilter}
-                onChange={(e) => setCompletedFilter(e.target.value)}
+                onChange={(e) => handleCompletedChange(e.target.value)}
                 className="h-11 rounded-xl border border-border bg-background/50 backdrop-blur-sm px-3 text-sm focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option value="all">Status: All</option>
@@ -620,7 +648,7 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
 
               {/* Bookmark toggle */}
               <button
-                onClick={() => setBookmarkedFilter(!bookmarkedFilter)}
+                onClick={handleBookmarkedToggle}
                 className={`flex items-center justify-center gap-1.5 h-11 rounded-xl border px-3 text-sm font-medium transition-all ${
                   bookmarkedFilter
                     ? "bg-amber-500/10 border-amber-500/30 text-amber-500"
@@ -638,7 +666,7 @@ export function LearningItemsExplorer({ items }: ExplorerProps) {
             {sectionsList.map((sec) => (
               <button
                 key={sec}
-                onClick={() => setSectionFilter(sec)}
+                onClick={() => handleSectionChange(sec)}
                 className={`whitespace-nowrap px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all ${
                   sectionFilter === sec
                     ? "bg-primary border-primary text-primary-foreground shadow-lg shadow-primary/25"

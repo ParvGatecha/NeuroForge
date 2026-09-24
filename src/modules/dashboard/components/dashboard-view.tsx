@@ -411,7 +411,7 @@ export function DashboardView() {
                 <Trophy className="h-8 w-8 text-amber-500 mx-auto" />
                 <h3 className="font-bold text-sm">Roadmap Completed!</h3>
                 <p className="text-xs text-muted-foreground">
-                  You've successfully completed all learning items in the roadmap. You are an expert AI Engineer!
+                  You&apos;ve successfully completed all learning items in the roadmap. You are an expert AI Engineer!
                 </p>
               </div>
             )}

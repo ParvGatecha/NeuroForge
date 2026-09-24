@@ -12,7 +12,6 @@ import {
   Check,
   Moon,
   Sun,
-  Lock,
 } from "lucide-react";
 import { useTheme } from "next-themes";
 

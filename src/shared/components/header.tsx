@@ -20,35 +20,40 @@ import {
   User,
   GraduationCap,
   Star,
+  Sparkles,
 } from "lucide-react";
+
+const emptySubscribe = () => () => {};
 
 export function Header() {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const mounted = React.useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const { user, streak, fetchUserData } = useUserStore();
 
   useEffect(() => {
-    setMounted(true);
     fetchUserData();
   }, [fetchUserData]);
-
-  if (!mounted) return null;
 
   // Compute levels
   const xpProgress = user ? getLevelProgress(user.xp) : null;
 
   const navLinks = [
     { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+    { href: "/assessment", label: "Assessment", icon: Sparkles },
     { href: "/learning-items", label: "Learning Items", icon: Compass },
     { href: "/roadmaps", label: "Roadmaps", icon: Map },
     { href: "/saved-items", label: "Saved Items", icon: Star },
     { href: "/settings", label: "Settings", icon: Settings },
   ];
 
-  if (user?.role === "ADMIN") {
+  if (mounted && user?.role === "ADMIN") {
     navLinks.push({ href: "/admin", label: "Admin", icon: Shield });
   }
 
@@ -95,7 +100,7 @@ export function Header() {
         {/* Right Side Stats & Actions */}
         <div className="flex items-center gap-4">
           {/* XP & Level Panel (Desktop) */}
-          {user && xpProgress && (
+          {mounted && user && xpProgress && (
             <div className="hidden sm:flex flex-col items-end gap-1 text-xs">
               <div className="flex items-center gap-2 font-medium">
                 <span className="text-muted-foreground">LVL {xpProgress.level}</span>
@@ -113,7 +118,7 @@ export function Header() {
           )}
 
           {/* Streak Indicator */}
-          {streak && (
+          {mounted && streak && (
             <div
               className={`flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold ${
                 streak.currentCount > 0
@@ -133,11 +138,11 @@ export function Header() {
             className="rounded-lg p-2 text-muted-foreground hover:bg-secondary hover:text-foreground"
             aria-label="Toggle theme"
           >
-            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            {!mounted ? <Sun className="h-4 w-4" /> : theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
 
           {/* User Profile (Desktop) */}
-          {user ? (
+          {mounted && user ? (
             <div className="flex items-center gap-2 border-l border-border/40 pl-4">
               <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary dark:text-blue-400">
                 <User className="h-4 w-4" />
