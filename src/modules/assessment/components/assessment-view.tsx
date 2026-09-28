@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { AssessmentQuiz } from "./assessment-quiz";
 import { AssessmentResults } from "./assessment-results";
-import { AssessmentResult } from "../assessment-data";
+import { AssessmentResult, AssessmentQuestion, generateAssessmentSession } from "../assessment-data";
 import {
   Sparkles,
   Clock,
@@ -15,8 +15,10 @@ import {
 export function AssessmentView() {
   const [stage, setStage] = useState<"intro" | "quiz" | "results">("intro");
   const [result, setResult] = useState<AssessmentResult | null>(null);
+  const [questions, setQuestions] = useState<AssessmentQuestion[]>([]);
 
   const handleStart = () => {
+    setQuestions(generateAssessmentSession(2));
     setStage("quiz");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -29,6 +31,7 @@ export function AssessmentView() {
 
   const handleRetake = () => {
     setResult(null);
+    setQuestions(generateAssessmentSession(2));
     setStage("quiz");
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -119,7 +122,13 @@ export function AssessmentView() {
         </div>
       )}
 
-      {stage === "quiz" && <AssessmentQuiz onComplete={handleComplete} />}
+      {stage === "quiz" && (
+        <AssessmentQuiz
+          key={questions.map((q) => q.id).join("-")}
+          questions={questions}
+          onComplete={handleComplete}
+        />
+      )}
 
       {stage === "results" && result && (
         <AssessmentResults result={result} onRetake={handleRetake} />

@@ -26,14 +26,14 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const tracks = [
-    { name: "Python Concurrency", count: "20 Items", icon: Binary, desc: "GIL, asyncio, generators, decorators" },
-    { name: "Mathematical Stats", count: "30 Items", icon: Cpu, desc: "MLE, Bayesian, Hypothesis testing, MCMC" },
-    { name: "Classical ML", count: "40 Items", icon: Layers, desc: "Gradient descent, SVMs, trees, expectations" },
-    { name: "Deep Learning", count: "30 Items", icon: Cpu, desc: "Backprop, Adam, CNNs, LSTMs, Transformers" },
-    { name: "Large Language Models", count: "30 Items", icon: Bot, desc: "Tokenizers, RLHF, Quantization, MoE, FlashAttention" },
-    { name: "RAG Engineering", count: "20 Items", icon: Layers, desc: "Chunking, Vector search, Hybrid, Reranking, GraphRAG" },
-    { name: "AI Agent Systems", count: "20 Items", icon: Bot, desc: "ReAct loop, function calling, stateful graphs" },
-    { name: "AI System Design", count: "10 Items", icon: ShieldCheck, desc: "Scalability, serving, caching, distributed training" },
+    { key: "python", name: "Python Concurrency", count: "20 Items", icon: Binary, desc: "GIL, asyncio, generators, decorators" },
+    { key: "statistics", name: "Mathematical Stats", count: "30 Items", icon: Cpu, desc: "MLE, Bayesian, Hypothesis testing, MCMC" },
+    { key: "machine-learning", name: "Classical ML", count: "40 Items", icon: Layers, desc: "Gradient descent, SVMs, trees, expectations" },
+    { key: "deep-learning", name: "Deep Learning Architecture", count: "30 Items", icon: Cpu, desc: "Backprop, Adam, CNNs, LSTMs, Transformers" },
+    { key: "llm", name: "Large Language Models", count: "30 Items", icon: Bot, desc: "Tokenizers, RLHF, Quantization, MoE, FlashAttention" },
+    { key: "rag", name: "RAG Engineering", count: "20 Items", icon: Layers, desc: "Chunking, Vector search, Hybrid, Reranking, GraphRAG" },
+    { key: "agents", name: "AI Agent Systems", count: "20 Items", icon: Bot, desc: "ReAct loop, function calling, stateful graphs" },
+    { key: "system-design", name: "AI System Design", count: "10 Items", icon: ShieldCheck, desc: "Scalability, serving, caching, distributed training" },
   ];
 
   return (
@@ -128,7 +128,7 @@ export default function Home() {
                   How AI Engineer Ready Are You?
                 </h2>
                 <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                  Answer 16 first-principles questions across Python, Math, ML, DL, LLMs, RAG, Agents, and System Design. Get an instant proficiency profile and your personalized TensorTrack path.
+                  Answer 16 randomized first-principles questions across Python, Math, ML, DL, LLMs, RAG, Agents, and System Design. Dynamically sampled from our 48-question engineering bank.
                 </p>
               </div>
 
@@ -229,7 +229,7 @@ export default function Home() {
                     <p className="text-xs text-muted-foreground leading-normal">{track.desc}</p>
                   </div>
                   <Link
-                    href={`/learning-items?section=${track.name.toLowerCase().replace(/\s+/g, "-")}`}
+                    href={`/learning-items?section=${track.key}`}
                     className="text-xs font-bold text-primary dark:text-blue-400 inline-flex items-center gap-1 hover:underline pt-2"
                   >
                     Explore Track

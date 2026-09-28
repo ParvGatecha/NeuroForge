@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     url: 'https://tensor-track.vercel.app',
     siteName: 'TensorTrack',
     title: 'TensorTrack — AI Engineer Prep & Upskilling',
-    description: 'Master AI engineering from first principles. Structured curriculum, gamified XP, 100+ curated resources.',
+    description: 'Master AI engineering from first principles. Structured curriculum, gamified XP, 200+ curated resources.',
     images: [
       {
         url: '/og-image.png',

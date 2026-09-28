@@ -17,10 +17,11 @@ import {
 } from "lucide-react";
 
 interface AssessmentQuizProps {
+  questions?: AssessmentQuestion[];
   onComplete: (result: AssessmentResult, answers: { [id: number]: string }) => void;
 }
 
-export function AssessmentQuiz({ onComplete }: AssessmentQuizProps) {
+export function AssessmentQuiz({ questions = ASSESSMENT_QUESTIONS.slice(0, 16), onComplete }: AssessmentQuizProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<{ [questionId: number]: string }>({});
   const [showExplanation, setShowExplanation] = useState(false);
@@ -34,14 +35,15 @@ export function AssessmentQuiz({ onComplete }: AssessmentQuizProps) {
     return () => clearInterval(timer);
   }, []);
 
-  const currentQ: AssessmentQuestion = ASSESSMENT_QUESTIONS[currentIndex];
-  const selectedOption = answers[currentQ.id];
+  const totalQuestions = questions.length;
+  const currentQ: AssessmentQuestion = questions[currentIndex] || questions[0];
+  const selectedOption = currentQ ? answers[currentQ.id] : undefined;
   const isAnswered = selectedOption !== undefined;
   const answeredCount = Object.keys(answers).length;
-  const totalQuestions = ASSESSMENT_QUESTIONS.length;
   const progressPercent = Math.round((answeredCount / totalQuestions) * 100);
 
   const handleSelectOption = (optionId: string) => {
+    if (!currentQ) return;
     setAnswers((prev) => ({
       ...prev,
       [currentQ.id]: optionId,
@@ -65,7 +67,7 @@ export function AssessmentQuiz({ onComplete }: AssessmentQuizProps) {
   };
 
   const finishAssessment = () => {
-    const result = computeAssessmentResult(answers);
+    const result = computeAssessmentResult(answers, questions);
     onComplete(result, answers);
   };
 
@@ -234,7 +236,7 @@ export function AssessmentQuiz({ onComplete }: AssessmentQuizProps) {
           Jump to Question
         </p>
         <div className="flex flex-wrap items-center justify-center gap-1.5">
-          {ASSESSMENT_QUESTIONS.map((q, idx) => {
+          {questions.map((q, idx) => {
             const answered = answers[q.id] !== undefined;
             const isCurrent = idx === currentIndex;
             return (
